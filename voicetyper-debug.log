@@ -1,0 +1,2711 @@
+[14:13:22] ERROR: vad error; see voicetyper-debug.log
+[14:13:22] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:22] ERROR: vad error; see voicetyper-debug.log
+[14:13:22] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:22] ERROR: vad error; see voicetyper-debug.log
+[14:13:22] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:22] ERROR: vad error; see voicetyper-debug.log
+[14:13:22] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:22] ERROR: vad error; see voicetyper-debug.log
+[14:13:22] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:22] ERROR: vad error; see voicetyper-debug.log
+[14:13:22] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:22] ERROR: vad error; see voicetyper-debug.log
+[14:13:22] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:22] ERROR: vad error; see voicetyper-debug.log
+[14:13:22] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:22] ERROR: vad error; see voicetyper-debug.log
+[14:13:22] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:22] ERROR: vad error; see voicetyper-debug.log
+[14:13:22] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:22] ERROR: vad error; see voicetyper-debug.log
+[14:13:22] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:23] ERROR: vad error; see voicetyper-debug.log
+[14:13:23] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:23] ERROR: vad error; see voicetyper-debug.log
+[14:13:23] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:23] ERROR: vad error; see voicetyper-debug.log
+[14:13:23] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:23] ERROR: vad error; see voicetyper-debug.log
+[14:13:23] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:23] ERROR: vad error; see voicetyper-debug.log
+[14:13:23] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:23] ERROR: vad error; see voicetyper-debug.log
+[14:13:23] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:23] ERROR: vad error; see voicetyper-debug.log
+[14:13:23] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:23] ERROR: vad error; see voicetyper-debug.log
+[14:13:23] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:24] ERROR: vad error; see voicetyper-debug.log
+[14:13:24] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:24] ERROR: vad error; see voicetyper-debug.log
+[14:13:24] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:24] ERROR: vad error; see voicetyper-debug.log
+[14:13:24] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:24] ERROR: vad error; see voicetyper-debug.log
+[14:13:24] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:24] ERROR: vad error; see voicetyper-debug.log
+[14:13:24] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:24] ERROR: vad error; see voicetyper-debug.log
+[14:13:24] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:24] ERROR: vad error; see voicetyper-debug.log
+[14:13:24] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:24] ERROR: vad error; see voicetyper-debug.log
+[14:13:24] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:24] ERROR: vad error; see voicetyper-debug.log
+[14:13:24] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:24] ERROR: vad error; see voicetyper-debug.log
+[14:13:24] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:24] ERROR: vad error; see voicetyper-debug.log
+[14:13:24] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:24] ERROR: vad error; see voicetyper-debug.log
+[14:13:24] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:24] ERROR: vad error; see voicetyper-debug.log
+[14:13:24] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:24] ERROR: vad error; see voicetyper-debug.log
+[14:13:24] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:24] ERROR: vad error; see voicetyper-debug.log
+[14:13:24] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:24] ERROR: vad error; see voicetyper-debug.log
+[14:13:24] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:24] ERROR: vad error; see voicetyper-debug.log
+[14:13:24] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:24] ERROR: vad error; see voicetyper-debug.log
+[14:13:24] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:13:25] ERROR: vad error; see voicetyper-debug.log
+[14:13:25] vad error
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/audio/vad.py", line 46, in is_speech
+    speech_prob = self._model(audio, self.sample_rate).item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.jit.Error: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/vad/model/vad_annotator.py", line 26, in forward
+    if _2:
+      _3 = torch.format(_0, (torch.size(x0))[-1])
+      ops.prim.RaiseException(_3, "builtins.ValueError")
+      ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    else:
+      pass
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/keras/notebook/nvme1/adamnsandle/silero-models-research/vad/model/vad_annotator.py", line 480, in forward
+        num_samples = 512 if sr == 16000 else 256
+        if x.shape[-1] != num_samples:
+            raise ValueError(f"Provided number of samples is {x.shape[-1]} (Supported values: 256 for 8000 sample rate, 512 for 16000)")
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    
+        batch_size = x.shape[0]
+builtins.ValueError: Provided number of samples is 800 (Supported values: 256 for 8000 sample rate, 512 for 16000)
+
+[14:21:24] session: start (trigger)
+[14:21:24] speechmatics: stream start
+[14:21:25] session: stop (trigger)
+[14:21:33] session: start (trigger)
+[14:21:33] speechmatics: stream start
+[14:21:34] session: stop (trigger)
+[14:21:36] session: start (trigger)
+[14:21:36] speechmatics: stream start
+[14:21:36] vad: speech detected
+[14:21:41] session: stop (trigger)
+[14:27:59] session: start (trigger)
+[14:27:59] speechmatics: stream start
+[14:28:00] vad: speech detected
+[14:28:00] partial: 
+[14:28:00] partial: 
+[14:28:01] partial: Test
+[14:28:01] partial: Test
+[14:28:02] final: Test. 
+[14:28:02] partial: 
+[14:28:02] session: stop (trigger)
+[14:28:19] session: start (trigger)
+[14:28:19] speechmatics: stream start
+[14:28:19] vad: speech detected
+[14:28:20] partial: 
+[14:28:20] partial: This
+[14:28:20] partial: This is a test
+[14:28:20] final: This is a 
+[14:28:20] partial: test. I'm
+[14:28:21] final: test. 
+[14:28:21] partial: I'm wondering
+[14:28:21] toggle: started
+[14:28:21] toggle: session busy, skipping start
+[14:28:21] final: I'm 
+[14:28:21] partial: wondering if
+[14:28:21] toggle: stopped
+[14:28:22] final: wondering 
+[14:28:22] partial: if
+[14:28:22] partial: if you can
+[14:28:22] final: if you 
+[14:28:22] partial: can hear me
+[14:28:23] final: can hear 
+[14:28:23] partial: me.
+[14:28:23] final: me. 
+[14:28:23] partial: 
+[14:28:24] session: stop (trigger)
+[14:30:13] session: start (trigger)
+[14:30:13] speechmatics: stream start
+[14:30:14] partial: 
+[14:30:14] partial: 
+[14:30:15] final: 
+[14:30:15] partial: 
+[14:30:15] session: stop (trigger)
+[14:30:17] session: start (trigger)
+[14:30:17] speechmatics: stream start
+[14:30:17] vad: speech detected
+[14:30:18] partial: 
+[14:30:18] partial: 
+[14:30:19] partial: The
+[14:30:19] final: The 
+[14:30:19] partial: test. I'm
+[14:30:19] final: test. I'm 
+[14:30:19] partial: wondering if you
+[14:30:20] final: wondering 
+[14:30:20] partial: if you can hear
+[14:30:20] final: if you can 
+[14:30:20] partial: hear me.
+[14:30:21] final: hear me. 
+[14:30:21] partial: 
+[14:30:21] session: stop (trigger)
+[14:30:27] session: start (trigger)
+[14:30:27] speechmatics: stream start
+[14:30:28] vad: speech detected
+[14:30:28] partial: 
+[14:30:28] partial: 
+[14:30:29] partial: This
+[14:30:29] partial: This is a
+[14:30:29] final: This is 
+[14:30:29] partial: a test I
+[14:30:30] final: a 
+[14:30:30] partial: test. I'm wondering
+[14:30:30] final: test. I'm 
+[14:30:30] partial: wondering if you
+[14:30:30] final: wondering 
+[14:30:30] partial: if you can hear
+[14:30:31] final: if you can 
+[14:30:31] partial: hear me.
+[14:30:32] final: hear me. 
+[14:30:32] partial: 
+[14:30:32] session: stop (trigger)
+[14:30:41] session: start (trigger)
+[14:30:41] speechmatics: stream start
+[14:30:41] vad: speech detected
+[14:30:42] partial: 
+[14:30:42] partial: 
+[14:30:42] partial: This is a
+[14:30:43] final: This 
+[14:30:43] partial: is a test
+[14:30:43] final: is a 
+[14:30:43] partial: test. I'm
+[14:30:43] final: test. 
+[14:30:43] partial: I'm wondering if
+[14:30:44] final: I'm 
+[14:30:44] partial: wondering if you can hear
+[14:30:44] final: wondering if you 
+[14:30:44] partial: can hear me.
+[14:30:45] final: can hear 
+[14:30:45] partial: me.
+[14:30:45] final: me. 
+[14:30:45] partial: 
+[14:30:45] session: stop (trigger)
+[14:32:28] session: start (trigger)
+[14:32:28] speechmatics: stream start
+[14:32:29] vad: speech detected
+[14:32:29] partial: 
+[14:32:29] partial: This
+[14:32:30] partial: This is the
+[14:32:30] final: This is 
+[14:32:30] partial: the test I
+[14:32:31] final: the 
+[14:32:31] partial: test. I'm wondering
+[14:32:31] final: test. I'm 
+[14:32:31] partial: wondering if you can
+[14:32:31] final: wondering 
+[14:32:31] partial: if you can hear me
+[14:32:32] final: if you can 
+[14:32:32] partial: hear me.
+[14:32:33] session: stop (trigger)
+[14:32:33] final: hear me. 
+[14:32:33] partial: 
+[14:33:02] session: start (trigger)
+[14:33:02] speechmatics: stream start
+[14:33:03] partial: 
+[14:33:03] partial: 
+[14:33:04] final: 
+[14:33:04] partial: 
+[14:33:04] session: stop (trigger)
+[14:33:08] session: start (trigger)
+[14:33:08] speechmatics: stream start
+[14:33:08] partial: 
+[14:33:09] partial: 
+[14:33:09] final: 
+[14:33:09] partial: 
+[14:33:09] session: stop (trigger)
+[14:41:41] listening enabled
+[14:41:42] vad: speech detected
+[14:41:42] speechmatics: stream start
+[14:41:43] partial: 
+[14:41:43] partial: Test
+[14:41:43] partial: Test
+[14:41:44] final: Test. 
+[14:41:44] partial: 
+[14:41:44] utterance: stop
+[14:41:46] vad: speech detected
+[14:41:46] speechmatics: stream start
+[14:41:47] partial: 
+[14:41:47] partial: Has
+[14:41:47] partial: Has
+[14:41:48] final: Has. 
+[14:41:48] partial: 
+[14:41:48] utterance: stop
+[14:41:49] vad: speech detected
+[14:41:49] speechmatics: stream start
+[14:41:53] utterance: stop
+[14:41:57] vad: speech detected
+[14:41:57] speechmatics: stream start
+[14:41:58] ERROR: speechmatics error: Concurrent Quota Exceeded; see voicetyper-debug.log
+[14:41:58] speechmatics error: Concurrent Quota Exceeded
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/stt/speechmatics_client.py", line 56, in _run
+    ws.run_synchronously(audio_source, transcription_config, audio_settings)
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 662, in run_synchronously
+    asyncio.run(asyncio.wait_for(self.run(*args, **kwargs), timeout=timeout))
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 686, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 641, in run
+    await self._communicate(stream, audio_settings)
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 533, in _communicate
+    raise exc
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 389, in _consumer_handler
+    self._consumer(message)
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 278, in _consumer
+    raise TranscriptionError(message["reason"])
+speechmatics.exceptions.TranscriptionError: Concurrent Quota Exceeded
+
+[14:41:58] partial: This
+[14:41:59] partial: This is a
+[14:41:59] final: This 
+[14:41:59] partial: is a test
+[14:41:59] final: is a test. 
+[14:41:59] partial: 
+[15:04:48] listening enabled
+[15:04:50] vad: speech detected
+[15:04:50] speechmatics: stream start
+[15:04:50] speechmatics: session start (active=1)
+[15:04:50] partial: 
+[15:04:51] partial: Hello.
+[15:04:51] partial: Hello.
+[15:04:51] speechmatics: stop requested
+[15:04:52] final: Hello. 
+[15:04:52] partial: 
+[15:04:52] speechmatics: session end (active=0, duration=2.14s)
+[15:04:52] utterance: stop (duration=2.14s)
+[15:04:57] vad: speech detected
+[15:04:57] speechmatics: stream start
+[15:04:57] speechmatics: session start (active=1)
+[15:04:58] partial: 
+[15:04:58] partial: Test
+[15:04:58] speechmatics: stop requested
+[15:04:58] partial: Test
+[15:04:59] final: Test. 
+[15:04:59] partial: 
+[15:04:59] speechmatics: session end (active=0, duration=1.93s)
+[15:04:59] utterance: stop (duration=1.93s)
+[15:05:01] vad: speech detected
+[15:05:01] speechmatics: stream start
+[15:05:01] speechmatics: session start (active=1)
+[15:05:02] partial: A
+[15:05:02] partial: Alone.
+[15:05:02] speechmatics: stop requested
+[15:05:02] final: A 
+[15:05:02] partial: low
+[15:05:03] final: low. 
+[15:05:03] partial: 
+[15:05:03] speechmatics: session end (active=0, duration=1.98s)
+[15:05:03] utterance: stop (duration=1.98s)
+[15:05:04] vad: speech detected
+[15:05:04] speechmatics: stream start
+[15:05:04] speechmatics: session start (active=1)
+[15:05:06] speechmatics: stop requested
+[15:05:07] utterance: stop (duration=2.54s)
+[15:05:07] vad: speech detected
+[15:05:07] speechmatics: stream start
+[15:05:07] speechmatics: session start (active=2)
+[15:05:08] speechmatics: stop requested
+[15:05:09] utterance: stop (duration=2.54s)
+[15:05:14] vad: speech detected
+[15:05:14] speechmatics: stream start
+[15:05:14] speechmatics: session start (active=3)
+[15:05:15] ERROR: speechmatics error: Concurrent Quota Exceeded; see voicetyper-debug.log
+[15:05:15] speechmatics error: Concurrent Quota Exceeded
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/stt/speechmatics_client.py", line 72, in _run
+    ws.run_synchronously(audio_source, transcription_config, audio_settings)
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 662, in run_synchronously
+    asyncio.run(asyncio.wait_for(self.run(*args, **kwargs), timeout=timeout))
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 686, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 641, in run
+    await self._communicate(stream, audio_settings)
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 533, in _communicate
+    raise exc
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 389, in _consumer_handler
+    self._consumer(message)
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 278, in _consumer
+    raise TranscriptionError(message["reason"])
+speechmatics.exceptions.TranscriptionError: Concurrent Quota Exceeded
+
+[15:05:15] speechmatics: session end (active=2, duration=10.43s)
+[15:05:15] speechmatics: stop requested
+[15:05:15] speechmatics: session end (active=1, duration=1.06s)
+[15:05:16] ERROR: speechmatics error: Concurrent Quota Exceeded; see voicetyper-debug.log
+[15:05:16] speechmatics error: Concurrent Quota Exceeded
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/stt/speechmatics_client.py", line 72, in _run
+    ws.run_synchronously(audio_source, transcription_config, audio_settings)
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 662, in run_synchronously
+    asyncio.run(asyncio.wait_for(self.run(*args, **kwargs), timeout=timeout))
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 686, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 641, in run
+    await self._communicate(stream, audio_settings)
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 533, in _communicate
+    raise exc
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 389, in _consumer_handler
+    self._consumer(message)
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 278, in _consumer
+    raise TranscriptionError(message["reason"])
+speechmatics.exceptions.TranscriptionError: Concurrent Quota Exceeded
+
+[15:05:16] speechmatics: session end (active=0, duration=9.28s)
+[15:15:23] listening enabled
+[15:15:26] vad: speech detected
+[15:15:26] speechmatics: stream start
+[15:15:26] speechmatics: session start (active=1)
+[15:15:27] partial: 
+[15:15:27] speechmatics: stop requested
+[15:15:27] partial: 
+[15:15:28] final: 
+[15:15:28] partial: 
+[15:15:28] speechmatics: session end (active=0, duration=1.83s)
+[15:15:28] utterance: stop (duration=1.83s)
+[15:15:31] vad: speech detected
+[15:15:31] speechmatics: stream start
+[15:15:31] speechmatics: session start (active=1)
+[15:15:32] partial: 
+[15:15:32] partial: This is
+[15:15:33] partial: This is a
+[15:15:33] final: This is 
+[15:15:33] partial: a test
+[15:15:33] final: a 
+[15:15:33] partial: test
+[15:15:33] speechmatics: stop requested
+[15:15:34] partial: test
+[15:15:34] final: test. 
+[15:15:34] partial: 
+[15:15:34] speechmatics: session end (active=0, duration=3.25s)
+[15:15:34] utterance: stop (duration=3.25s)
+[15:15:36] vad: speech detected
+[15:15:36] speechmatics: stream start
+[15:15:36] speechmatics: session start (active=1)
+[15:15:37] speechmatics: stop requested
+[15:15:38] utterance: stop (duration=2.28s)
+[15:15:38] vad: speech detected
+[15:15:38] speechmatics: stream start
+[15:15:38] speechmatics: session start (active=2)
+[15:15:39] partial: 
+[15:15:40] partial: His
+[15:15:40] final: Is 
+[15:15:40] partial: a test
+[15:15:40] final: a 
+[15:15:40] partial: test
+[15:15:40] final: test 
+[15:15:40] partial: 
+[15:15:40] partial: . hello
+[15:15:41] final: . 
+[15:15:41] partial: Hello?
+[15:15:41] final: Hello. 
+[15:15:41] partial: This is
+[15:15:41] partial: This is a test
+[15:15:41] final: This is a 
+[15:15:41] partial: test
+[15:15:42] speechmatics: stop requested
+[15:15:42] partial: test
+[15:15:42] final: test. I. 
+[15:15:42] partial: 
+[15:15:42] speechmatics: session end (active=1, duration=4.08s)
+[15:15:42] utterance: stop (duration=4.08s)
+[15:15:43] vad: speech detected
+[15:15:43] speechmatics: stream start
+[15:15:43] speechmatics: session start (active=2)
+[15:15:43] partial: La
+[15:15:44] speechmatics: stop requested
+[15:15:44] partial: Hello, this is
+[15:15:44] final: Hello. 
+[15:15:44] partial: This is a test
+[15:15:44] final: This is a 
+[15:15:44] partial: test
+[15:15:44] partial: test
+[15:15:45] utterance: stop (duration=2.04s)
+[15:15:45] final: test. 
+[15:15:45] partial: 
+[15:15:45] speechmatics: session end (active=1, duration=2.28s)
+[15:15:46] vad: speech detected
+[15:15:46] speechmatics: stream start
+[15:15:46] speechmatics: session start (active=2)
+[15:15:47] ERROR: speechmatics error: Concurrent Quota Exceeded; see voicetyper-debug.log
+[15:15:47] speechmatics error: Concurrent Quota Exceeded
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/stt/speechmatics_client.py", line 72, in _run
+    ws.run_synchronously(audio_source, transcription_config, audio_settings)
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 662, in run_synchronously
+    asyncio.run(asyncio.wait_for(self.run(*args, **kwargs), timeout=timeout))
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 686, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 641, in run
+    await self._communicate(stream, audio_settings)
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 533, in _communicate
+    raise exc
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 389, in _consumer_handler
+    self._consumer(message)
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 278, in _consumer
+    raise TranscriptionError(message["reason"])
+speechmatics.exceptions.TranscriptionError: Concurrent Quota Exceeded
+
+[15:15:47] speechmatics: session end (active=1, duration=10.41s)
+[15:15:47] speechmatics: stop requested
+[15:15:57] ERROR: speechmatics error: Concurrent Quota Exceeded; see voicetyper-debug.log
+[15:15:57] speechmatics error: Concurrent Quota Exceeded
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/stt/speechmatics_client.py", line 72, in _run
+    ws.run_synchronously(audio_source, transcription_config, audio_settings)
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 662, in run_synchronously
+    asyncio.run(asyncio.wait_for(self.run(*args, **kwargs), timeout=timeout))
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 686, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/synapso/.local/share/uv/python/cpython-3.12.8-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 641, in run
+    await self._communicate(stream, audio_settings)
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 533, in _communicate
+    raise exc
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 389, in _consumer_handler
+    self._consumer(message)
+  File "/home/synapso/voicetyper/.venv/lib/python3.12/site-packages/speechmatics/client.py", line 278, in _consumer
+    raise TranscriptionError(message["reason"])
+speechmatics.exceptions.TranscriptionError: Concurrent Quota Exceeded
+
+[15:15:57] speechmatics: session end (active=0, duration=10.41s)
+[15:46:49] listening enabled
+[15:46:55] listening disabled
+[15:46:56] listening enabled
+[15:46:56] listener busy, skipping start
+[15:46:56] listening disabled
+[15:47:20] listening enabled
+[15:47:20] listener busy, skipping start
+[15:47:36] listening enabled
+[15:55:02] listening enabled
+[15:55:02] speechmatics: session start (active=1)
+[15:55:03] vad: speech detected
+[15:55:04] partial: 
+[15:55:04] partial: Test
+[15:55:04] speechmatics: ForceEndOfUtterance sent
+[15:55:04] utterance: stop (duration=1.28s)
+[15:55:04] final: Test. 
+[15:55:04] partial: 
+[15:55:09] vad: speech detected
+[15:55:09] partial: 
+[15:55:10] partial: This
+[15:55:10] partial: This is a
+[15:55:11] final: This 
+[15:55:11] partial: is a
+[15:55:11] final: is a 
+[15:55:11] partial: test
+[15:55:11] speechmatics: ForceEndOfUtterance sent
+[15:55:11] utterance: stop (duration=2.05s)
+[15:55:11] final: test. 
+[15:55:11] partial: 
+[15:55:13] vad: speech detected
+[15:55:14] partial: 
+[15:55:14] partial: Hello
+[15:55:15] partial: Hello.
+[15:55:15] speechmatics: ForceEndOfUtterance sent
+[15:55:15] utterance: stop (duration=1.19s)
+[15:55:16] vad: speech detected
+[15:55:16] final: Hello. 
+[15:55:16] partial: 
+[15:55:17] partial: Hello
+[15:55:17] speechmatics: ForceEndOfUtterance sent
+[15:55:17] utterance: stop (duration=1.11s)
+[15:55:17] partial: Hello.
+[15:55:17] final: Hello. 
+[15:55:17] partial: 
+[15:55:19] vad: speech detected
+[15:55:19] partial: 
+[15:55:20] partial: Hey. The
+[15:55:20] final: Hey. The 
+[15:55:20] partial: problem of trying
+[15:55:21] final: problem 
+[15:55:21] partial: of treating
+[15:55:21] final: of 
+[15:55:21] partial: treating intelligence
+[15:55:21] final: treating 
+[15:55:21] partial: intelligence is a binary
+[15:55:21] final: intelligence is a 
+[15:55:21] partial: binary.
+[15:55:22] final: binary. 
+[15:55:22] partial: 
+[15:55:22] partial: Category. Aside, none of
+[15:55:23] final: Category. Aside, 
+[15:55:23] partial: none of those folks
+[15:55:23] final: none of 
+[15:55:23] partial: those folks
+[15:55:23] final: those folks 
+[15:55:23] partial: invented their
+[15:55:24] final: invented 
+[15:55:24] partial: there stock from
+[15:55:24] final: their 
+[15:55:24] partial: stack from ground
+[15:55:24] final: stack from 
+[15:55:24] partial: ground up either
+[15:55:25] final: ground up 
+[15:55:25] partial: either.
+[15:55:25] partial: either. They didn't
+[15:55:26] final: either. They 
+[15:55:26] partial: didn't come up
+[15:55:26] final: didn't 
+[15:55:26] partial: come up with the
+[15:55:26] final: come up 
+[15:55:26] partial: with the prix
+[15:55:27] final: with the 
+[15:55:27] partial: 
+[15:55:27] partial: prerequisite math
+[15:55:27] final: prerequisite 
+[15:55:27] partial: math or
+[15:55:28] final: math 
+[15:55:28] partial: or even the LA
+[15:55:28] final: or even 
+[15:55:28] partial: the language they
+[15:55:29] final: the 
+[15:55:29] partial: language they have
+[15:55:29] final: language they 
+[15:55:29] partial: have used to
+[15:55:29] final: have used 
+[15:55:29] partial: to achieve
+[15:55:29] final: to 
+[15:55:29] partial: achieve whatever
+[15:55:30] final: achieve 
+[15:55:30] partial: whatever you believe
+[15:55:30] final: whatever you 
+[15:55:30] partial: believe they've
+[15:55:30] final: believe 
+[15:55:30] partial: they've achieved
+[15:55:31] final: they've 
+[15:55:31] partial: achieved
+[15:55:31] speechmatics: ForceEndOfUtterance sent
+[15:55:31] utterance: stop (duration=12.20s)
+[15:55:31] final: achieved. 
+[15:55:31] partial: 
+[15:55:34] vad: speech detected
+[15:55:34] partial: Skills
+[15:55:35] partial: Skills acquisition
+[15:55:35] final: Skills 
+[15:55:35] partial: acquisition
+[15:55:35] partial: acquisition
+[15:55:35] speechmatics: ForceEndOfUtterance sent
+[15:55:35] utterance: stop (duration=1.71s)
+[15:55:39] vad: speech detected
+[15:55:39] final: acquisition. 
+[15:55:39] partial: 
+[15:55:39] partial: And the
+[15:55:40] final: And 
+[15:55:40] partial: the problem of
+[15:55:40] final: the 
+[15:55:40] partial: problem of Ferdinand
+[15:55:40] final: problem of 
+[15:55:40] partial: 
+[15:55:41] partial: intelligence as a binder
+[15:55:41] final: intelligence as 
+[15:55:41] partial: a binary
+[15:55:41] final: a 
+[15:55:41] partial: binary category
+[15:55:42] final: binary 
+[15:55:42] partial: category aside
+[15:55:42] speechmatics: ForceEndOfUtterance sent
+[15:55:42] utterance: stop (duration=3.58s)
+[15:55:42] vad: speech detected
+[15:55:42] final: category 
+[15:55:42] partial: aside
+[15:55:43] final: aside. 
+[15:55:43] partial: 
+[15:55:43] partial: 
+[15:55:43] partial: A
+[15:55:43] speechmatics: ForceEndOfUtterance sent
+[15:55:43] utterance: stop (duration=1.19s)
+[15:55:44] final: A. 
+[15:55:44] partial: 
+[15:55:53] vad: speech detected
+[15:55:54] partial: 
+[15:55:54] partial: Test
+[15:55:54] speechmatics: ForceEndOfUtterance sent
+[15:55:54] utterance: stop (duration=1.11s)
+[15:55:54] partial: Test
+[15:55:57] vad: speech detected
+[15:55:57] final: Test. 
+[15:55:57] partial: 
+[15:55:58] partial: Flow
+[15:55:58] speechmatics: ForceEndOfUtterance sent
+[15:55:58] utterance: stop (duration=1.02s)
+[15:55:58] final: Flow. 
+[15:55:58] partial: 
+[15:56:03] vad: speech detected
+[15:56:03] partial: 
+[15:56:04] partial: This is
+[15:56:04] partial: This is a
+[15:56:04] final: This is 
+[15:56:04] partial: a test
+[15:56:05] partial: a test one
+[15:56:05] final: a 
+[15:56:05] partial: test one two
+[15:56:06] partial: test 123
+[15:56:06] speechmatics: ForceEndOfUtterance sent
+[15:56:06] utterance: stop (duration=2.99s)
+[15:56:06] final: test. One. Two. 
+[15:56:06] partial: Three.
+[15:56:08] vad: speech detected
+[15:56:09] final: Three. 
+[15:56:09] partial: 
+[15:56:09] partial: This
+[15:56:09] partial: This is a
+[15:56:10] final: This is 
+[15:56:10] partial: a test
+[15:56:10] partial: a test one
+[15:56:10] final: a 
+[15:56:10] partial: test 123
+[15:56:11] final: test 
+[15:56:11] partial: 123.
+[15:56:11] speechmatics: ForceEndOfUtterance sent
+[15:56:11] utterance: stop (duration=2.90s)
+[15:56:11] partial: 123.
+[16:01:04] listening enabled
+[16:01:04] speechmatics: session start (active=1)
+[16:01:08] vad: speech detected
+[16:01:09] partial: 
+[16:01:09] partial: This is a
+[16:01:09] final: This 
+[16:01:09] partial: is a test
+[16:01:10] partial: is a test one two
+[16:01:10] final: is a test 
+[16:01:10] partial: one, two, three
+[16:01:10] final: . One, two, 
+[16:01:10] partial: three.
+[16:01:10] speechmatics: ForceEndOfUtterance sent
+[16:01:10] utterance: stop (duration=2.56s)
+[16:01:11] final: three. 
+[16:01:11] partial: 
+[16:01:12] vad: speech detected
+[16:01:13] partial: This
+[16:01:13] partial: This is a
+[16:01:14] partial: This is a test one
+[16:01:14] final: This 
+[16:01:14] partial: is a test one two
+[16:01:14] final: is a test one 
+[16:01:14] partial: two. Three.
+[16:01:15] speechmatics: ForceEndOfUtterance sent
+[16:01:15] utterance: stop (duration=2.30s)
+[16:01:15] final: , two. Three. 
+[16:01:15] partial: 
+[16:01:18] vad: speech detected
+[16:01:18] partial: 
+[16:01:19] partial: Hello
+[16:01:19] speechmatics: ForceEndOfUtterance sent
+[16:01:19] utterance: stop (duration=1.20s)
+[16:01:19] partial: Hello.
+[16:01:22] vad: speech detected
+[16:01:22] final: Hello. 
+[16:01:23] partial: 
+[16:01:23] partial: Hello
+[16:01:23] speechmatics: ForceEndOfUtterance sent
+[16:01:23] utterance: stop (duration=1.02s)
+[16:01:23] partial: Hello.
+[16:01:26] vad: speech detected
+[16:01:26] final: Hello. 
+[16:01:26] partial: 
+[16:01:27] partial: Is
+[16:01:27] final: Is 
+[16:01:27] partial: anyone there
+[16:01:27] partial: anyone there?
+[16:01:27] speechmatics: ForceEndOfUtterance sent
+[16:01:27] utterance: stop (duration=1.45s)
+[16:01:32] vad: speech detected
+[16:01:33] final: anyone there? 
+[16:01:33] partial: 
+[16:01:33] partial: 
+[16:01:33] partial: Yep.
+[16:01:34] speechmatics: ForceEndOfUtterance sent
+[16:01:34] utterance: stop (duration=1.20s)
+[16:01:34] partial: Yep.
+[16:01:36] vad: speech detected
+[16:01:37] final: Yep. 
+[16:01:37] partial: 
+[16:01:37] partial: Okay
+[16:01:37] partial: Okay.
+[16:01:38] speechmatics: ForceEndOfUtterance sent
+[16:01:38] utterance: stop (duration=1.45s)
+[16:01:38] final: Okay. 
+[16:01:38] partial: 
+[16:01:47] vad: speech detected
+[16:01:48] final: 
+[16:01:48] partial: 
+[16:01:48] partial: True
+[16:01:48] speechmatics: ForceEndOfUtterance sent
+[16:01:48] utterance: stop (duration=1.02s)
+[16:01:48] partial: True
+[16:01:55] vad: speech detected
+[16:01:55] final: True. 
+[16:01:55] partial: 
+[16:01:55] partial: And
+[16:01:56] speechmatics: ForceEndOfUtterance sent
+[16:01:56] utterance: stop (duration=1.11s)
+[16:01:56] partial: And
+[16:01:58] vad: speech detected
+[16:01:58] final: And. 
+[16:01:58] partial: 
+[16:01:59] partial: And
+[16:01:59] partial: End
+[16:01:59] speechmatics: ForceEndOfUtterance sent
+[16:01:59] utterance: stop (duration=1.28s)
+[16:01:59] final: End. 
+[16:01:59] partial: 
+[16:02:00] vad: speech detected
+[16:02:00] partial: 
+[16:02:01] partial: End
+[16:02:01] speechmatics: ForceEndOfUtterance sent
+[16:02:01] utterance: stop (duration=1.19s)
+[16:02:01] partial: End it
+[16:02:02] vad: speech detected
+[16:02:03] final: End it. 
+[16:02:03] partial: 
+[16:02:03] partial: Stop
+[16:02:03] partial: Stop
+[16:02:04] speechmatics: ForceEndOfUtterance sent
+[16:02:04] utterance: stop (duration=1.20s)
+[16:02:04] final: Stop! 
+[16:02:04] partial: 
+[16:02:05] vad: speech detected
+[16:02:06] partial: 
+[16:02:06] partial: Stop
+[16:02:07] speechmatics: ForceEndOfUtterance sent
+[16:02:07] utterance: stop (duration=1.11s)
+[16:02:07] final: Stop. 
+[16:02:07] partial: 
+[16:02:08] vad: speech detected
+[16:02:08] partial: 
+[16:02:09] partial: Stop
+[16:02:09] speechmatics: ForceEndOfUtterance sent
+[16:02:09] utterance: stop (duration=1.11s)
+[16:02:09] final: Stop. 
+[16:02:09] partial: 
+[16:02:11] vad: speech detected
+[16:02:11] partial: 
+[16:02:11] partial: Stop
+[16:02:12] speechmatics: ForceEndOfUtterance sent
+[16:02:12] utterance: stop (duration=1.11s)
+[16:02:12] partial: Stop
+[16:02:15] vad: speech detected
+[16:02:15] final: Stop. 
+[16:02:15] partial: 
+[16:02:15] partial: And
+[16:02:16] partial: And
+[16:02:16] final: End. 
+[16:02:16] partial: Utterance.
+[16:02:16] speechmatics: ForceEndOfUtterance sent
+[16:02:16] utterance: stop (duration=1.62s)
+[16:02:16] final: Utterance. 
+[16:02:16] partial: 
+[16:02:45] vad: speech detected
+[16:02:45] partial: 
+[16:02:46] partial: Okay
+[16:02:46] partial: Okay.
+[16:02:47] final: Okay. 
+[16:02:47] partial: The system
+[16:02:47] final: The 
+[16:02:47] partial: system is working
+[16:02:47] final: system 
+[16:02:47] partial: is working right
+[16:02:48] final: is 
+[16:02:48] partial: working right now
+[16:02:48] final: working right 
+[16:02:48] partial: now. And in
+[16:02:48] final: now. 
+[16:02:48] partial: And in fact
+[16:02:49] final: And in 
+[16:02:49] partial: fact, I
+[16:02:49] final: fact, 
+[16:02:49] partial: I'm
+[16:02:49] final: I'm 
+[16:02:49] partial: 
+[16:02:50] partial: dictating
+[16:02:50] partial: dictating to you
+[16:02:51] final: dictating 
+[16:02:51] partial: to you. Using
+[16:02:51] final: to you 
+[16:02:51] partial: using the system
+[16:02:51] final: using 
+[16:02:51] partial: the system
+[16:02:51] speechmatics: ForceEndOfUtterance sent
+[16:02:51] utterance: stop (duration=6.49s)
+[16:02:52] final: the 
+[16:02:52] partial: system
+[16:02:52] vad: speech detected
+[16:02:52] final: system. 
+[16:02:52] partial: 
+[16:02:52] partial: 
+[16:02:53] partial: However
+[16:02:53] partial: However
+[16:02:54] final: However, 
+[16:02:54] partial: there
+[16:02:54] partial: there is one
+[16:02:54] partial: there is one problem
+[16:02:55] final: there 
+[16:02:55] partial: is one problem
+[16:02:55] final: is one 
+[16:02:55] partial: problem where
+[16:02:55] final: problem 
+[16:02:56] partial: where
+[16:02:56] partial: where
+[16:02:56] final: where, 
+[16:02:56] partial: because
+[16:02:56] partial: because of
+[16:02:57] final: because 
+[16:02:57] partial: of the
+[16:02:57] final: of the 
+[16:02:57] partial: partial
+[16:02:58] partial: partial and
+[16:02:58] final: partial 
+[16:02:58] partial: and
+[16:02:58] final: and 
+[16:02:58] partial: final series
+[16:02:59] final: final 
+[16:02:59] partial: system
+[16:02:59] partial: system that
+[16:02:59] final: system that 
+[16:02:59] partial: Speechmatics
+[16:03:00] partial: Speechmatics
+[16:03:00] partial: Speechmatics
+[16:03:00] final: Speechmatics 
+[16:03:01] partial: uses
+[16:03:01] speechmatics: ForceEndOfUtterance sent
+[16:03:01] utterance: stop (duration=9.04s)
+[16:03:01] partial: uses
+[16:03:02] vad: speech detected
+[16:03:02] final: uses. 
+[16:03:02] partial: 
+[16:03:02] partial: 
+[16:03:03] partial: Basically
+[16:03:03] partial: Basically
+[16:03:03] speechmatics: ForceEndOfUtterance sent
+[16:03:03] utterance: stop (duration=1.71s)
+[16:03:03] partial: Basically
+[16:03:04] vad: speech detected
+[16:03:04] final: Basically. 
+[16:03:04] partial: 
+[16:03:04] partial: 
+[16:03:05] partial: Words
+[16:03:05] final: Words 
+[16:03:05] partial: can stay in
+[16:03:06] final: can 
+[16:03:06] partial: stay in the buffer
+[16:03:06] final: stay in 
+[16:03:06] partial: the buffer
+[16:03:06] final: the 
+[16:03:06] partial: buffer for a very
+[16:03:07] final: buffer for 
+[16:03:07] partial: a very long time
+[16:03:07] final: a very 
+[16:03:07] partial: long time
+[16:03:07] final: long 
+[16:03:07] partial: time.
+[16:03:08] partial: time to
+[16:03:08] final: time. 
+[16:03:08] partial: 
+[16:03:08] partial: Ten or
+[16:03:09] partial: Ten or even 20
+[16:03:09] partial: Ten or even 20
+[16:03:10] final: Ten or 
+[16:03:10] partial: even 20 or
+[16:03:10] final: even 
+[16:03:10] partial: 20 or more
+[16:03:10] final: 20 or 
+[16:03:10] partial: more. Second
+[16:03:11] final: more 
+[16:03:11] partial: seconds
+[16:03:11] partial: seconds.
+[16:03:11] speechmatics: ForceEndOfUtterance sent
+[16:03:11] utterance: stop (duration=7.34s)
+[16:03:11] final: seconds. 
+[16:03:11] partial: 
+[16:03:12] vad: speech detected
+[16:03:12] partial: And
+[16:03:13] partial: And they only
+[16:03:13] final: And 
+[16:03:13] partial: they only get
+[16:03:13] final: they 
+[16:03:13] partial: only get sent
+[16:03:14] final: only get 
+[16:03:14] partial: sent as
+[16:03:14] final: sent 
+[16:03:14] partial: as final
+[16:03:14] final: as 
+[16:03:14] partial: final when I
+[16:03:15] final: final 
+[16:03:15] partial: when I
+[16:03:15] final: when 
+[16:03:15] partial: I
+[16:03:16] final: I 
+[16:03:16] partial: 
+[16:03:16] partial: talk
+[16:03:16] speechmatics: ForceEndOfUtterance sent
+[16:03:16] utterance: stop (duration=4.35s)
+[16:03:16] partial: talk
+[16:03:17] vad: speech detected
+[16:03:18] final: talk. And. 
+[16:03:18] partial: 
+[16:03:18] partial: I'd say
+[16:03:18] final: I'd 
+[16:03:19] partial: say something
+[16:03:19] final: say 
+[16:03:19] partial: something else
+[16:03:19] final: something 
+[16:03:19] speechmatics: ForceEndOfUtterance sent
+[16:03:19] utterance: stop (duration=1.96s)
+[16:03:19] partial: else.
+[16:03:20] final: else. 
+[16:03:20] partial: 
+[16:03:30] vad: speech detected
+[16:03:31] partial: This is a
+[16:03:31] partial: This is a problem
+[16:03:31] final: This is a 
+[16:03:31] partial: problem
+[16:03:32] partial: problem because
+[16:03:32] final: problem 
+[16:03:32] partial: because
+[16:03:32] partial: because
+[16:03:33] final: because 
+[16:03:33] partial: this
+[16:03:33] partial: this
+[16:03:33] final: this 
+[16:03:33] partial: system should
+[16:03:34] final: system 
+[16:03:34] partial: should be quite
+[16:03:34] final: should be 
+[16:03:34] partial: quite predictable
+[16:03:35] final: quite 
+[16:03:35] partial: predictable
+[16:03:35] partial: predictable and
+[16:03:35] final: predictable, 
+[16:03:35] partial: and I don't
+[16:03:36] final: and I 
+[16:03:36] partial: don't want
+[16:03:36] final: don't 
+[16:03:36] partial: want something
+[16:03:36] final: want 
+[16:03:36] partial: something random
+[16:03:37] final: something 
+[16:03:37] partial: random to
+[16:03:37] final: random to 
+[16:03:37] partial: appear
+[16:03:37] partial: appear
+[16:03:38] final: appear 
+[16:03:38] partial: when I
+[16:03:38] partial: when I start talking
+[16:03:39] final: when I 
+[16:03:39] partial: start talking
+[16:03:39] final: start 
+[16:03:39] partial: talking
+[16:03:39] final: talking 
+[16:03:39] partial: to
+[16:03:40] partial: . to fix this
+[16:03:40] final: . To 
+[16:03:40] partial: fix this, what
+[16:03:40] final: fix 
+[16:03:40] partial: this, what we can
+[16:03:41] final: this, what we 
+[16:03:41] partial: can do
+[16:03:41] final: can 
+[16:03:41] partial: do is
+[16:03:41] final: do 
+[16:03:42] partial: is have
+[16:03:42] final: is 
+[16:03:42] partial: have a
+[16:03:42] final: have 
+[16:03:42] partial: a
+[16:03:43] final: a. 
+[16:03:43] partial: Stop
+[16:03:43] final: Stop 
+[16:03:43] partial: utterance
+[16:03:43] partial: utterance.
+[16:03:44] final: utterance 
+[16:03:44] partial: keyword
+[16:03:44] partial: keyword that the
+[16:03:44] final: keyword that 
+[16:03:44] partial: the user can
+[16:03:45] final: the user 
+[16:03:45] partial: can say
+[16:03:45] final: can 
+[16:03:45] partial: say
+[16:03:45] final: say 
+[16:03:45] partial: and
+[16:03:46] partial: , and this should be
+[16:03:46] final: , and this 
+[16:03:46] partial: should be adjusted
+[16:03:46] final: should be 
+[16:03:47] partial: 
+[16:03:47] partial: adjustable in
+[16:03:47] final: adjustable 
+[16:03:47] partial: in
+[16:03:48] final: in 
+[16:03:48] partial: configuration
+[16:03:48] partial: configuration
+[16:03:48] partial: configuration for
+[16:03:49] final: configuration 
+[16:03:49] partial: for now.
+[16:03:49] final: . For 
+[16:03:49] partial: now, let's
+[16:03:49] final: now, 
+[16:03:49] partial: let's make it
+[16:03:50] final: let's make 
+[16:03:50] partial: it stop
+[16:03:50] final: it 
+[16:03:50] partial: stop.
+[16:03:50] partial: stop
+[16:03:51] final: stop, 
+[16:03:51] partial: because this
+[16:03:51] partial: because this can
+[16:03:51] final: because this 
+[16:03:52] partial: can be recognized
+[16:03:52] final: can be 
+[16:03:52] partial: recognized
+[16:03:52] partial: recognized quite
+[16:03:53] final: recognized 
+[16:03:53] partial: quite clearly
+[16:03:53] final: quite 
+[16:03:53] partial: clearly by
+[16:03:53] final: clearly 
+[16:03:53] partial: by the
+[16:03:54] final: by 
+[16:03:54] partial: the system
+[16:03:54] final: the 
+[16:03:54] partial: system
+[16:03:54] final: system 
+[16:03:54] partial: and
+[16:03:55] partial: . and when
+[16:03:55] partial: . and when the user
+[16:03:55] final: . And when the 
+[16:03:56] partial: user
+[16:03:56] partial: user says
+[16:03:56] final: user 
+[16:03:56] partial: says
+[16:03:56] final: says 
+[16:03:56] partial: the
+[16:03:57] partial: the end
+[16:03:57] final: the 
+[16:03:57] partial: end utterance
+[16:03:58] final: end 
+[16:03:58] partial: utterance.
+[16:03:58] final: utterance 
+[16:03:58] partial: keyword
+[16:03:58] partial: keyword.
+[16:03:59] final: keyword, 
+[16:03:59] partial: the
+[16:03:59] partial: the system
+[16:03:59] final: the 
+[16:03:59] partial: system should
+[16:04:00] final: system 
+[16:04:00] partial: should automatically
+[16:04:00] final: should 
+[16:04:00] partial: automatically
+[16:04:00] partial: automatically
+[16:04:01] final: automatically 
+[16:04:01] partial: discard
+[16:04:01] partial: discard any
+[16:04:02] final: discard 
+[16:04:02] partial: any
+[16:04:02] partial: any
+[16:04:02] final: any 
+[16:04:02] partial: partials
+[16:04:03] partial: partials current
+[16:04:03] final: partials. 
+[16:04:03] partial: Current
+[16:04:03] final: Current 
+[16:04:04] partial: and it
+[16:04:04] partial: , and it should
+[16:04:04] final: and it 
+[16:04:04] partial: should force
+[16:04:05] final: should 
+[16:04:05] partial: force end to
+[16:04:05] final: force end 
+[16:04:05] partial: the utterance
+[16:04:05] final: the 
+[16:04:05] partial: utterance.
+[16:04:06] final: utterance. 
+[16:04:06] partial: Does that
+[16:04:06] partial: Does that make sense
+[16:04:06] final: Does that 
+[16:04:06] partial: make sense
+[16:04:07] speechmatics: ForceEndOfUtterance sent
+[16:04:07] utterance: stop (duration=36.69s)
+[16:04:07] final: make 
+[16:04:07] partial: sense?
+[16:04:07] final: sense? 
+[16:04:07] partial: 
+[16:04:49] vad: speech detected
+[16:04:49] partial: 
+[16:04:50] partial: Actually, we
+[16:04:50] partial: Actually, we should
+[16:04:50] final: Actually, we 
+[16:04:51] partial: should have
+[16:04:51] partial: should have two
+[16:04:51] final: should have 
+[16:04:51] partial: two.
+[16:04:52] final: two. 
+[16:04:52] partial: Keywords
+[16:04:52] partial: Keywords
+[16:04:52] partial: Keywords end
+[16:04:53] final: Keywords 
+[16:04:53] partial: end
+[16:04:53] final: end 
+[16:04:53] partial: utterance
+[16:04:53] partial: utterance and
+[16:04:54] final: utterance 
+[16:04:54] partial: and
+[16:04:54] final: and 
+[16:04:54] partial: 
+[16:04:54] partial: a
+[16:04:55] final: a 
+[16:04:55] partial: keyword that
+[16:04:55] partial: keyword that hits
+[16:04:55] final: keyword that 
+[16:04:56] partial: hits the
+[16:04:56] final: hits 
+[16:04:56] partial: the enter
+[16:04:56] final: the 
+[16:04:56] partial: enter key
+[16:04:57] final: enter 
+[16:04:57] partial: key
+[16:04:57] final: key 
+[16:04:57] partial: for
+[16:04:57] partial: . for now
+[16:04:58] final: for 
+[16:04:58] partial: now.
+[16:04:58] final: now. 
+[16:04:58] partial: Make
+[16:04:58] partial: Make
+[16:04:59] final: Make 
+[16:04:59] partial: the
+[16:04:59] partial: the
+[16:05:00] final: the 
+[16:05:00] partial: enter
+[16:05:00] partial: enter key
+[16:05:00] final: enter 
+[16:05:00] partial: keyword
+[16:05:01] partial: keyword
+[16:05:01] final: keyword 
+[16:05:01] partial: simply the
+[16:05:01] partial: simply the word
+[16:05:02] final: simply the 
+[16:05:02] partial: word
+[16:05:02] final: word 
+[16:05:02] partial: enter
+[16:05:02] speechmatics: ForceEndOfUtterance sent
+[16:05:02] utterance: stop (duration=13.40s)
+[16:05:02] final: enter. 
+[16:05:02] partial: 
+[16:13:29] listening enabled
+[16:13:29] speechmatics: session start (active=1)
+[16:13:32] vad: speech detected
+[16:13:32] partial: This
+[16:13:33] partial: This is a
+[16:13:33] partial: This is a test one
+[16:13:33] final: This 
+[16:13:33] partial: is a test one two
+[16:13:34] final: is a test one, 
+[16:13:34] partial: two, three
+[16:13:34] final: two, 
+[16:13:34] partial: three. Enter
+[16:13:34] keyword: enter (1x)
+[16:13:34] speechmatics: ForceEndOfUtterance sent
+[16:13:34] utterance: stop (duration=2.73s)
+[16:13:34] final: three. 
+[16:13:34] partial: Enter
+[16:13:46] vad: speech detected
+[16:13:46] final: Enter. 
+[16:13:46] keyword: enter (1x)
+[16:13:46] partial: 
+[16:13:47] partial: Dot
+[16:13:47] speechmatics: ForceEndOfUtterance sent
+[16:13:47] utterance: stop (duration=1.11s)
+[16:13:47] partial: Dot
+[16:13:48] vad: speech detected
+[16:13:49] final: Dot. 
+[16:13:49] partial: 
+[16:13:49] partial: 
+[16:13:49] partial: Stop
+[16:13:49] keyword: end utterance (stop)
+[16:13:49] utterance: force end (keyword=stop)
+[16:13:49] speechmatics: ForceEndOfUtterance sent
+[16:13:49] utterance: stop (keyword)
+[16:13:49] speechmatics: ForceEndOfUtterance sent
+[16:13:49] utterance: stop (duration=1.02s)
+[16:13:55] vad: speech detected
+[16:13:56] final: Stop. 
+[16:13:56] keyword: end utterance (stop)
+[16:13:56] utterance: force end (keyword=stop)
+[16:13:56] speechmatics: ForceEndOfUtterance sent
+[16:13:56] partial: 
+[16:13:56] utterance: stop (keyword)
+[16:13:56] speechmatics: ForceEndOfUtterance sent
+[16:13:56] utterance: stop (duration=0.43s)
+[16:13:56] vad: speech detected
+[16:13:56] final: This is. 
+[16:13:56] partial: 
+[16:13:56] partial: A test
+[16:13:57] partial: A test one
+[16:13:57] partial: A test 123
+[16:13:58] final: A 
+[16:13:58] partial: test 123
+[16:13:58] final: test 123. 
+[16:13:58] partial: Stop
+[16:13:58] keyword: end utterance (stop)
+[16:13:58] utterance: force end (keyword=stop)
+[16:13:58] speechmatics: ForceEndOfUtterance sent
+[16:13:58] utterance: stop (keyword)
+[16:13:58] speechmatics: ForceEndOfUtterance sent
+[16:13:58] utterance: stop (duration=2.22s)
+[16:13:58] final: Stop. 
+[16:13:58] partial: 
+[16:14:00] vad: speech detected
+[16:14:01] partial: This is
+[16:14:01] partial: This is a test
+[16:14:01] final: This is a 
+[16:14:02] partial: test
+[16:14:02] speechmatics: ForceEndOfUtterance sent
+[16:14:02] utterance: stop (duration=1.54s)
+[16:14:02] final: test. 
+[16:14:02] partial: 
+[16:14:03] vad: speech detected
+[16:14:04] partial: 
+[16:14:04] partial: This is
+[16:14:04] partial: This is a
+[16:14:05] final: This is 
+[16:14:05] partial: a test
+[16:14:05] final: a 
+[16:14:05] partial: test
+[16:14:05] speechmatics: ForceEndOfUtterance sent
+[16:14:05] utterance: stop (duration=1.96s)
+[16:14:10] vad: speech detected
+[16:14:10] final: test. 
+[16:14:10] partial: 
+[16:14:11] partial: This
+[16:14:11] partial: This is a
+[16:14:12] final: This 
+[16:14:12] partial: is a test
+[16:14:12] final: is a 
+[16:14:12] partial: test
+[16:14:12] speechmatics: ForceEndOfUtterance sent
+[16:14:12] utterance: stop (duration=1.96s)
+[16:14:12] partial: test
+[16:14:21] vad: speech detected
+[16:14:21] final: test. The. 
+[16:14:21] partial: 
+[16:14:21] partial: This
+[16:14:22] partial: This is a
+[16:14:22] final: This 
+[16:14:22] partial: is a test
+[16:14:23] final: is a 
+[16:14:23] partial: test
+[16:14:23] partial: test.
+[16:14:23] final: test. 
+[16:14:23] partial: One, two
+[16:14:24] final: One. 
+[16:14:24] partial: Two. Three
+[16:14:24] final: Two. 
+[16:14:24] partial: Three.
+[16:14:24] partial: Three. Enter
+[16:14:24] keyword: enter (1x)
+[16:14:25] speechmatics: ForceEndOfUtterance sent
+[16:14:25] utterance: stop (duration=4.01s)
+[16:14:25] final: Three. 
+[16:14:25] partial: Enter
+[16:15:06] vad: speech detected
+[16:15:07] final: Enter. 
+[16:15:07] keyword: enter (1x)
+[16:15:07] partial: 
+[16:15:07] partial: Stop
+[16:15:07] keyword: end utterance (stop)
+[16:15:07] utterance: force end (keyword=stop)
+[16:15:07] speechmatics: ForceEndOfUtterance sent
+[16:15:07] utterance: stop (keyword)
+[16:15:07] speechmatics: ForceEndOfUtterance sent
+[16:15:07] utterance: stop (duration=0.85s)
+[16:15:07] final: Stop! 
+[16:15:07] partial: 
+[16:15:23] vad: speech detected
+[16:15:24] partial: So it
+[16:15:24] partial: So it seems
+[16:15:25] final: So it 
+[16:15:25] partial: seems like
+[16:15:25] final: seems 
+[16:15:25] partial: like. Enter
+[16:15:25] keyword: enter (1x)
+[16:15:26] final: like. 
+[16:15:26] partial: Enter and
+[16:15:26] final: Enter 
+[16:15:26] partial: and stop
+[16:15:26] keyword: end utterance (stop)
+[16:15:26] utterance: force end (keyword=stop)
+[16:15:26] speechmatics: ForceEndOfUtterance sent
+[16:15:26] utterance: stop (keyword)
+[16:15:26] speechmatics: ForceEndOfUtterance sent
+[16:15:26] utterance: stop (duration=2.47s)
+[16:15:26] vad: speech detected
+[16:15:26] final: and stop. Can. 
+[16:15:26] keyword: end utterance (stop)
+[16:15:26] utterance: force end (keyword=stop)
+[16:15:26] speechmatics: ForceEndOfUtterance sent
+[16:15:26] partial: 
+[16:15:26] utterance: stop (keyword)
+[16:15:26] speechmatics: ForceEndOfUtterance sent
+[16:15:26] utterance: stop (duration=0.50s)
+[16:15:27] vad: speech detected
+[16:15:27] final: 
+[16:15:27] partial: 
+[16:15:27] partial: Get
+[16:15:28] partial: Get
+[16:15:28] final: Get 
+[16:15:28] partial: processed
+[16:15:28] partial: processed out of
+[16:15:29] final: processed 
+[16:15:29] partial: out of order
+[16:15:29] final: out of 
+[16:15:29] partial: order.
+[16:15:29] speechmatics: ForceEndOfUtterance sent
+[16:15:29] utterance: stop (duration=2.56s)
+[16:15:29] final: order. 
+[16:15:29] partial: 
+[16:15:48] vad: speech detected
+[16:15:49] partial: 
+[16:15:49] partial: Also
+[16:15:49] partial: Also, whatever
+[16:15:50] final: Also, 
+[16:15:50] partial: whatever you change
+[16:15:50] final: whatever you 
+[16:15:50] partial: change, you
+[16:15:50] final: change, 
+[16:15:51] partial: you made
+[16:15:51] final: you 
+[16:15:51] partial: made seems to
+[16:15:51] final: made 
+[16:15:51] partial: seems to really have
+[16:15:51] final: seems to 
+[16:15:51] partial: really have
+[16:15:52] final: really have 
+[16:15:52] partial: messed up
+[16:15:52] final: messed 
+[16:15:52] partial: up with
+[16:15:52] final: up 
+[16:15:52] partial: with the
+[16:15:53] final: with 
+[16:15:53] partial: the. The
+[16:15:53] final: the. 
+[16:15:53] partial: The
+[16:15:54] final: The 
+[16:15:54] partial: spaces in
+[16:15:54] partial: spaces in the
+[16:15:54] final: spaces in the 
+[16:15:54] partial: output
+[16:15:55] speechmatics: ForceEndOfUtterance sent
+[16:15:55] utterance: stop (duration=6.40s)
+[16:15:55] final: output. 
+[16:15:55] partial: 
+[16:16:25] vad: speech detected
+[16:16:26] partial: 
+[16:16:26] partial: Here is
+[16:16:26] final: Here 
+[16:16:26] partial: is me talking
+[16:16:27] final: is 
+[16:16:27] partial: me talking
+[16:16:27] final: me 
+[16:16:27] partial: talking so
+[16:16:27] partial: talking so you can
+[16:16:28] final: talking so 
+[16:16:28] partial: you can see
+[16:16:28] final: you can 
+[16:16:28] partial: see the
+[16:16:28] final: see 
+[16:16:28] partial: the error
+[16:16:29] speechmatics: ForceEndOfUtterance sent
+[16:16:29] utterance: stop (duration=3.67s)
+[16:16:29] final: the 
+[16:16:29] partial: error
+[16:16:38] vad: speech detected
+[16:16:39] final: error. 
+[16:16:39] partial: 
+[16:16:39] partial: Do you think
+[16:16:39] final: Do 
+[16:16:39] partial: you think? Could
+[16:16:40] final: you think 
+[16:16:40] partial: could have caused
+[16:16:40] final: could 
+[16:16:40] partial: have caused this
+[16:16:41] final: have caused 
+[16:16:41] partial: this?
+[16:16:41] speechmatics: ForceEndOfUtterance sent
+[16:16:41] utterance: stop (duration=2.56s)
+[16:16:41] partial: this?
+[16:16:42] vad: speech detected
+[16:16:42] final: this? 
+[16:16:42] partial: 
+[16:16:43] partial: This
+[16:16:43] partial: This
+[16:16:43] speechmatics: ForceEndOfUtterance sent
+[16:16:43] utterance: stop (duration=1.28s)
+[16:16:43] final: This. 
+[16:16:43] partial: 
+[16:17:15] vad: speech detected
+[16:17:16] partial: 
+[16:17:16] partial: One
+[16:17:16] partial: One, two
+[16:17:17] final: One. 
+[16:17:17] partial: Two. Three
+[16:17:17] partial: 234
+[16:17:17] partial: 2345
+[16:17:18] final: Two. Three. Four. 
+[16:17:18] speechmatics: ForceEndOfUtterance sent
+[16:17:18] utterance: stop (duration=2.65s)
+[16:17:18] partial: Five.
+[16:17:18] final: Five. 
+[16:17:18] partial: 
+[16:17:22] vad: speech detected
+[16:17:23] partial: Where
+[16:17:23] partial: Where did my
+[16:17:24] final: Where did 
+[16:17:24] partial: my spaces
+[16:17:24] final: my 
+[16:17:24] partial: spaces go
+[16:17:24] speechmatics: ForceEndOfUtterance sent
+[16:17:24] utterance: stop (duration=2.05s)
+[16:17:24] final: spaces 
+[16:17:24] partial: go
+[16:17:26] vad: speech detected
+[16:17:27] final: go? 
+[16:17:27] partial: 
+[16:17:27] partial: Stop
+[16:17:27] keyword: end utterance (stop)
+[16:17:27] utterance: force end (keyword=stop)
+[16:17:27] speechmatics: ForceEndOfUtterance sent
+[16:17:27] utterance: stop (keyword)
+[16:17:27] speechmatics: ForceEndOfUtterance sent
+[16:17:27] utterance: stop (duration=0.77s)
+[16:17:40] vad: speech detected
+[16:17:41] final: Stop! 
+[16:17:41] keyword: end utterance (stop)
+[16:17:41] utterance: force end (keyword=stop)
+[16:17:41] speechmatics: ForceEndOfUtterance sent
+[16:17:41] partial: 
+[16:17:41] utterance: stop (keyword)
+[16:17:41] speechmatics: ForceEndOfUtterance sent
+[16:17:41] utterance: stop (duration=0.34s)
+[16:17:41] vad: speech detected
+[16:17:41] final: Codec. 
+[16:17:41] partial: 
+[16:17:41] partial: Is
+[16:17:42] partial: Is taking a
+[16:17:42] final: Is 
+[16:17:42] partial: taking a long time to
+[16:17:42] final: taking a long 
+[16:17:43] partial: time to
+[16:17:43] final: time to 
+[16:17:43] partial: respond
+[16:17:43] speechmatics: ForceEndOfUtterance sent
+[16:17:43] utterance: stop (duration=2.46s)
+[16:17:43] partial: respond
+[16:18:01] vad: speech detected
+[16:18:01] final: respond. 
+[16:18:01] partial: 
+[16:18:02] partial: Why is
+[16:18:02] partial: Why is
+[16:18:03] final: Why is 
+[16:18:03] partial: codecs not
+[16:18:03] final: codecs 
+[16:18:03] partial: not doing anything
+[16:18:03] final: not doing 
+[16:18:03] partial: anything
+[16:18:03] speechmatics: ForceEndOfUtterance sent
+[16:18:03] utterance: stop (duration=2.30s)
+[16:18:04] final: anything? 
+[16:18:04] partial: 

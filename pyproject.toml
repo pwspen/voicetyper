@@ -1,0 +1,16 @@
+[project]
+name = "voicetyper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "speechmatics-python>=1.8.2",
+    "sounddevice>=0.4.6",
+    "silero-vad>=4.0.1",
+    "torch>=2.1.0",
+    "numpy>=1.26.0",
+]
+
+[project.scripts]
+voicetyper = "voicetyper.main:main"
