@@ -2709,3 +2709,829 @@ speechmatics.exceptions.TranscriptionError: Concurrent Quota Exceeded
 [16:18:03] utterance: stop (duration=2.30s)
 [16:18:04] final: anything? 
 [16:18:04] partial: 
+[16:20:28] listening enabled
+[16:20:28] speechmatics: session start (active=1)
+[16:20:29] vad: speech detected
+[16:20:30] partial: This
+[16:20:30] partial: This is a
+[16:20:31] partial: This is a test one
+[16:20:31] final: This 
+[16:20:31] partial: is a test one two
+[16:20:32] final: is a test one, 
+[16:20:32] partial: two, three
+[16:20:32] speechmatics: ForceEndOfUtterance sent
+[16:20:32] utterance: stop (duration=2.39s)
+[16:20:32] final: two, 
+[16:20:32] partial: three.
+[16:20:36] vad: speech detected
+[16:20:36] final: three. 
+[16:20:36] partial: 
+[16:20:36] partial: 
+[16:20:37] speechmatics: ForceEndOfUtterance sent
+[16:20:37] utterance: stop (duration=1.19s)
+[16:20:37] partial: Dot
+[16:20:37] final: Dot. 
+[16:20:37] partial: 
+[16:20:38] vad: speech detected
+[16:20:38] partial: 
+[16:20:39] partial: This
+[16:20:39] partial: This
+[16:20:39] speechmatics: ForceEndOfUtterance sent
+[16:20:39] utterance: stop (duration=1.54s)
+[16:20:39] final: This 
+[16:20:39] partial: 
+[16:20:40] vad: speech detected
+[16:20:41] final: . 
+[16:20:41] partial: 
+[16:20:41] partial: This is a
+[16:20:41] partial: This is a test
+[16:20:42] partial: This is a test one two
+[16:20:42] final: This is a 
+[16:20:42] partial: test 123
+[16:20:42] speechmatics: ForceEndOfUtterance sent
+[16:20:42] utterance: stop (duration=2.22s)
+[16:20:42] final: test 
+[16:20:42] partial: 123.
+[16:20:45] vad: speech detected
+[16:20:46] final: 123. 
+[16:20:46] partial: 
+[16:20:46] partial: Stop
+[16:20:46] keyword: end utterance (stop)
+[16:20:46] utterance: force end (keyword=stop)
+[16:20:46] speechmatics: ForceEndOfUtterance sent
+[16:20:46] utterance: stop (keyword)
+[16:20:46] speechmatics: ForceEndOfUtterance sent
+[16:20:46] utterance: stop (duration=0.77s)
+[16:20:49] vad: speech detected
+[16:20:50] final: Stop. 
+[16:20:50] keyword: end utterance (stop)
+[16:20:50] utterance: force end (keyword=stop)
+[16:20:50] speechmatics: ForceEndOfUtterance sent
+[16:20:50] partial: 
+[16:20:50] utterance: stop (keyword)
+[16:20:50] speechmatics: ForceEndOfUtterance sent
+[16:20:50] utterance: stop (duration=0.43s)
+[16:20:50] vad: speech detected
+[16:20:51] final: Stop. 
+[16:20:51] keyword: end utterance (stop)
+[16:20:51] utterance: force end (keyword=stop)
+[16:20:51] speechmatics: ForceEndOfUtterance sent
+[16:20:51] partial: 
+[16:20:51] utterance: stop (keyword)
+[16:20:51] speechmatics: ForceEndOfUtterance sent
+[16:20:51] utterance: stop (duration=0.34s)
+[16:20:51] vad: speech detected
+[16:20:52] final: Stop. 
+[16:20:52] keyword: end utterance (stop)
+[16:20:52] utterance: force end (keyword=stop)
+[16:20:52] speechmatics: ForceEndOfUtterance sent
+[16:20:52] partial: 
+[16:20:52] utterance: stop (keyword)
+[16:20:52] speechmatics: ForceEndOfUtterance sent
+[16:20:52] utterance: stop (duration=0.43s)
+[16:20:52] final: Stop. 
+[16:20:52] partial: 
+[16:20:53] vad: speech detected
+[16:20:53] partial: 
+[16:20:54] partial: Stop
+[16:20:54] keyword: end utterance (stop)
+[16:20:54] utterance: force end (keyword=stop)
+[16:20:54] speechmatics: ForceEndOfUtterance sent
+[16:20:54] utterance: stop (keyword)
+[16:20:54] speechmatics: ForceEndOfUtterance sent
+[16:20:54] utterance: stop (duration=1.02s)
+[16:20:54] vad: speech detected
+[16:20:54] final: Stop. 
+[16:20:54] keyword: end utterance (stop)
+[16:20:54] utterance: force end (keyword=stop)
+[16:20:54] speechmatics: ForceEndOfUtterance sent
+[16:20:54] partial: 
+[16:20:54] utterance: stop (keyword)
+[16:20:54] speechmatics: ForceEndOfUtterance sent
+[16:20:54] utterance: stop (duration=0.34s)
+[16:20:55] vad: speech detected
+[16:20:55] final: Stop. 
+[16:20:55] keyword: end utterance (stop)
+[16:20:55] utterance: force end (keyword=stop)
+[16:20:55] speechmatics: ForceEndOfUtterance sent
+[16:20:55] partial: 
+[16:20:55] utterance: stop (keyword)
+[16:20:55] speechmatics: ForceEndOfUtterance sent
+[16:20:55] utterance: stop (duration=0.51s)
+[16:20:55] final: Stop. 
+[16:20:55] partial: 
+[16:20:56] vad: speech detected
+[16:20:56] partial: 
+[16:20:57] partial: Stop
+[16:20:57] keyword: end utterance (stop)
+[16:20:57] utterance: force end (keyword=stop)
+[16:20:57] speechmatics: ForceEndOfUtterance sent
+[16:20:57] utterance: stop (keyword)
+[16:20:57] speechmatics: ForceEndOfUtterance sent
+[16:20:57] utterance: stop (duration=0.94s)
+[16:20:59] vad: speech detected
+[16:20:59] final: Stop. 
+[16:20:59] keyword: end utterance (stop)
+[16:20:59] utterance: force end (keyword=stop)
+[16:20:59] speechmatics: ForceEndOfUtterance sent
+[16:20:59] partial: 
+[16:20:59] utterance: stop (keyword)
+[16:20:59] speechmatics: ForceEndOfUtterance sent
+[16:20:59] utterance: stop (duration=0.43s)
+[16:20:59] vad: speech detected
+[16:20:59] final: This is a. 
+[16:21:00] partial: 
+[16:21:00] partial: Test one
+[16:21:00] partial: Test one. Two three
+[16:21:01] final: Test one. 
+[16:21:01] partial: Two three
+[16:21:01] final: Two three. 
+[16:21:01] partial: Stop
+[16:21:01] speechmatics: ForceEndOfUtterance sent
+[16:21:01] utterance: stop (duration=1.95s)
+[16:21:01] final: Stop. 
+[16:21:01] partial: 
+[16:21:07] vad: speech detected
+[16:21:08] partial: 
+[16:21:08] partial: I am determined
+[16:21:09] final: I 
+[16:21:09] partial: am dictating
+[16:21:09] final: am 
+[16:21:09] partial: dictating to you
+[16:21:09] final: dictating 
+[16:21:09] partial: to you right now
+[16:21:10] final: to you 
+[16:21:10] partial: right now
+[16:21:10] final: right 
+[16:21:10] partial: now as you
+[16:21:10] final: now. 
+[16:21:10] partial: As you can probably
+[16:21:11] final: As you 
+[16:21:11] partial: can probably
+[16:21:11] final: can 
+[16:21:11] partial: probably see
+[16:21:11] final: probably 
+[16:21:12] partial: see, the
+[16:21:12] final: see, 
+[16:21:12] partial: the space
+[16:21:12] final: the 
+[16:21:12] partial: space
+[16:21:13] final: space 
+[16:21:13] partial: issue is
+[16:21:13] final: issue 
+[16:21:13] partial: is still a
+[16:21:13] final: is 
+[16:21:13] partial: still a thing
+[16:21:14] final: still a 
+[16:21:14] partial: thing.
+[16:21:14] partial: thing. Please
+[16:21:14] final: thing. 
+[16:21:14] partial: Please
+[16:21:15] partial: Please
+[16:21:15] final: Please 
+[16:21:15] partial: spend more
+[16:21:15] final: spend 
+[16:21:15] partial: more effort
+[16:21:16] final: more 
+[16:21:16] partial: effort
+[16:21:16] final: effort 
+[16:21:16] partial: investigating
+[16:21:17] partial: investigating the
+[16:21:17] final: investigating 
+[16:21:17] partial: the root
+[16:21:17] final: the root 
+[16:21:17] partial: cause. Behind
+[16:21:17] partial: cause. Because I
+[16:21:18] final: cause. 
+[16:21:18] partial: Because I know
+[16:21:18] final: Because I 
+[16:21:18] partial: know for a fact
+[16:21:19] final: know for 
+[16:21:19] partial: a fact
+[16:21:19] final: a 
+[16:21:19] partial: fact it
+[16:21:19] final: fact 
+[16:21:19] partial: it was
+[16:21:20] final: it was 
+[16:21:20] partial: not like this
+[16:21:20] final: not 
+[16:21:20] partial: like this before
+[16:21:20] final: like this 
+[16:21:20] partial: before.
+[16:21:21] speechmatics: ForceEndOfUtterance sent
+[16:21:21] utterance: stop (duration=13.40s)
+[16:21:21] partial: before.
+[16:21:22] vad: speech detected
+[16:21:23] final: before. 
+[16:21:23] partial: 
+[16:21:23] partial: Stop
+[16:21:23] keyword: end utterance (stop)
+[16:21:23] utterance: force end (keyword=stop)
+[16:21:23] speechmatics: ForceEndOfUtterance sent
+[16:21:23] utterance: stop (keyword)
+[16:21:23] speechmatics: ForceEndOfUtterance sent
+[16:21:23] utterance: stop (duration=0.85s)
+[16:24:09] listening enabled
+[16:24:09] speechmatics: session start (active=1)
+[16:24:11] vad: speech detected
+[16:24:12] partial: 
+[16:24:12] partial: All right
+[16:24:12] final: All 
+[16:24:12] partial: right. Here
+[16:24:13] final: right. 
+[16:24:13] partial: Here is a
+[16:24:13] final: Here is 
+[16:24:13] partial: a test of
+[16:24:13] final: a test 
+[16:24:13] partial: of
+[16:24:14] final: of 
+[16:24:14] partial: dictating what
+[16:24:14] partial: dictating one, two
+[16:24:14] final: dictating one, 
+[16:24:15] partial: two, three
+[16:24:15] partial: 231, two
+[16:24:15] partial: 23123
+[16:24:15] final: 2312, 
+[16:24:15] speechmatics: ForceEndOfUtterance sent
+[16:24:15] utterance: stop (duration=4.61s)
+[16:24:16] partial: three.
+[16:24:16] final: three. 
+[16:24:16] partial: 
+[16:24:20] vad: speech detected
+[16:24:21] partial: You
+[16:24:21] partial: You did it
+[16:24:21] final: You 
+[16:24:21] partial: did it.
+[16:24:21] speechmatics: ForceEndOfUtterance sent
+[16:24:21] utterance: stop (duration=1.45s)
+[16:24:22] final: did it. 
+[16:24:22] partial: 
+[16:24:23] vad: speech detected
+[16:24:24] partial: Good
+[16:24:24] partial: Good job
+[16:24:24] speechmatics: ForceEndOfUtterance sent
+[16:24:24] utterance: stop (duration=1.28s)
+[16:24:24] final: Good 
+[16:24:25] partial: job.
+[16:24:31] vad: speech detected
+[16:24:31] final: job. 
+[16:24:31] partial: 
+[16:24:31] partial: 
+[16:24:32] partial: Stop
+[16:24:32] keyword: end utterance (stop)
+[16:24:32] utterance: force end (keyword=stop)
+[16:24:32] speechmatics: ForceEndOfUtterance sent
+[16:24:32] utterance: stop (keyword)
+[16:24:32] speechmatics: ForceEndOfUtterance sent
+[16:24:32] utterance: stop (duration=1.11s)
+[16:24:33] vad: speech detected
+[16:24:33] final: Stop! 
+[16:24:33] keyword: end utterance (stop)
+[16:24:33] utterance: force end (keyword=stop)
+[16:24:33] speechmatics: ForceEndOfUtterance sent
+[16:24:33] partial: 
+[16:24:33] utterance: stop (keyword)
+[16:24:33] speechmatics: ForceEndOfUtterance sent
+[16:24:33] utterance: stop (duration=0.34s)
+[16:24:33] vad: speech detected
+[16:24:34] final: 
+[16:24:34] partial: 
+[16:24:34] partial: Here.
+[16:24:34] speechmatics: ForceEndOfUtterance sent
+[16:24:34] utterance: stop (duration=1.01s)
+[16:24:34] partial: Here.
+[16:24:38] vad: speech detected
+[16:24:38] final: Here. 
+[16:24:38] partial: 
+[16:24:38] partial: Enter
+[16:24:38] keyword: enter
+[16:24:39] partial: Enter
+[16:24:39] speechmatics: ForceEndOfUtterance sent
+[16:24:39] utterance: stop (duration=1.28s)
+[16:24:39] partial: Enter
+[16:24:45] vad: speech detected
+[16:24:46] final: Enter. How? 
+[16:24:46] keyword: enter
+[16:24:46] partial: 
+[16:24:46] partial: Is your day
+[16:24:46] final: Is 
+[16:24:46] partial: your day going
+[16:24:47] final: your day 
+[16:24:47] partial: going? Today
+[16:24:47] final: going 
+[16:24:47] partial: today? Enter
+[16:24:47] keyword: enter
+[16:24:47] final: today? 
+[16:24:47] speechmatics: ForceEndOfUtterance sent
+[16:24:47] utterance: stop (duration=2.30s)
+[16:24:48] partial: Enter
+[16:24:48] final: Enter. 
+[16:24:48] partial: 
+[16:24:57] vad: speech detected
+[16:24:57] partial: 
+[16:24:58] partial: Send
+[16:24:58] speechmatics: ForceEndOfUtterance sent
+[16:24:58] utterance: stop (duration=1.19s)
+[16:24:58] final: Send. 
+[16:24:58] partial: 
+[16:25:00] vad: speech detected
+[16:25:00] partial: 
+[16:25:01] partial: Enter
+[16:25:01] keyword: enter
+[16:25:01] partial: Enter
+[16:25:01] speechmatics: ForceEndOfUtterance sent
+[16:25:01] utterance: stop (duration=1.28s)
+[16:25:07] vad: speech detected
+[16:25:07] final: Enter. 
+[16:25:07] keyword: enter
+[16:25:07] partial: 
+[16:25:08] partial: 
+[16:25:08] partial: Tend
+[16:25:08] partial: Send. Send
+[16:25:09] final: Send. 
+[16:25:09] partial: Send
+[16:25:09] final: Send. 
+[16:25:09] partial: Send
+[16:25:09] partial: Send
+[16:25:10] final: Send. 
+[16:25:10] partial: Send
+[16:25:10] partial: Send. Send
+[16:25:11] final: Send. 
+[16:25:11] partial: Send
+[16:25:11] partial: Send send
+[16:25:11] final: Send 
+[16:25:11] partial: send
+[16:25:12] final: send 
+[16:25:12] partial: send
+[16:25:12] speechmatics: ForceEndOfUtterance sent
+[16:25:12] utterance: stop (duration=4.95s)
+[16:25:12] partial: send
+[16:25:14] vad: speech detected
+[16:25:14] final: . Send. 
+[16:25:14] partial: 
+[16:25:14] partial: 
+[16:25:15] partial: Send
+[16:25:15] speechmatics: ForceEndOfUtterance sent
+[16:25:15] utterance: stop (duration=1.28s)
+[16:25:15] vad: speech detected
+[16:25:15] partial: Send
+[16:25:15] final: Send. 
+[16:25:15] partial: 
+[16:25:16] partial: Ten
+[16:25:16] partial: Send. Sen
+[16:25:16] final: Sen. 
+[16:25:16] partial: Sen.
+[16:25:17] final: Sen. 
+[16:25:17] partial: Sen.
+[16:25:17] partial: Sen. Sen
+[16:25:18] final: Sen. 
+[16:25:18] partial: Sen.
+[16:25:18] speechmatics: ForceEndOfUtterance sent
+[16:25:18] utterance: stop (duration=2.72s)
+[16:25:18] vad: speech detected
+[16:25:18] final: Sen. 
+[16:25:18] partial: 
+[16:25:18] partial: 
+[16:25:19] partial: Send
+[16:25:19] speechmatics: ForceEndOfUtterance sent
+[16:25:19] utterance: stop (duration=1.28s)
+[16:25:19] partial: Send
+[16:25:20] vad: speech detected
+[16:25:20] final: Send. 
+[16:25:20] partial: 
+[16:25:21] partial: Tend
+[16:25:21] speechmatics: ForceEndOfUtterance sent
+[16:25:21] utterance: stop (duration=1.02s)
+[16:25:21] partial: Send
+[16:25:21] vad: speech detected
+[16:25:21] final: Send. 
+[16:25:21] partial: 
+[16:25:22] partial: Tend
+[16:25:22] partial: Send
+[16:25:23] final: Send 
+[16:25:23] partial: 
+[16:25:23] partial: . trend
+[16:25:23] partial: . send
+[16:25:23] speechmatics: ForceEndOfUtterance sent
+[16:25:23] utterance: stop (duration=2.30s)
+[16:25:24] vad: speech detected
+[16:25:24] final: . Send. 
+[16:25:24] partial: 
+[16:25:25] partial: 
+[16:25:25] partial: Send
+[16:25:25] speechmatics: ForceEndOfUtterance sent
+[16:25:25] utterance: stop (duration=1.28s)
+[16:25:25] partial: Send
+[16:25:25] vad: speech detected
+[16:25:26] final: Send. 
+[16:25:26] partial: 
+[16:25:26] partial: Tend
+[16:25:27] speechmatics: ForceEndOfUtterance sent
+[16:25:27] utterance: stop (duration=1.19s)
+[16:25:27] vad: speech detected
+[16:25:27] partial: Send
+[16:25:27] final: Send. 
+[16:25:27] partial: 
+[16:25:27] partial: Send
+[16:25:28] partial: Send
+[16:25:28] speechmatics: ForceEndOfUtterance sent
+[16:25:28] utterance: stop (duration=1.18s)
+[16:25:28] vad: speech detected
+[16:25:28] final: Send. 
+[16:25:28] partial: 
+[16:25:29] partial: 
+[16:25:29] partial: Enter
+[16:25:29] keyword: enter
+[16:25:29] speechmatics: ForceEndOfUtterance sent
+[16:25:29] utterance: stop (duration=1.28s)
+[16:25:29] partial: Enter
+[16:25:30] vad: speech detected
+[16:25:30] final: Enter. 
+[16:25:30] keyword: enter
+[16:25:30] partial: 
+[16:25:30] partial: Enter
+[16:25:30] keyword: enter
+[16:25:31] partial: Enter
+[16:25:31] speechmatics: ForceEndOfUtterance sent
+[16:25:31] utterance: stop (duration=1.28s)
+[16:25:31] final: Enter. 
+[16:25:31] partial: 
+[16:25:31] vad: speech detected
+[16:25:32] partial: 
+[16:25:32] partial: Enter
+[16:25:32] keyword: enter
+[16:25:32] partial: Enter
+[16:25:32] speechmatics: ForceEndOfUtterance sent
+[16:25:32] utterance: stop (duration=1.28s)
+[16:25:33] vad: speech detected
+[16:25:33] final: Enter. 
+[16:25:33] keyword: enter
+[16:25:33] partial: 
+[16:25:33] partial: 
+[16:25:34] partial: Enter
+[16:25:34] keyword: enter
+[16:25:34] speechmatics: ForceEndOfUtterance sent
+[16:25:34] utterance: stop (duration=1.28s)
+[16:25:34] partial: Enter
+[16:25:36] vad: speech detected
+[16:25:36] final: Enter. 
+[16:25:36] keyword: enter
+[16:25:36] partial: 
+[16:25:37] partial: Enter
+[16:25:37] keyword: enter
+[16:25:37] partial: Enter
+[16:25:37] speechmatics: ForceEndOfUtterance sent
+[16:25:37] utterance: stop (duration=1.28s)
+[16:25:37] final: Enter. 
+[16:25:37] partial: 
+[16:25:45] vad: speech detected
+[16:25:46] partial: 
+[16:25:46] partial: Enter
+[16:25:46] keyword: enter
+[16:25:46] partial: Enter
+[16:25:46] speechmatics: ForceEndOfUtterance sent
+[16:25:46] utterance: stop (duration=1.19s)
+[16:25:47] vad: speech detected
+[16:25:47] final: Enter. 
+[16:25:47] keyword: enter
+[16:25:47] partial: 
+[16:25:47] partial: 
+[16:25:48] partial: Enter
+[16:25:48] keyword: enter
+[16:25:48] partial: Enter
+[16:25:48] speechmatics: ForceEndOfUtterance sent
+[16:25:48] utterance: stop (duration=1.28s)
+[16:25:48] vad: speech detected
+[16:25:49] final: Enter. 
+[16:25:49] keyword: enter
+[16:25:49] partial: 
+[16:25:49] partial: Enter
+[16:25:49] keyword: enter
+[16:25:50] partial: Enter
+[16:25:50] speechmatics: ForceEndOfUtterance sent
+[16:25:50] utterance: stop (duration=1.37s)
+[16:25:50] final: Enter 
+[16:25:50] partial: 
+[16:25:51] vad: speech detected
+[16:25:51] final: . 
+[16:25:51] partial: 
+[16:25:52] partial: Send
+[16:25:52] partial: Send
+[16:25:52] speechmatics: ForceEndOfUtterance sent
+[16:25:52] utterance: stop (duration=1.28s)
+[16:25:52] final: Send. 
+[16:25:52] partial: 
+[16:25:53] vad: speech detected
+[16:25:53] partial: 
+[16:25:53] partial: Send
+[16:25:54] speechmatics: ForceEndOfUtterance sent
+[16:25:54] utterance: stop (duration=1.19s)
+[16:25:54] vad: speech detected
+[16:25:54] partial: Send
+[16:25:54] final: Send. 
+[16:25:54] partial: 
+[16:25:55] partial: Then
+[16:25:55] partial: Send
+[16:25:55] final: Send 
+[16:25:55] partial: 
+[16:25:56] partial: . send
+[16:25:56] speechmatics: ForceEndOfUtterance sent
+[16:25:56] utterance: stop (duration=2.21s)
+[16:25:56] partial: . send
+[16:26:01] vad: speech detected
+[16:26:02] final: . Send. 
+[16:26:02] partial: 
+[16:26:02] partial: Drop
+[16:26:02] partial: Stop
+[16:26:03] speechmatics: ForceEndOfUtterance sent
+[16:26:03] utterance: stop (duration=1.02s)
+[16:26:10] vad: speech detected
+[16:26:10] final: Stop. 
+[16:26:10] keyword: end utterance (stop)
+[16:26:10] utterance: force end (keyword=stop)
+[16:26:10] speechmatics: ForceEndOfUtterance sent
+[16:26:10] partial: 
+[16:26:10] utterance: stop (keyword)
+[16:26:10] speechmatics: ForceEndOfUtterance sent
+[16:26:10] utterance: stop (duration=0.43s)
+[16:26:10] vad: speech detected
+[16:26:11] final: Okay. 
+[16:26:11] partial: 
+[16:26:11] partial: 
+[16:26:11] partial: One
+[16:26:12] partial: One problem
+[16:26:12] partial: One problem with the
+[16:26:12] final: One problem 
+[16:26:12] partial: with the
+[16:26:13] final: with the 
+[16:26:13] partial: keywords
+[16:26:13] partial: keywords is that
+[16:26:13] final: keywords is 
+[16:26:13] partial: that it
+[16:26:14] final: that 
+[16:26:14] partial: it seems
+[16:26:14] final: it 
+[16:26:14] partial: seems like
+[16:26:15] final: seems 
+[16:26:15] partial: like
+[16:26:15] final: like 
+[16:26:15] partial: the
+[16:26:15] partial: the
+[16:26:16] final: the 
+[16:26:16] partial: punctuation
+[16:26:16] partial: punctuation and
+[16:26:16] partial: punctuation in
+[16:26:17] final: punctuation 
+[16:26:17] partial: in spaces
+[16:26:17] final: and 
+[16:26:17] partial: spaces are
+[16:26:17] final: spaces 
+[16:26:17] partial: are not
+[16:26:18] final: are 
+[16:26:18] partial: not stripped
+[16:26:18] final: not 
+[16:26:18] partial: stripped from
+[16:26:18] final: stripped 
+[16:26:19] partial: from them
+[16:26:19] final: from 
+[16:26:19] partial: them. When they
+[16:26:19] final: them. 
+[16:26:19] partial: When they should
+[16:26:20] final: When they 
+[16:26:20] partial: should be
+[16:26:20] final: should 
+[16:26:20] partial: be
+[16:26:20] speechmatics: ForceEndOfUtterance sent
+[16:26:20] utterance: stop (duration=9.89s)
+[16:26:20] final: be. 
+[16:26:20] partial: 
+[16:26:21] vad: speech detected
+[16:26:22] partial: So
+[16:26:22] partial: So
+[16:26:23] partial: So please try to
+[16:26:23] final: So please 
+[16:26:23] partial: try to fix that
+[16:26:23] final: try to 
+[16:26:23] partial: fix that
+[16:26:24] speechmatics: ForceEndOfUtterance sent
+[16:26:24] utterance: stop (duration=2.22s)
+[16:26:24] final: fix 
+[16:26:24] partial: that.
+[16:26:24] vad: speech detected
+[16:26:25] final: that. 
+[16:26:25] partial: 
+[16:26:25] partial: Enter
+[16:26:25] keyword: enter
+[16:26:25] partial: Enter
+[16:26:25] speechmatics: ForceEndOfUtterance sent
+[16:26:25] utterance: stop (duration=1.19s)
+[16:26:57] listening enabled
+[16:26:57] speechmatics: session start (active=1)
+[16:26:58] vad: speech detected
+[16:26:59] partial: This
+[16:26:59] partial: This is a
+[16:26:59] final: This is 
+[16:27:00] partial: a test. This
+[16:27:00] final: a 
+[16:27:00] partial: test. This is a
+[16:27:00] final: test. This is 
+[16:27:00] partial: a test
+[16:27:01] final: a 
+[16:27:01] partial: test stop
+[16:27:01] keyword: end utterance (stop)
+[16:27:01] utterance: force end (keyword=stop)
+[16:27:01] speechmatics: ForceEndOfUtterance sent
+[16:27:01] utterance: stop (keyword)
+[16:27:01] speechmatics: ForceEndOfUtterance sent
+[16:27:01] utterance: stop (duration=2.65s)
+[16:27:01] final: test stop. 
+[16:27:01] partial: 
+[16:27:15] vad: speech detected
+[16:27:15] partial: 
+[16:27:15] partial: This is a
+[16:27:16] final: This 
+[16:27:16] partial: is a test. This
+[16:27:16] final: is a 
+[16:27:16] partial: test is to test
+[16:27:17] final: test. This 
+[16:27:17] partial: to test stop
+[16:27:17] keyword: end utterance (stop)
+[16:27:17] utterance: force end (keyword=stop)
+[16:27:17] speechmatics: ForceEndOfUtterance sent
+[16:27:17] utterance: stop (keyword)
+[16:27:17] speechmatics: ForceEndOfUtterance sent
+[16:27:17] utterance: stop (duration=2.30s)
+[16:27:17] final: to test stop. 
+[16:27:17] partial: 
+[16:27:33] vad: speech detected
+[16:27:33] final: It. 
+[16:27:33] partial: 
+[16:27:34] partial: If a
+[16:27:34] partial: If a
+[16:27:34] final: If a 
+[16:27:34] partial: final
+[16:27:35] partial: final is
+[16:27:35] final: final is 
+[16:27:35] partial: received
+[16:27:35] partial: received that
+[16:27:36] final: received 
+[16:27:36] partial: that
+[16:27:36] final: that 
+[16:27:36] partial: contains a
+[16:27:36] partial: contains a key
+[16:27:37] final: contains a 
+[16:27:37] partial: keyword
+[16:27:37] partial: keyword.
+[16:27:37] partial: keyword, the
+[16:27:38] final: keyword, 
+[16:27:38] partial: the behavior
+[16:27:38] final: the 
+[16:27:38] partial: behavior should
+[16:27:39] final: behavior 
+[16:27:39] partial: should be
+[16:27:39] final: should 
+[16:27:39] partial: be
+[16:27:39] final: be 
+[16:27:39] partial: that
+[16:27:40] partial: that
+[16:27:40] final: that 
+[16:27:40] partial: 
+[16:27:40] partial: everything
+[16:27:41] partial: everything is
+[16:27:41] final: everything, 
+[16:27:41] partial: including
+[16:27:41] partial: including the key
+[16:27:42] final: including the 
+[16:27:42] partial: keyword
+[16:27:42] partial: keyword and
+[16:27:43] final: keyword 
+[16:27:43] partial: and
+[16:27:43] final: and 
+[16:27:43] partial: after
+[16:27:43] partial: after, is
+[16:27:44] final: after 
+[16:27:44] partial: is stripped
+[16:27:44] final: is 
+[16:27:44] partial: stripped
+[16:27:44] final: stripped. 
+[16:27:44] partial: But
+[16:27:45] final: But 
+[16:27:45] partial: everything before
+[16:27:45] partial: everything before
+[16:27:45] final: everything 
+[16:27:45] partial: before is
+[16:27:46] final: before 
+[16:27:46] partial: is sent to
+[16:27:46] final: is 
+[16:27:46] partial: sent to
+[16:27:47] final: sent to 
+[16:27:47] partial: X due
+[16:27:47] final: X 
+[16:27:47] partial: due tool
+[16:27:47] partial: tool.
+[16:27:48] final: tool. 
+[16:27:48] partial: Please
+[16:27:48] final: Please 
+[16:27:48] partial: implement this
+[16:27:48] final: implement 
+[16:27:48] partial: this
+[16:27:49] final: this. 
+[16:27:49] partial: Enter
+[16:27:49] speechmatics: ForceEndOfUtterance sent
+[16:27:49] utterance: stop (duration=16.21s)
+[16:27:49] partial: Enter
+[16:27:52] vad: speech detected
+[16:27:53] final: Enter. 
+[16:27:53] keyword: enter
+[16:27:53] partial: 
+[16:27:53] partial: Enter
+[16:27:53] keyword: enter
+[16:27:54] partial: Enter
+[16:27:54] speechmatics: ForceEndOfUtterance sent
+[16:27:54] utterance: stop (duration=1.37s)
+[16:27:54] final: Enter. 
+[16:27:54] partial: 
+[16:29:00] listening enabled
+[16:29:00] speechmatics: session start (active=1)
+[16:29:02] vad: speech detected
+[16:29:03] partial: 
+[16:29:04] partial: This is a
+[16:29:04] final: This 
+[16:29:04] partial: is a test. This
+[16:29:04] final: is a 
+[16:29:04] partial: test. This is a
+[16:29:05] final: test. This is 
+[16:29:05] partial: a test. One
+[16:29:05] final: a 
+[16:29:05] partial: test. One, two
+[16:29:05] final: test. One, 
+[16:29:05] partial: two, three
+[16:29:06] final: two, 
+[16:29:06] partial: three. Stop
+[16:29:06] keyword: end utterance (stop)
+[16:29:06] utterance: force end (keyword=stop)
+[16:29:06] speechmatics: ForceEndOfUtterance sent
+[16:29:06] utterance: stop (keyword)
+[16:29:06] speechmatics: ForceEndOfUtterance sent
+[16:29:06] utterance: stop (duration=3.24s)
+[16:29:45] vad: speech detected
+[16:29:45] final: three. Stop. 
+[16:29:45] keyword: end utterance (stop)
+[16:29:45] utterance: force end (keyword=stop)
+[16:29:45] speechmatics: ForceEndOfUtterance sent
+[16:29:46] utterance: stop (keyword)
+[16:29:46] speechmatics: ForceEndOfUtterance sent
+[16:29:46] utterance: stop (duration=0.34s)
+[16:29:46] partial: 
+[16:30:00] vad: speech detected
+[16:30:00] final: Okay. 
+[16:30:00] partial: 
+[16:30:01] partial: 
+[16:30:01] partial: Test
+[16:30:01] speechmatics: ForceEndOfUtterance sent
+[16:30:01] utterance: stop (duration=1.19s)
+[16:30:01] final: Test. 
+[16:30:01] partial: 
+[16:30:13] vad: speech detected
+[16:30:14] partial: 
+[16:30:14] partial: This is
+[16:30:14] final: This 
+[16:30:14] partial: is a test
+[16:30:15] partial: is a test one
+[16:30:15] final: is 
+[16:30:15] partial: a test one two
+[16:30:15] final: a test. One. 
+[16:30:16] partial: Two. Three
+[16:30:16] final: Two. 
+[16:30:16] partial: Three.
+[16:30:16] partial: Three. This is a
+[16:30:16] final: Three. 
+[16:30:16] partial: This is a test
+[16:30:17] partial: This is a test one
+[16:30:17] final: This is 
+[16:30:17] partial: a test one two
+[16:30:18] final: a 
+[16:30:18] partial: test 123
+[16:30:18] final: test one. Two. 
+[16:30:18] partial: Three.
+[16:30:18] speechmatics: ForceEndOfUtterance sent
+[16:30:18] utterance: stop (duration=5.12s)
+[16:30:18] final: Three. 
+[16:30:18] partial: Stop
+[16:30:28] vad: speech detected
+[16:30:28] final: Stop! 
+[16:30:28] keyword: end utterance (stop)
+[16:30:28] utterance: force end (keyword=stop)
+[16:30:28] speechmatics: ForceEndOfUtterance sent
+[16:30:28] partial: 
+[16:30:28] utterance: stop (keyword)
+[16:30:28] speechmatics: ForceEndOfUtterance sent
+[16:30:28] utterance: stop (duration=0.34s)
+[16:30:28] vad: speech detected
+[16:30:28] final: Okay. 
+[16:30:29] partial: 
+[16:30:29] partial: 
+[16:30:29] speechmatics: ForceEndOfUtterance sent
+[16:30:29] utterance: stop (duration=1.01s)
+[16:30:29] final: 
+[16:30:29] partial: 

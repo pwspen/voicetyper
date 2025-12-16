@@ -15,6 +15,3 @@ Terminal-based voice typing using Speechmatics Realtime API, Silero VAD, and xdo
 
 ### Features
 - Mic selection screen with live level indicator.
-- Trigger mode: start capture with hotkey, stop on VAD silence.
-- Toggle mode: VAD-controlled start/stop; configurable silence timeout.
-- Partials sent to xdotool by default; finals optional.

@@ -63,10 +63,20 @@ class TranscriptRouter:
         for keyword in (self.end_keyword, self.enter_keyword):
             if not keyword:
                 continue
-            pattern = rf"\b{re.escape(keyword)}\b"
+            pattern = rf"\b{re.escape(keyword)}\b[^\w\s]*"
             cleaned = re.sub(pattern, " ", cleaned, flags=re.IGNORECASE)
-        cleaned = re.sub(r"\s+", " ", cleaned).strip()
-        return cleaned
+        cleaned = re.sub(r"\s+", " ", cleaned)
+        return cleaned if cleaned.strip() else ""
+
+    def _first_keyword_pos(self, text: str) -> int | None:
+        positions: list[int] = []
+        for keyword in (self.end_keyword, self.enter_keyword):
+            if not keyword:
+                continue
+            match = re.search(rf"\b{re.escape(keyword)}\b[^\w\s]*", text, flags=re.IGNORECASE)
+            if match:
+                positions.append(match.start())
+        return min(positions) if positions else None
 
     def on_partial(self, text: str):
         self.log(f"partial: {text}")
@@ -87,8 +97,11 @@ class TranscriptRouter:
 
     def on_final(self, text: str):
         self.log(f"final: {text}")
+        keyword_pos = self._first_keyword_pos(text)
         self._handle_keywords(text)
-        if self._suppress_output:
+        if keyword_pos is not None:
+            text = text[:keyword_pos]
+        elif self._suppress_output:
             return
         cleaned = self._strip_keywords(text)
         if cleaned:
