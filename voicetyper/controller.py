@@ -31,32 +31,54 @@ class TranscriptRouter:
         self.send_enter = send_enter
         self.log = log_fn or (lambda _msg: None)
         self._suppress_output = False
-        self._handled_tokens = 0
+        self._keyword_counts: dict[str, int] = {}
         self._last_sent_partial = ""
+        self._last_partial_raw = ""
+        self._last_forced_final = ""
+        self._keyword_seen = False
+        self._force_end_sent = False
+        self._pending_force_end = False
+        self._pending_force_end_generation: int | None = None
+        self._generation = 0
 
     def start_utterance(self):
+        self._generation += 1
         self._suppress_output = False
-        self._handled_tokens = 0
+        self._keyword_counts = {
+            kw: 0 for kw in (self.end_keyword, self.enter_keyword) if kw
+        }
         self._last_sent_partial = ""
+        self._last_partial_raw = ""
+        self._last_forced_final = ""
+        self._keyword_seen = False
+        self._force_end_sent = False
 
     def _tokenize(self, text: str) -> list[str]:
         return re.findall(r"\b\w+\b", text.lower())
 
     def _handle_keywords(self, text: str):
-        tokens = self._tokenize(text)
-        if self._handled_tokens > len(tokens):
-            self._handled_tokens = len(tokens)
-
-        for token in tokens[self._handled_tokens :]:
-            if token == self.end_keyword and not self._suppress_output:
-                self._suppress_output = True
-                self.log(f"keyword: end utterance ({self.end_keyword})")
-                self.request_force_end(self.end_keyword)
-            if token == self.enter_keyword:
-                self.log("keyword: enter")
-                self.send_enter()
-
-        self._handled_tokens = len(tokens)
+        for keyword in (self.end_keyword, self.enter_keyword):
+            if not keyword:
+                continue
+            pattern = rf"\b{re.escape(keyword)}\b[^\w\s]*"
+            count = len(re.findall(pattern, text, flags=re.IGNORECASE))
+            prev = self._keyword_counts.get(keyword, 0)
+            if count > prev:
+                delta = count - prev
+                self._keyword_counts[keyword] = count
+                for _ in range(delta):
+                    self._keyword_seen = True
+                    if not self._force_end_sent:
+                        self.request_force_end(keyword)
+                        self._force_end_sent = True
+                        self._pending_force_end = True
+                        self._pending_force_end_generation = self._generation
+                    if keyword == self.end_keyword and not self._suppress_output:
+                        self._suppress_output = True
+                        self.log(f"keyword: end utterance ({self.end_keyword})")
+                    if keyword == self.enter_keyword:
+                        self.log("keyword: enter")
+                        self.send_enter()
 
     def _strip_keywords(self, text: str) -> str:
         cleaned = text
@@ -80,8 +102,9 @@ class TranscriptRouter:
 
     def on_partial(self, text: str):
         self.log(f"partial: {text}")
+        self._last_partial_raw = text
         self._handle_keywords(text)
-        if self._suppress_output:
+        if self._suppress_output or self._keyword_seen:
             return
         if self.prefer_partials:
             cleaned = self._strip_keywords(text)
@@ -94,9 +117,14 @@ class TranscriptRouter:
             if delta:
                 output.xdotool.send_text(delta)
                 self._last_sent_partial = cleaned
+                self._last_forced_final = cleaned
+                self.log(f"type_partial: {delta}")
 
     def on_final(self, text: str):
         self.log(f"final: {text}")
+        if self._pending_force_end and self._pending_force_end_generation != self._generation:
+            self.log("final skipped: arrived after new utterance started")
+            return
         keyword_pos = self._first_keyword_pos(text)
         self._handle_keywords(text)
         if keyword_pos is not None:
@@ -104,8 +132,27 @@ class TranscriptRouter:
         elif self._suppress_output:
             return
         cleaned = self._strip_keywords(text)
-        if cleaned:
+        if cleaned and cleaned != self._last_forced_final:
+            self.log(f"type_final: {cleaned}")
             output.xdotool.send_text(cleaned)
+            self._last_forced_final = cleaned
+        if self._pending_force_end:
+            self._pending_force_end = False
+            self._pending_force_end_generation = None
+
+    def flush_partial_as_final(self):
+        if self.prefer_partials:
+            return
+        if self._suppress_output:
+            return
+        if not self._last_partial_raw:
+            return
+        cleaned = self._strip_keywords(self._last_partial_raw)
+        if cleaned and cleaned != self._last_forced_final:
+            self.log("auto-finalize: partial->final")
+            self.log(f"type_autofinal: {cleaned}")
+            output.xdotool.send_text(cleaned)
+            self._last_forced_final = cleaned
 
 
 class VoiceController:
@@ -212,11 +259,11 @@ class VoiceController:
                                 speech = self.vad.is_speech(frame2)
                                 if speech:
                                     last_speech = time.time()
+                                silence = time.time() - last_speech
                                 elapsed = time.time() - start_time
-                                if (
-                                    elapsed >= self.config.min_stream_seconds
-                                    and (time.time() - last_speech) >= self.config.silence_timeout
-                                ):
+                                silence_limit = max(self.config.silence_timeout, self.config.auto_finalize_silence)
+                                if elapsed >= self.config.min_stream_seconds and silence >= silence_limit:
+                                    router.flush_partial_as_final()
                                     break
                             backend.end_utterance()
                             self.listening = False

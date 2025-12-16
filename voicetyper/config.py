@@ -17,6 +17,7 @@ class AppConfig:
     debug: bool = True
     debug_log_path: str = "voicetyper-debug.log"
     min_stream_seconds: float = 1.0
+    auto_finalize_silence: float = 1.2
     end_utterance_keyword: str = "stop"
     enter_keyword: str = "enter"
 
