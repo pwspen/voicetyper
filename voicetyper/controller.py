@@ -28,76 +28,22 @@ class TranscriptRouter:
         self.prefer_partials = prefer_partials
         self.end_keyword = end_keyword.strip().lower()
         self.enter_keyword = enter_keyword.strip().lower()
-        self.keyword_final_grace = keyword_final_grace
+        self.keyword_final_grace = keyword_final_grace  # retained for signature compatibility
         self.request_force_end = request_force_end
         self.send_enter = send_enter
         self.log = log_fn or (lambda _msg: None)
         self._suppress_output = False
-        self._keyword_counts: dict[str, int] = {}
-        self._last_sent_partial = ""
-        self._last_partial_raw = ""
-        self._last_forced_final = ""
-        self._keyword_seen = False
-        self._force_end_sent = False
-        self._pending_force_end = False
-        self._pending_force_end_generation: int | None = None
-        self._generation = 0
-        self._pending_keyword: str | None = None
-        self._pending_pre_text: str = ""
-        self._pending_keyword_generation: int | None = None
-        self._keyword_timer: threading.Timer | None = None
         self._last_force_end_time: float | None = None
-        self._first_partial_seen: bool = False
+        self._content_seen: bool = False
+        self._committed: str = ""
+        self._keyword_triggered: bool = False
 
     def start_utterance(self):
-        self._generation += 1
         self._suppress_output = False
-        self._keyword_counts = {
-            kw: 0 for kw in (self.end_keyword, self.enter_keyword) if kw
-        }
-        self._last_sent_partial = ""
-        self._last_partial_raw = ""
-        self._last_forced_final = ""
-        self._keyword_seen = False
-        self._force_end_sent = False
-        self._pending_force_end = False
-        self._pending_force_end_generation = None
-        self._pending_keyword = None
-        self._pending_pre_text = ""
-        self._pending_keyword_generation = None
-        if self._keyword_timer:
-            self._keyword_timer.cancel()
-        self._keyword_timer = None
         self._last_force_end_time = None
-        self._first_partial_seen = False
-
-    def _tokenize(self, text: str) -> list[str]:
-        return re.findall(r"\b\w+\b", text.lower())
-
-    def _handle_keywords(self, text: str):
-        for keyword in (self.end_keyword, self.enter_keyword):
-            if not keyword:
-                continue
-            pattern = rf"\b{re.escape(keyword)}\b[^\w\s]*"
-            count = len(re.findall(pattern, text, flags=re.IGNORECASE))
-            prev = self._keyword_counts.get(keyword, 0)
-            if count > prev and self._pending_keyword is None:
-                self._keyword_counts[keyword] = count
-                self._keyword_seen = True
-                self._pending_keyword = keyword
-                self._pending_pre_text = self._text_before_first_keyword(text)
-                self._pending_keyword_generation = self._generation
-                self.log(
-                    f"keyword pending: {keyword} (waiting {self.keyword_final_grace:.1f}s for final)"
-                )
-                if self._keyword_timer:
-                    self._keyword_timer.cancel()
-                self._keyword_timer = threading.Timer(
-                    self.keyword_final_grace, self._keyword_timeout_fire, args=(self._generation,)
-                )
-                self._keyword_timer.start()
-                # Stop processing additional keywords once one is pending.
-                break
+        self._content_seen = False
+        self._committed = ""
+        self._keyword_triggered = False
 
     def _strip_keywords(self, text: str) -> str:
         cleaned = text
@@ -109,86 +55,50 @@ class TranscriptRouter:
         cleaned = re.sub(r"\s+", " ", cleaned)
         return cleaned if cleaned.strip() else ""
 
-    def _text_before_first_keyword(self, text: str) -> str:
-        positions: list[tuple[int, int]] = []
+    def _first_keyword_pos(self, text: str) -> tuple[str | None, int | None]:
+        first: tuple[str | None, int | None] = (None, None)
         for keyword in (self.end_keyword, self.enter_keyword):
             if not keyword:
                 continue
             match = re.search(rf"\b{re.escape(keyword)}\b[^\w\s]*", text, flags=re.IGNORECASE)
             if match:
-                positions.append((match.start(), match.end()))
-        if not positions:
-            return text
-        start, _ = min(positions, key=lambda p: p[0])
-        return text[:start]
+                if first[1] is None or match.start() < first[1]:
+                    first = (keyword, match.start())
+        return first
 
-    def _keyword_timeout_fire(self, generation: int):
-        if generation != self._generation:
+    def _has_content(self, text: str) -> bool:
+        return bool(re.search(r"\w", text))
+
+    def _overlap_len(self, a: str, b: str) -> int:
+        max_len = min(len(a), len(b))
+        for size in range(max_len, 0, -1):
+            if a[-size:] == b[:size]:
+                return size
+        return 0
+
+    def _append_text(self, text: str, log_label: str):
+        cleaned = self._strip_keywords(text)
+        if not cleaned:
             return
-        if not self._pending_keyword:
+        overlap = self._overlap_len(self._committed, cleaned)
+        if overlap == len(cleaned):
+            self.log(f"{log_label} skipped: contained in committed")
             return
-        keyword = self._pending_keyword
-        pre = self._pending_pre_text
-        cleaned = self._strip_keywords(pre)
-        if cleaned and cleaned != self._last_forced_final:
-            self.log(f"type_keyword_fallback: {cleaned}")
-            output.xdotool.send_text(cleaned)
-            self._last_forced_final = cleaned
-        self.log(f"keyword timeout: forcing end ({keyword})")
-        self._pending_keyword = None
-        self._suppress_output = True
-        self.request_force_end(keyword)
-        self._last_force_end_time = time.time()
-        self._force_end_sent = True
-        self._pending_force_end = True
-        self._pending_force_end_generation = self._generation
-        if keyword == self.enter_keyword:
-            self.log("keyword: enter (timeout)")
-            self.send_enter()
-
-    def _text_before_first_keyword(self, text: str) -> str:
-        positions: list[tuple[int, int]] = []
-        for keyword in (self.end_keyword, self.enter_keyword):
-            if not keyword:
-                continue
-            match = re.search(rf"\b{re.escape(keyword)}\b[^\w\s]*", text, flags=re.IGNORECASE)
-            if match:
-                positions.append((match.start(), match.end()))
-        if not positions:
-            return text
-        start, _ = min(positions, key=lambda p: p[0])
-        return text[:start]
-
-    def _first_keyword_pos(self, text: str) -> int | None:
-        positions: list[int] = []
-        for keyword in (self.end_keyword, self.enter_keyword):
-            if not keyword:
-                continue
-            match = re.search(rf"\b{re.escape(keyword)}\b[^\w\s]*", text, flags=re.IGNORECASE)
-            if match:
-                positions.append(match.start())
-        return min(positions) if positions else None
+        delta = cleaned[overlap:]
+        if not delta:
+            return
+        self.log(f"{log_label}: {delta}")
+        output.xdotool.send_text(delta)
+        self._committed += delta
 
     def on_partial(self, text: str):
         self.log(f"partial: {text}")
-        self._first_partial_seen = True
-        self._last_partial_raw = text
-        self._handle_keywords(text)
-        if self._suppress_output or self._keyword_seen or self._pending_keyword:
+        if self._has_content(text):
+            self._content_seen = True
+        if self._suppress_output or self._keyword_triggered:
             return
         if self.prefer_partials:
-            cleaned = self._strip_keywords(text)
-            if not cleaned:
-                return
-            if cleaned.startswith(self._last_sent_partial):
-                delta = cleaned[len(self._last_sent_partial) :]
-            else:
-                delta = cleaned
-            if delta:
-                output.xdotool.send_text(delta)
-                self._last_sent_partial = cleaned
-                self._last_forced_final = cleaned
-                self.log(f"type_partial: {delta}")
+            self._append_text(text, "type_partial")
 
     def on_final(self, text: str):
         self.log(f"final: {text}")
@@ -196,30 +106,19 @@ class TranscriptRouter:
         if self._last_force_end_time and (now - self._last_force_end_time) <= 1.0:
             self.log("final skipped: within post-force-end window")
             return
-        if not self._first_partial_seen:
-            self.log("final skipped: before first partial of utterance")
+        has_content = self._has_content(text)
+        if not self._content_seen and not has_content:
+            self.log("final skipped: before first content of utterance")
             return
-        if self._pending_keyword and self._pending_keyword_generation != self._generation:
-            self.log("final skipped: pending keyword belongs to different utterance")
+        if has_content:
+            self._content_seen = True
+        if self._suppress_output or self._keyword_triggered:
             return
-        if self._pending_force_end and self._pending_force_end_generation != self._generation:
-            self.log("final skipped: arrived after new utterance started")
-            return
-        keyword_pos = self._first_keyword_pos(text)
-        self._handle_keywords(text)
-        if self._pending_keyword:
-            # Consume the final during grace window.
-            if self._keyword_timer:
-                self._keyword_timer.cancel()
-                self._keyword_timer = None
-            pre = self._text_before_first_keyword(text)
-            cleaned = self._strip_keywords(pre)
-            if cleaned and cleaned != self._last_forced_final:
-                self.log(f"type_final: {cleaned}")
-                output.xdotool.send_text(cleaned)
-                self._last_forced_final = cleaned
-            keyword = self._pending_keyword
-            self._pending_keyword = None
+        keyword, pos = self._first_keyword_pos(text)
+        if keyword and pos is not None:
+            before = text[:pos]
+            self._append_text(before, "type_final")
+            self._keyword_triggered = True
             self._suppress_output = True
             if keyword == self.enter_keyword:
                 self.log("keyword: enter (final)")
@@ -227,39 +126,13 @@ class TranscriptRouter:
             elif keyword == self.end_keyword:
                 self.log(f"keyword: end utterance ({self.end_keyword})")
             self._last_force_end_time = time.time()
-            if self._pending_force_end:
-                self._pending_force_end = False
-                self._pending_force_end_generation = None
+            self.request_force_end(keyword)
             return
-        if keyword_pos is not None:
-            text = text[:keyword_pos]
-        elif self._suppress_output:
-            return
-        cleaned = self._strip_keywords(text)
-        if cleaned and cleaned != self._last_forced_final:
-            if self._last_forced_final and cleaned.startswith(self._last_forced_final):
-                self.log(f"final skipped: prefix of typed content ({cleaned})")
-            else:
-                self.log(f"type_final: {cleaned}")
-                output.xdotool.send_text(cleaned)
-                self._last_forced_final = cleaned
-        if self._pending_force_end:
-            self._pending_force_end = False
-            self._pending_force_end_generation = None
+        self._append_text(text, "type_final")
 
     def flush_partial_as_final(self):
-        if self.prefer_partials:
-            return
-        if self._suppress_output:
-            return
-        if not self._last_partial_raw:
-            return
-        cleaned = self._strip_keywords(self._last_partial_raw)
-        if cleaned and cleaned != self._last_forced_final:
-            self.log("auto-finalize: partial->final")
-            self.log(f"type_autofinal: {cleaned}")
-            output.xdotool.send_text(cleaned)
-            self._last_forced_final = cleaned
+        # Auto-finalize removed; finals drive commits.
+        return
 
 
 class VoiceController:
@@ -324,7 +197,6 @@ class VoiceController:
             mic = MicrophoneStream(
                 device_index=self.device.index,
                 sample_rate=self.config.sample_rate,
-                chunk_ms=self.config.chunk_ms,
                 channels=1,
                 level_meter=level_meter,
             )

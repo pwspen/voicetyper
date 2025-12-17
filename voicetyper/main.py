@@ -31,7 +31,6 @@ def select_device(ui: TerminalUI, devices: list[InputDevice], config: AppConfig)
     stream = MicrophoneStream(
         device_index=devices[selected].index,
         sample_rate=config.sample_rate,
-        chunk_ms=config.chunk_ms,
         channels=1,
         level_meter=level_meter,
     )
@@ -49,7 +48,6 @@ def select_device(ui: TerminalUI, devices: list[InputDevice], config: AppConfig)
                 stream = MicrophoneStream(
                     device_index=devices[selected].index,
                     sample_rate=config.sample_rate,
-                    chunk_ms=config.chunk_ms,
                     channels=1,
                     level_meter=level_meter,
                 )
@@ -60,7 +58,6 @@ def select_device(ui: TerminalUI, devices: list[InputDevice], config: AppConfig)
                 stream = MicrophoneStream(
                     device_index=devices[selected].index,
                     sample_rate=config.sample_rate,
-                    chunk_ms=config.chunk_ms,
                     channels=1,
                     level_meter=level_meter,
                 )

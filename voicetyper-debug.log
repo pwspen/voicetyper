@@ -7973,3 +7973,2270 @@ TypeError: TranscriptRouter.__init__() missing 1 required positional argument: '
 [17:48:28] utterance: stop (duration=1.28s)
 [17:48:29] final: 
 [17:48:29] partial: 
+[19:18:29] listening enabled
+[19:18:29] speechmatics: session start (active=1)
+[19:18:33] vad: speech detected
+[19:18:34] partial: 
+[19:18:34] partial: This is a
+[19:18:35] partial: This is a test
+[19:18:35] partial: This is a test
+[19:18:35] partial: This is a test. We think
+[19:18:36] final: This 
+[19:18:36] type_final: This 
+[19:18:36] partial: is a test we
+[19:18:36] final: is a 
+[19:18:36] type_final: is a 
+[19:18:36] partial: test we theoretically
+[19:18:37] final: test 
+[19:18:37] type_final: test 
+[19:18:37] partial: we theoretically should have
+[19:18:37] final: we 
+[19:18:37] type_final: we 
+[19:18:37] partial: theoretically should have fixed
+[19:18:37] partial: theoretically should have fixed the
+[19:18:38] partial: theoretically should have fixed the
+[19:18:38] final: theoretically should 
+[19:18:38] type_final: theoretically should 
+[19:18:38] partial: have fixed the, uh
+[19:18:38] final: have 
+[19:18:38] type_final: have 
+[19:18:38] partial: fixed the, uh
+[19:18:39] final: fixed 
+[19:18:39] type_final: fixed 
+[19:18:39] partial: the, uh
+[19:18:39] final: the, 
+[19:18:39] type_final: the, 
+[19:18:39] partial: uh, period
+[19:18:39] partial: uh, period appearing at
+[19:18:40] final: uh, 
+[19:18:40] type_final: uh, 
+[19:18:40] partial: period appearing at the start of
+[19:18:40] partial: period appearing at the start of an
+[19:18:40] final: period 
+[19:18:40] type_final: period 
+[19:18:40] partial: appearing at the start of an utterance
+[19:18:41] final: appearing 
+[19:18:41] type_final: appearing 
+[19:18:41] partial: at the start of an utterance. By now
+[19:18:41] final: at the 
+[19:18:41] type_final: at the 
+[19:18:41] partial: start of an utterance by now, but
+[19:18:42] final: start of 
+[19:18:42] type_final: start of 
+[19:18:42] partial: an utterance by now, but we
+[19:18:42] final: an 
+[19:18:42] type_final: an 
+[19:18:42] partial: utterance by now. But we shall
+[19:18:42] final: utterance by 
+[19:18:42] type_final: utterance by 
+[19:18:42] partial: now, but we shall see
+[19:18:43] final: now, 
+[19:18:43] type_final: now, 
+[19:18:43] partial: but we shall see
+[19:18:43] final: but we 
+[19:18:43] type_final: but we 
+[19:18:43] partial: shall see. Enter
+[19:18:43] keyword pending: enter (waiting 1.0s for final)
+[19:18:43] partial: shall see. Enter
+[19:18:44] auto-finalize: partial->final
+[19:18:44] type_autofinal: shall see. 
+[19:18:44] final: shall 
+[19:18:44] type_final: shall 
+[19:18:44] speechmatics: ForceEndOfUtterance sent
+[19:18:44] utterance: stop (duration=10.57s)
+[19:18:44] keyword: enter (final)
+[19:18:44] partial: see. Enter
+[19:18:44] final: see. Enter. 
+[19:18:44] final skipped: within post-force-end window
+[19:18:44] partial: 
+[19:20:06] vad: speech detected
+[19:20:06] partial: 
+[19:20:06] partial: Troubleshooting
+[19:20:07] partial: Trouble shooting a bug
+[19:20:07] partial: Trouble shooting a bug here
+[19:20:08] partial: Troubleshooting a bug here. See
+[19:20:08] partial: Troubleshooting a bug. Here. See it
+[19:20:08] final: Troubleshooting a 
+[19:20:08] type_final: Troubleshooting a 
+[19:20:08] partial: bug here. See attached
+[19:20:09] final: bug 
+[19:20:09] type_final: bug 
+[19:20:09] partial: here. See? Attached. Both
+[19:20:09] final: here. 
+[19:20:09] type_final: here. 
+[19:20:09] partial: See attached both the
+[19:20:09] final: See 
+[19:20:09] type_final: See 
+[19:20:09] partial: attached both the log
+[19:20:10] partial: ? attached both the log
+[19:20:10] final: ? Attached 
+[19:20:10] type_final: ? Attached 
+[19:20:10] partial: both the log as
+[19:20:11] final: both 
+[19:20:11] type_final: both 
+[19:20:11] partial: the log as well as
+[19:20:11] final: the 
+[19:20:11] type_final: the 
+[19:20:11] partial: log as well as the
+[19:20:11] final: log 
+[19:20:11] type_final: log 
+[19:20:11] partial: as well as the actual
+[19:20:12] partial: as well as the actual output
+[19:20:12] final: as well 
+[19:20:12] type_final: as well 
+[19:20:12] partial: as the actual output that was
+[19:20:12] final: as the 
+[19:20:12] type_final: as the 
+[19:20:12] partial: actual output that was produced
+[19:20:13] partial: actual output that was produced
+[19:20:13] final: actual 
+[19:20:13] type_final: actual 
+[19:20:13] partial: output that was produced from
+[19:20:13] final: output 
+[19:20:13] type_final: output 
+[19:20:13] partial: that was produced from
+[19:20:14] final: that was 
+[19:20:14] type_final: that was 
+[19:20:14] partial: produced from the
+[19:20:14] partial: produced from the log
+[19:20:14] final: produced 
+[19:20:14] type_final: produced 
+[19:20:15] partial: from the log
+[19:20:15] partial: from the log
+[19:20:15] final: from 
+[19:20:15] type_final: from 
+[19:20:15] partial: the log. Enter
+[19:20:15] keyword pending: enter (waiting 1.0s for final)
+[19:20:16] final: the 
+[19:20:16] type_final: the 
+[19:20:16] keyword: enter (final)
+[19:20:16] partial: log. Enter
+[19:20:16] final: log. 
+[19:20:16] final skipped: within post-force-end window
+[19:20:16] partial: Enter
+[19:20:16] speechmatics: ForceEndOfUtterance sent
+[19:20:16] utterance: stop (duration=10.41s)
+[19:20:16] final: Enter. 
+[19:20:16] final skipped: within post-force-end window
+[19:20:16] partial: 
+[19:25:14] listening enabled
+[19:25:14] speechmatics: session start (active=1)
+[19:25:18] vad: speech detected
+[19:25:18] partial: 
+[19:25:19] partial: This is a
+[19:25:19] partial: This is a test
+[19:25:19] partial: This is a test. We
+[19:25:20] partial: This is a test we
+[19:25:20] final: This is 
+[19:25:20] type_final: This is 
+[19:25:20] partial: a test we theoretically
+[19:25:21] final: a 
+[19:25:21] type_final: a 
+[19:25:21] partial: test we theoretically should have
+[19:25:21] final: test we 
+[19:25:21] type_final: test we 
+[19:25:21] partial: theoretically should have fixed
+[19:25:21] partial: theoretically should have fixed the
+[19:25:22] partial: theoretically should have fixed the
+[19:25:22] final: theoretically should 
+[19:25:22] type_final: theoretically should 
+[19:25:22] partial: have fixed the
+[19:25:22] final: have 
+[19:25:22] type_final: have 
+[19:25:22] partial: fixed the problem
+[19:25:23] partial: fixed the problems
+[19:25:23] final: fixed 
+[19:25:23] type_final: fixed 
+[19:25:23] partial: the problems by now
+[19:25:23] final: the 
+[19:25:23] type_final: the 
+[19:25:23] partial: problems by now, including the
+[19:25:24] partial: problems by now, including the
+[19:25:24] partial: problems by now, including the duplication
+[19:25:24] final: problems by 
+[19:25:24] type_final: problems by 
+[19:25:25] partial: now, including the duplication and
+[19:25:25] final: now, 
+[19:25:25] type_final: now, 
+[19:25:25] partial: including the duplication and the
+[19:25:25] final: including the 
+[19:25:25] type_final: including the 
+[19:25:25] partial: duplication and the period
+[19:25:26] partial: duplication and the period at the
+[19:25:26] final: duplication 
+[19:25:26] type_final: duplication 
+[19:25:26] partial: and the period at the start
+[19:25:26] final: and the 
+[19:25:26] type_final: and the 
+[19:25:26] partial: period at the start of
+[19:25:27] partial: period at the start. But
+[19:25:27] final: period at 
+[19:25:27] type_final: period at 
+[19:25:27] partial: the start. But we
+[19:25:27] final: the 
+[19:25:27] type_final: the 
+[19:25:27] partial: start. But we shall
+[19:25:28] final: start. 
+[19:25:28] type_final: start. 
+[19:25:28] partial: But we shall see
+[19:25:28] partial: But we shall see. Enter
+[19:25:28] keyword pending: enter (waiting 1.5s for final)
+[19:25:28] final: But we 
+[19:25:28] type_final: But we 
+[19:25:28] keyword: enter (final)
+[19:25:28] partial: shall see. Enter
+[19:25:29] final: shall 
+[19:25:29] final skipped: within post-force-end window
+[19:25:29] partial: see. Enter
+[19:25:29] speechmatics: ForceEndOfUtterance sent
+[19:25:29] utterance: stop (duration=11.18s)
+[19:25:29] final: see. Enter. 
+[19:25:29] final skipped: within post-force-end window
+[19:25:29] partial: 
+[19:26:03] vad: speech detected
+[19:26:03] partial: 
+[19:26:04] partial: Okay.
+[19:26:04] partial: Okay.
+[19:26:04] partial: Okay.
+[19:26:05] auto-finalize: partial->final
+[19:26:05] type_autofinal: Okay.
+[19:26:05] speechmatics: ForceEndOfUtterance sent
+[19:26:05] utterance: stop (duration=1.74s)
+[19:26:05] final: Okay. 
+[19:26:05] final skipped: prefix of typed content (Okay. )
+[19:26:05] partial: 
+[19:26:11] vad: speech detected
+[19:26:12] partial: 
+[19:26:12] partial: Does the
+[19:26:13] partial: Does the period
+[19:26:13] partial: Does the period thing still
+[19:26:13] partial: Does the period thing still happen or
+[19:26:14] final: Does 
+[19:26:14] type_final: Does 
+[19:26:14] partial: the period thing still happen or not
+[19:26:14] final: the 
+[19:26:14] type_final: the 
+[19:26:14] partial: period thing still happen or not?
+[19:26:14] final: period thing 
+[19:26:14] type_final: period thing 
+[19:26:15] partial: still happen or not?
+[19:26:15] auto-finalize: partial->final
+[19:26:15] type_autofinal: still happen or not?
+[19:26:15] speechmatics: ForceEndOfUtterance sent
+[19:26:15] utterance: stop (duration=3.46s)
+[19:26:15] final: still 
+[19:26:15] type_final: still 
+[19:26:15] partial: happen or not
+[19:26:56] vad: speech detected
+[19:26:57] final: happen or not? And. 
+[19:26:57] type_final: happen or not? And. 
+[19:26:57] partial: 
+[19:26:57] partial: Enter
+[19:26:57] keyword pending: enter (waiting 1.5s for final)
+[19:26:58] partial: Enter
+[19:26:58] partial: Enter
+[19:26:58] speechmatics: ForceEndOfUtterance sent
+[19:26:58] utterance: stop (duration=1.54s)
+[19:26:59] keyword timeout: forcing end (enter)
+[19:26:59] utterance: force end (keyword=enter)
+[19:26:59] speechmatics: ForceEndOfUtterance sent
+[19:26:59] keyword: enter (timeout)
+[19:27:02] vad: speech detected
+[19:27:02] final: Enter. 
+[19:27:02] keyword pending: enter (waiting 1.5s for final)
+[19:27:02] keyword: enter (final)
+[19:27:02] partial: 
+[19:27:02] partial: Enter
+[19:27:03] partial: Enter
+[19:27:03] partial: Enter
+[19:27:04] partial: Enter
+[19:27:04] speechmatics: ForceEndOfUtterance sent
+[19:27:04] utterance: stop (duration=1.71s)
+[19:27:05] vad: speech detected
+[19:27:06] final: Enter. 
+[19:27:06] keyword pending: enter (waiting 1.5s for final)
+[19:27:06] keyword: enter (final)
+[19:27:06] partial: 
+[19:27:06] partial: Enter
+[19:27:06] partial: Enter
+[19:27:07] partial: Enter
+[19:27:07] partial: Enter
+[19:27:07] speechmatics: ForceEndOfUtterance sent
+[19:27:07] utterance: stop (duration=1.79s)
+[19:27:13] vad: speech detected
+[19:27:14] final: Enter. 
+[19:27:14] keyword pending: enter (waiting 1.5s for final)
+[19:27:14] keyword: enter (final)
+[19:27:14] partial: 
+[19:27:14] partial: Enter
+[19:27:14] partial: Enter
+[19:27:15] partial: Enter
+[19:27:15] partial: Enter
+[19:27:15] partial: Enter. Enter
+[19:27:15] keyword pending: enter (waiting 1.5s for final)
+[19:27:16] final: Enter. 
+[19:27:16] keyword: enter (final)
+[19:27:16] partial: Enter
+[19:27:16] partial: Enter
+[19:27:16] speechmatics: ForceEndOfUtterance sent
+[19:27:16] utterance: stop (duration=2.99s)
+[19:27:16] final: Enter. 
+[19:27:16] final skipped: within post-force-end window
+[19:27:16] partial: 
+[19:27:22] vad: speech detected
+[19:27:23] partial: Up
+[19:27:24] partial: Up. Arrow
+[19:27:24] partial: Up. Arrow.
+[19:27:24] partial: Up. Arrow.
+[19:27:24] auto-finalize: partial->final
+[19:27:24] type_autofinal: Up. Arrow.
+[19:27:24] speechmatics: ForceEndOfUtterance sent
+[19:27:24] utterance: stop (duration=1.77s)
+[19:27:26] vad: speech detected
+[19:27:27] final: Up. Arrow. 
+[19:27:27] type_final: Up. Arrow. 
+[19:27:27] partial: 
+[19:27:27] partial: Up
+[19:27:28] partial: Up. Arrow.
+[19:27:28] partial: Up. Arrow.
+[19:27:28] partial: Up. Arrow. Up
+[19:27:29] final: Up 
+[19:27:29] type_final: Up 
+[19:27:29] partial: arrow. Up. Arrow
+[19:27:29] partial: arrow. Up. Arrow.
+[19:27:29] final: arrow. 
+[19:27:29] type_final: arrow. 
+[19:27:29] partial: Up. Arrow.
+[19:27:29] auto-finalize: partial->final
+[19:27:29] type_autofinal: Up. Arrow.
+[19:27:30] speechmatics: ForceEndOfUtterance sent
+[19:27:30] utterance: stop (duration=3.14s)
+[19:27:30] final: Up. Arrow. 
+[19:27:30] final skipped: prefix of typed content (Up. Arrow. )
+[19:27:30] partial: 
+[19:27:32] vad: speech detected
+[19:27:33] partial: 
+[19:27:33] partial: Down
+[19:27:34] partial: Down. Arrow.
+[19:27:34] partial: Down. Arrow.
+[19:27:34] auto-finalize: partial->final
+[19:27:34] type_autofinal: Down. Arrow.
+[19:27:34] partial: Down. Arrow.
+[19:27:34] speechmatics: ForceEndOfUtterance sent
+[19:27:34] utterance: stop (duration=1.87s)
+[19:27:37] vad: speech detected
+[19:27:38] final: Down. Arrow. And. 
+[19:27:38] type_final: Down. Arrow. And. 
+[19:27:38] partial: 
+[19:27:38] partial: Snaps
+[19:27:38] partial: Nap. So
+[19:27:39] partial: Nap. So
+[19:27:39] auto-finalize: partial->final
+[19:27:39] type_autofinal: Nap. So
+[19:27:39] speechmatics: ForceEndOfUtterance sent
+[19:27:39] utterance: stop (duration=1.84s)
+[19:27:39] partial: Nap. So
+[19:27:40] vad: speech detected
+[19:27:41] final: Snap. Zero. 
+[19:27:41] type_final: Snap. Zero. 
+[19:27:41] partial: 
+[19:27:41] partial: An app
+[19:27:42] partial: An episode
+[19:27:42] partial: An app so
+[19:27:42] partial: An app so
+[19:27:43] auto-finalize: partial->final
+[19:27:43] type_autofinal: An app so
+[19:27:43] speechmatics: ForceEndOfUtterance sent
+[19:27:43] utterance: stop (duration=2.11s)
+[19:27:43] partial: Snap. So
+[19:27:48] vad: speech detected
+[19:27:49] final: Snap. Zo. 
+[19:27:49] type_final: Snap. Zo. 
+[19:27:49] partial: 
+[19:27:49] partial: 
+[19:27:49] partial: 
+[19:27:50] partial: 
+[19:27:50] partial: 
+[19:27:50] partial: Synapsis
+[19:27:51] partial: Synapsis
+[19:27:51] partial: Synapsis
+[19:27:51] auto-finalize: partial->final
+[19:27:51] type_autofinal: Synapsis
+[19:27:51] speechmatics: ForceEndOfUtterance sent
+[19:27:51] utterance: stop (duration=3.12s)
+[19:27:51] final: Synapsis. 
+[19:27:51] final skipped: prefix of typed content (Synapsis. )
+[19:27:51] partial: 
+[19:28:05] vad: speech detected
+[19:28:05] partial: 
+[19:28:06] partial: Right.
+[19:28:06] partial: Right.
+[19:28:06] auto-finalize: partial->final
+[19:28:06] type_autofinal: Right.
+[19:28:06] speechmatics: ForceEndOfUtterance sent
+[19:28:06] utterance: stop (duration=1.49s)
+[19:28:06] final: Right. 
+[19:28:06] final skipped: prefix of typed content (Right. )
+[19:28:06] partial: 
+[19:28:09] vad: speech detected
+[19:28:10] partial: Okay
+[19:28:10] partial: Okay. So this
+[19:28:10] partial: Okay, so this is the
+[19:28:11] partial: Okay, so this is the test. I'm
+[19:28:11] partial: Okay, so this is the test. I'm wondering
+[19:28:11] final: Okay, 
+[19:28:11] type_final: Okay, 
+[19:28:12] partial: so this is the test. I'm wondering
+[19:28:12] final: so this is 
+[19:28:12] type_final: so this is 
+[19:28:12] partial: the test. I'm wondering
+[19:28:12] auto-finalize: partial->final
+[19:28:12] type_autofinal: the test. I'm wondering
+[19:28:12] final: the test. 
+[19:28:12] type_final: the test. 
+[19:28:12] partial: I'm wondering
+[19:28:12] speechmatics: ForceEndOfUtterance sent
+[19:28:12] utterance: stop (duration=3.13s)
+[19:30:05] vad: speech detected
+[19:30:05] final: I'm wondering. 
+[19:30:05] type_final: I'm wondering. 
+[19:30:05] partial: 
+[19:30:06] partial: Making a
+[19:30:06] partial: Taking a step back
+[19:30:06] partial: Taking a step back here, I
+[19:30:07] partial: Taking a step back here. I want
+[19:30:07] final: Taking 
+[19:30:07] type_final: Taking 
+[19:30:07] partial: a step back here, I want to
+[19:30:08] final: a step 
+[19:30:08] type_final: a step 
+[19:30:08] partial: back here. I want to build a
+[19:30:08] final: back 
+[19:30:08] type_final: back 
+[19:30:08] partial: here. I want to build a
+[19:30:08] final: here. I 
+[19:30:08] type_final: here. I 
+[19:30:08] partial: want to build a robust
+[19:30:09] final: want to 
+[19:30:09] type_final: want to 
+[19:30:09] partial: build a robust
+[19:30:09] final: build 
+[19:30:09] type_final: build 
+[19:30:09] partial: a robust system
+[19:30:09] final: a 
+[19:30:09] type_final: a 
+[19:30:09] partial: robust system that's
+[19:30:10] partial: robust system that's not
+[19:30:10] final: robust 
+[19:30:10] type_final: robust 
+[19:30:10] partial: system that's not
+[19:30:10] partial: system that's not cobbled together
+[19:30:11] final: system 
+[19:30:11] type_final: system 
+[19:30:11] partial: that's not cobbled together from
+[19:30:11] final: that's 
+[19:30:11] type_final: that's 
+[19:30:11] partial: not cobbled together from a bunch
+[19:30:11] final: not 
+[19:30:11] type_final: not 
+[19:30:11] partial: cobbled together from a bunch of
+[19:30:12] final: cobbled 
+[19:30:12] type_final: cobbled 
+[19:30:12] partial: together from a bunch of kind of
+[19:30:12] final: together 
+[19:30:12] type_final: together 
+[19:30:12] partial: from a bunch of kind of hacks
+[19:30:13] final: from a 
+[19:30:13] type_final: from a 
+[19:30:13] partial: bunch of kind of hacks.
+[19:30:13] final: bunch of 
+[19:30:13] type_final: bunch of 
+[19:30:13] partial: kind of hacks
+[19:30:13] final: kind 
+[19:30:13] type_final: kind 
+[19:30:13] partial: of hacks
+[19:30:14] final: of 
+[19:30:14] type_final: of 
+[19:30:14] partial: hacks around how
+[19:30:14] partial: hacks around how
+[19:30:14] final: hacks 
+[19:30:14] type_final: hacks 
+[19:30:14] partial: around how finals and
+[19:30:15] partial: around how finals and partially
+[19:30:15] final: around 
+[19:30:15] type_final: around 
+[19:30:15] partial: how finals and parcels work
+[19:30:15] final: how 
+[19:30:15] type_final: how 
+[19:30:15] partial: finals and partials work
+[19:30:16] final: finals 
+[19:30:16] type_final: finals 
+[19:30:16] partial: and partials work
+[19:30:16] final: and 
+[19:30:16] type_final: and 
+[19:30:16] partial: partials work. So
+[19:30:17] final: partials 
+[19:30:17] type_final: partials 
+[19:30:17] partial: work. So do
+[19:30:17] final: work. 
+[19:30:17] type_final: work. 
+[19:30:17] partial: So do you think
+[19:30:17] partial: So do you think
+[19:30:17] partial: So do you think
+[19:30:18] final: So 
+[19:30:18] type_final: So 
+[19:30:18] partial: do you think where maybe
+[19:30:18] final: do you 
+[19:30:18] type_final: do you 
+[19:30:18] partial: think we're maybe doing
+[19:30:19] final: think 
+[19:30:19] type_final: think 
+[19:30:19] partial: we're maybe doing something
+[19:30:19] partial: we're maybe doing something
+[19:30:19] final: we're 
+[19:30:19] type_final: we're 
+[19:30:19] partial: maybe doing something
+[19:30:20] final: maybe 
+[19:30:20] type_final: maybe 
+[19:30:20] partial: doing something
+[19:30:20] final: doing 
+[19:30:20] type_final: doing 
+[19:30:20] partial: something
+[19:30:20] partial: something wrong
+[19:30:21] final: something 
+[19:30:21] type_final: something 
+[19:30:21] partial: wrong?
+[19:30:21] partial: wrong?
+[19:30:22] partial: wrong currently
+[19:30:22] partial: wrong? Currently in
+[19:30:22] final: wrong 
+[19:30:22] type_final: wrong 
+[19:30:22] partial: currently in terms of
+[19:30:23] partial: currently in terms of
+[19:30:23] partial: currently in terms of
+[19:30:23] final: currently in 
+[19:30:23] type_final: currently in 
+[19:30:23] partial: terms of
+[19:30:24] final: terms 
+[19:30:24] type_final: terms 
+[19:30:24] partial: of
+[19:30:24] partial: of collating
+[19:30:24] final: of 
+[19:30:24] type_final: of 
+[19:30:24] partial: collating a bunch
+[19:30:25] partial: collating a bunch of different
+[19:30:25] partial: collating a bunch of different
+[19:30:25] partial: collating a bunch of different rules and
+[19:30:26] final: collating a 
+[19:30:26] type_final: collating a 
+[19:30:26] partial: bunch of different rules instead of
+[19:30:26] final: bunch of 
+[19:30:26] type_final: bunch of 
+[19:30:26] partial: different rules, instead of having
+[19:30:27] final: different 
+[19:30:27] type_final: different 
+[19:30:27] partial: rules, instead of having
+[19:30:27] final: rules, 
+[19:30:27] type_final: rules, 
+[19:30:27] partial: instead of having
+[19:30:27] partial: instead of having some
+[19:30:28] final: instead of 
+[19:30:28] type_final: instead of 
+[19:30:28] partial: having some
+[19:30:28] partial: having some
+[19:30:28] final: having 
+[19:30:28] type_final: having 
+[19:30:28] partial: some
+[19:30:29] partial: some
+[19:30:29] final: some 
+[19:30:29] type_final: some 
+[19:30:29] partial: better
+[19:30:29] partial: better pattern for
+[19:30:30] partial: better pattern for this
+[19:30:30] partial: better pattern for this
+[19:30:31] final: better 
+[19:30:31] type_final: better 
+[19:30:31] partial: pattern for this
+[19:30:31] final: pattern 
+[19:30:31] type_final: pattern 
+[19:30:31] partial: for this, enter
+[19:30:31] keyword pending: enter (waiting 1.5s for final)
+[19:30:31] final: for 
+[19:30:31] type_final: for 
+[19:30:31] keyword: enter (final)
+[19:30:31] partial: this, enter
+[19:30:31] speechmatics: ForceEndOfUtterance sent
+[19:30:31] utterance: stop (duration=26.54s)
+[19:30:32] partial: this, enter
+[19:31:56] vad: speech detected
+[19:31:56] final: this? Enter. 
+[19:31:56] keyword pending: enter (waiting 1.5s for final)
+[19:31:56] type_final: this? 
+[19:31:57] keyword: enter (final)
+[19:31:57] partial: 
+[19:31:57] partial: Okay. I
+[19:31:57] partial: Okay. I like
+[19:31:58] partial: Okay, I like that
+[19:31:58] partial: Okay, I like that.
+[19:31:58] partial: Okay, I like that. Uh
+[19:31:59] final: Okay, I 
+[19:31:59] partial: like that. Uh, with
+[19:31:59] final: like 
+[19:31:59] partial: that. Uh, with the
+[19:31:59] partial: that. Uh, with this
+[19:32:00] final: that. 
+[19:32:00] partial: Uh, with this slight
+[19:32:00] final: Uh, 
+[19:32:00] partial: with this slight
+[19:32:01] final: with 
+[19:32:01] partial: this slight exception that
+[19:32:01] final: this 
+[19:32:01] partial: slight exception that I would
+[19:32:01] partial: slight exception that I would also
+[19:32:02] final: slight 
+[19:32:02] partial: exception that I would also like
+[19:32:02] final: exception 
+[19:32:02] partial: that I would also like
+[19:32:02] final: that I 
+[19:32:02] partial: would also like
+[19:32:03] speechmatics: ForceEndOfUtterance sent
+[19:32:03] utterance: stop (duration=6.57s)
+[19:32:03] final: would 
+[19:32:03] partial: also like
+[19:32:09] vad: speech detected
+[19:32:10] final: also like. 
+[19:32:10] type_final: also like. 
+[19:32:10] partial: 
+[19:32:10] partial: 
+[19:32:10] partial: Test
+[19:32:11] partial: Test
+[19:32:11] auto-finalize: partial->final
+[19:32:11] type_autofinal: Test
+[19:32:11] speechmatics: ForceEndOfUtterance sent
+[19:32:11] utterance: stop (duration=1.65s)
+[19:32:11] final: Test. 
+[19:32:11] final skipped: prefix of typed content (Test. )
+[19:32:11] partial: 
+[19:32:17] vad: speech detected
+[19:32:17] partial: 
+[19:32:18] partial: Okay. I
+[19:32:18] partial: Okay. I'd like
+[19:32:18] partial: Okay. I like that
+[19:32:19] partial: Okay. I like that with the
+[19:32:19] final: Okay. 
+[19:32:19] type_final: Okay. 
+[19:32:19] partial: I like that with the slight excess
+[19:32:19] final: I 
+[19:32:19] type_final: I 
+[19:32:19] partial: like that with the slight exception
+[19:32:20] final: like 
+[19:32:20] type_final: like 
+[19:32:20] partial: that with the slight exception that I
+[19:32:20] final: that with 
+[19:32:20] type_final: that with 
+[19:32:20] partial: the slight exception that I would like to
+[19:32:20] final: the slight 
+[19:32:20] type_final: the slight 
+[19:32:21] partial: exception that I would like to be
+[19:32:21] partial: exception that I would like to be extremely
+[19:32:21] final: exception that 
+[19:32:21] type_final: exception that 
+[19:32:21] partial: I would like to be extremely
+[19:32:21] final: I would 
+[19:32:21] type_final: I would 
+[19:32:22] partial: like to be extremely careful
+[19:32:22] final: like to be 
+[19:32:22] type_final: like to be 
+[19:32:22] partial: extremely careful
+[19:32:22] partial: extremely careful about
+[19:32:23] partial: extremely careful about
+[19:32:23] final: extremely 
+[19:32:23] type_final: extremely 
+[19:32:23] partial: careful about when
+[19:32:23] partial: careful about when exactly
+[19:32:24] final: careful 
+[19:32:24] type_final: careful 
+[19:32:24] partial: about when exactly
+[19:32:24] final: about 
+[19:32:24] type_final: about 
+[19:32:24] partial: when exactly we
+[19:32:24] partial: when exactly we directly
+[19:32:25] final: when 
+[19:32:25] type_final: when 
+[19:32:25] partial: exactly we directly type
+[19:32:25] partial: exactly we directly type
+[19:32:26] final: exactly we 
+[19:32:26] type_final: exactly we 
+[19:32:26] partial: directly type
+[19:32:26] partial: directly type partials
+[19:32:26] final: directly 
+[19:32:26] type_final: directly 
+[19:32:26] partial: type partials that
+[19:32:27] final: type 
+[19:32:27] type_final: type 
+[19:32:27] partial: partials. That seems like
+[19:32:27] partial: partials. That seems like
+[19:32:27] final: partials. 
+[19:32:27] type_final: partials. 
+[19:32:27] partial: That seems like that
+[19:32:28] partial: That seems like that could
+[19:32:28] final: That 
+[19:32:28] type_final: That 
+[19:32:28] partial: seems like that could mess a lot of
+[19:32:28] final: seems 
+[19:32:28] type_final: seems 
+[19:32:28] partial: like that could mess a lot of things
+[19:32:29] final: like 
+[19:32:29] type_final: like 
+[19:32:29] partial: that could mess a lot of things up. So
+[19:32:29] final: that could 
+[19:32:29] type_final: that could 
+[19:32:29] partial: mess a lot of things up. So we should
+[19:32:29] final: mess a lot 
+[19:32:29] type_final: mess a lot 
+[19:32:30] partial: of things up. So we should really
+[19:32:30] final: of 
+[19:32:30] type_final: of 
+[19:32:30] partial: things up. So we should really
+[19:32:30] final: things up. 
+[19:32:30] type_final: things up. 
+[19:32:30] partial: So we should really generally try
+[19:32:30] final: So we 
+[19:32:30] type_final: So we 
+[19:32:31] partial: should really generally try to
+[19:32:31] final: should 
+[19:32:31] type_final: should 
+[19:32:31] partial: really generally try to only
+[19:32:31] final: really 
+[19:32:31] type_final: really 
+[19:32:31] partial: generally try to only type
+[19:32:32] final: generally 
+[19:32:32] type_final: generally 
+[19:32:32] partial: try to only type from
+[19:32:32] final: try to 
+[19:32:32] type_final: try to 
+[19:32:32] partial: only type from
+[19:32:32] partial: only type from finals
+[19:32:33] final: only 
+[19:32:33] type_final: only 
+[19:32:33] partial: type from finals.
+[19:32:33] final: type 
+[19:32:33] type_final: type 
+[19:32:33] partial: from finals
+[19:32:33] final: from 
+[19:32:33] type_final: from 
+[19:32:34] partial: finals
+[19:32:34] partial: finals
+[19:32:34] final: finals. 
+[19:32:34] type_final: finals. 
+[19:32:34] partial: Um, other than
+[19:32:35] partial: Um, other than that
+[19:32:35] partial: Um, other than that, go
+[19:32:35] partial: Um, other than that, go ahead
+[19:32:36] final: Um, other 
+[19:32:36] type_final: Um, other 
+[19:32:36] partial: than that, go ahead and
+[19:32:36] final: than 
+[19:32:36] type_final: than 
+[19:32:36] partial: that, go ahead and implement
+[19:32:36] final: that, 
+[19:32:36] type_final: that, 
+[19:32:36] partial: go ahead and implement this
+[19:32:37] final: go 
+[19:32:37] type_final: go 
+[19:32:37] partial: ahead and implement this
+[19:32:37] final: ahead 
+[19:32:37] type_final: ahead 
+[19:32:37] partial: and implement this. Try
+[19:32:37] final: and 
+[19:32:37] type_final: and 
+[19:32:37] partial: implement this. Try to
+[19:32:38] partial: implement this. Try to replace
+[19:32:38] final: implement 
+[19:32:38] type_final: implement 
+[19:32:38] partial: this. Try to replace as
+[19:32:39] final: this. 
+[19:32:39] type_final: this. 
+[19:32:39] partial: Try to replace as many
+[19:32:39] final: Try to 
+[19:32:39] type_final: Try to 
+[19:32:39] partial: replace as many
+[19:32:39] partial: replace as many
+[19:32:40] final: replace 
+[19:32:40] type_final: replace 
+[19:32:40] partial: as many
+[19:32:40] final: as 
+[19:32:40] type_final: as 
+[19:32:40] partial: many
+[19:32:40] final: many 
+[19:32:40] type_final: many 
+[19:32:40] partial: individual
+[19:32:41] partial: individual rules
+[19:32:41] partial: individual rules as possible
+[19:32:41] partial: individual rules as possible
+[19:32:42] partial: individual rules as possible with
+[19:32:42] final: individual 
+[19:32:42] type_final: individual 
+[19:32:42] partial: rules as possible with this
+[19:32:42] final: rules as 
+[19:32:42] type_final: rules as 
+[19:32:42] partial: possible with this new
+[19:32:43] partial: possible with this new system
+[19:32:43] final: possible 
+[19:32:43] type_final: possible 
+[19:32:43] partial: with this new system
+[19:32:44] final: with 
+[19:32:44] type_final: with 
+[19:32:44] partial: this new system. And
+[19:32:44] final: this 
+[19:32:44] type_final: this 
+[19:32:44] partial: new system. And
+[19:32:44] final: new 
+[19:32:44] type_final: new 
+[19:32:44] partial: system and
+[19:32:45] partial: system, and really try
+[19:32:45] final: system, 
+[19:32:45] type_final: system, 
+[19:32:45] partial: and really try to make
+[19:32:45] final: and 
+[19:32:45] type_final: and 
+[19:32:45] partial: really try to make it
+[19:32:46] partial: really try to make it concise
+[19:32:46] final: really 
+[19:32:46] type_final: really 
+[19:32:46] partial: try to make it concise and
+[19:32:46] final: try to 
+[19:32:46] type_final: try to 
+[19:32:46] partial: make it concise and simple
+[19:32:47] final: make it 
+[19:32:47] type_final: make it 
+[19:32:47] partial: concise and simple. If
+[19:32:47] partial: concise and simple if possible
+[19:32:47] final: concise 
+[19:32:47] type_final: concise 
+[19:32:47] partial: and simple if possible.
+[19:32:48] final: and 
+[19:32:48] type_final: and 
+[19:32:48] partial: simple if possible.
+[19:32:48] final: simple 
+[19:32:48] type_final: simple 
+[19:32:48] partial: if possible.
+[19:32:49] final: if 
+[19:32:49] type_final: if 
+[19:32:49] partial: possible. That's the
+[19:32:49] partial: possible. That's the benefit
+[19:32:49] final: possible. 
+[19:32:49] type_final: possible. 
+[19:32:49] partial: That's the benefit of having
+[19:32:50] partial: That's the benefit of having this
+[19:32:50] final: That's 
+[19:32:50] type_final: That's 
+[19:32:50] partial: the benefit of having this system
+[19:32:50] final: the 
+[19:32:50] type_final: the 
+[19:32:50] partial: benefit of having this system as
+[19:32:51] final: benefit of 
+[19:32:51] type_final: benefit of 
+[19:32:51] partial: having this system as opposed to
+[19:32:51] final: having 
+[19:32:51] type_final: having 
+[19:32:51] partial: this system as opposed to a
+[19:32:51] final: this 
+[19:32:51] type_final: this 
+[19:32:51] partial: system as opposed to a bunch
+[19:32:52] final: system as 
+[19:32:52] type_final: system as 
+[19:32:52] partial: opposed to a bunch of
+[19:32:52] final: opposed 
+[19:32:52] type_final: opposed 
+[19:32:52] partial: to a bunch of independent
+[19:32:52] final: to 
+[19:32:52] type_final: to 
+[19:32:53] partial: a bunch of independent ruler
+[19:32:53] final: a 
+[19:32:53] type_final: a 
+[19:32:53] partial: bunch of independent rules
+[19:32:53] final: bunch of 
+[19:32:53] type_final: bunch of 
+[19:32:53] partial: independent rules. Enter
+[19:32:53] keyword pending: enter (waiting 1.5s for final)
+[19:32:54] partial: independent rules. Enter
+[19:32:54] final: independent 
+[19:32:54] type_final: independent 
+[19:32:54] keyword: enter (final)
+[19:32:54] partial: rules. Enter
+[19:32:54] speechmatics: ForceEndOfUtterance sent
+[19:32:54] utterance: stop (duration=37.46s)
+[19:32:54] final: rules. Enter. 
+[19:32:54] final skipped: within post-force-end window
+[19:32:54] partial: 
+[19:39:36] listening enabled
+[19:39:36] speechmatics: session start (active=1)
+[19:39:38] vad: speech detected
+[19:39:38] partial: 
+[19:39:39] partial: Okay.
+[19:39:39] partial: Okay. This is
+[19:39:40] partial: Okay. This is a test
+[19:39:40] partial: Okay. This is a test
+[19:39:40] partial: Okay, this is a test. I'm wondering
+[19:39:41] final: Okay, this 
+[19:39:41] type_final: Okay, this 
+[19:39:41] partial: is a test. I'm wondering if we
+[19:39:41] final: is a 
+[19:39:41] type_final skipped: diverges from committed
+[19:39:41] partial: test. I'm wondering if we have
+[19:39:41] final: test. 
+[19:39:41] type_final skipped: diverges from committed
+[19:39:41] partial: I'm wondering if we have things
+[19:39:42] final: I'm 
+[19:39:42] type_final skipped: diverges from committed
+[19:39:42] partial: wondering if we have things fixed or
+[19:39:42] final: wondering 
+[19:39:42] type_final skipped: diverges from committed
+[19:39:42] partial: if we have things fixed or not
+[19:39:42] final: if we 
+[19:39:42] type_final skipped: diverges from committed
+[19:39:42] partial: have things fixed or not.
+[19:39:43] final: have things 
+[19:39:43] type_final skipped: diverges from committed
+[19:39:43] partial: fixed or not
+[19:39:43] final: fixed 
+[19:39:43] type_final skipped: diverges from committed
+[19:39:43] partial: or not. Uh, I
+[19:39:44] final: or 
+[19:39:44] type_final skipped: diverges from committed
+[19:39:44] partial: not. Uh, I guess
+[19:39:44] final: not. 
+[19:39:44] type_final skipped: diverges from committed
+[19:39:44] partial: Uh, I guess we're
+[19:39:44] partial: Uh, I guess we're gonna find
+[19:39:45] final: Uh, 
+[19:39:45] type_final skipped: diverges from committed
+[19:39:45] partial: I guess we're gonna find out
+[19:39:45] final: I 
+[19:39:45] type_final skipped: diverges from committed
+[19:39:45] partial: guess we're gonna find out.
+[19:39:45] auto-finalize: partial->final
+[19:39:45] type_autofinal skipped: diverges from committed
+[19:39:45] speechmatics: ForceEndOfUtterance sent
+[19:39:45] utterance: stop (duration=7.25s)
+[19:39:45] final: guess we're gonna find out. 
+[19:39:45] type_final skipped: diverges from committed
+[19:39:45] partial: 
+[19:48:37] listening enabled
+[19:48:37] speechmatics: session start (active=1)
+[19:48:39] vad: speech detected
+[19:48:39] partial: 
+[19:48:40] partial: Okay
+[19:48:40] partial: Okay, this
+[19:48:40] partial: Okay. This is a
+[19:48:41] partial: Okay. This is a test
+[19:48:41] partial: Okay. This is a test
+[19:48:41] final: Okay. 
+[19:48:41] type_final: Okay. 
+[19:48:41] partial: This is a test. Uh.
+[19:48:42] final: This is a 
+[19:48:42] type_final: This is a 
+[19:48:42] partial: test. Uh.
+[19:48:42] partial: test. Uh
+[19:48:43] final: test. 
+[19:48:43] type_final: test. 
+[19:48:43] partial: Uh, things
+[19:48:43] final: Uh, 
+[19:48:43] type_final: Uh, 
+[19:48:43] partial: things should be a
+[19:48:43] partial: things should be a little bit
+[19:48:44] partial: things should be a little bit more
+[19:48:44] final: things 
+[19:48:44] type_final: things 
+[19:48:44] partial: should be a little bit more fixed now
+[19:48:44] final: should be 
+[19:48:44] type_final: should be 
+[19:48:44] partial: a little bit more fixed now.
+[19:48:45] final: a 
+[19:48:45] type_final: a 
+[19:48:45] partial: little bit more fixed now.
+[19:48:45] final: little bit more 
+[19:48:45] type_final: little bit more 
+[19:48:45] partial: fixed now.
+[19:48:45] final: fixed 
+[19:48:45] type_final: fixed 
+[19:48:45] partial: now. Um
+[19:48:46] final: now. 
+[19:48:46] type_final: now. 
+[19:48:46] partial: Um
+[19:48:46] partial: Um
+[19:48:47] partial: Um
+[19:48:47] partial: Um, it seems
+[19:48:47] final: Um, 
+[19:48:47] type_final: Um, 
+[19:48:47] partial: it seems like it's
+[19:48:48] partial: it seems like it's working pretty
+[19:48:48] partial: it seems like it's working pretty good
+[19:48:48] final: it 
+[19:48:48] type_final: it 
+[19:48:48] partial: seems like it's working pretty good
+[19:48:49] final: seems like 
+[19:48:49] type_final: seems like 
+[19:48:49] partial: it's working pretty good. Enter
+[19:48:49] final: it's working 
+[19:48:49] type_final: it's working 
+[19:48:49] partial: pretty good. Enter
+[19:48:49] final: pretty 
+[19:48:49] type_final: pretty 
+[19:48:49] partial: good. Enter
+[19:48:49] speechmatics: ForceEndOfUtterance sent
+[19:48:49] utterance: stop (duration=10.75s)
+[19:48:56] vad: speech detected
+[19:48:56] final: good. Enter. 
+[19:48:56] type_final: good. 
+[19:48:56] keyword: enter (final)
+[19:48:56] utterance: force end (keyword=enter)
+[19:48:56] speechmatics: ForceEndOfUtterance sent
+[19:48:56] partial: 
+[19:48:56] utterance: stop (keyword)
+[19:48:56] speechmatics: ForceEndOfUtterance sent
+[19:48:56] utterance: stop (duration=0.51s)
+[19:48:56] vad: speech detected
+[19:48:56] final: So. 
+[19:48:56] type_final: So. 
+[19:48:56] partial: 
+[19:48:57] partial: I
+[19:48:57] partial: I already knew
+[19:48:58] partial: I already knew that
+[19:48:58] partial: I already knew that would be
+[19:48:58] final: I 
+[19:48:58] type_final: I 
+[19:48:58] partial: already knew that would be the case
+[19:48:59] final: already 
+[19:48:59] type_final: already 
+[19:48:59] partial: knew that would be the case
+[19:48:59] final: knew 
+[19:48:59] type_final: knew 
+[19:48:59] partial: that would be the case, but
+[19:48:59] final: that would 
+[19:48:59] type_final: that would 
+[19:48:59] partial: be the case, but
+[19:49:00] final: be the 
+[19:49:00] type_final: be the 
+[19:49:00] partial: case, but
+[19:49:00] speechmatics: ForceEndOfUtterance sent
+[19:49:00] utterance: stop (duration=3.66s)
+[19:49:00] final: case, but. 
+[19:49:00] type_final: case, but. 
+[19:49:00] vad: speech detected
+[19:49:00] partial: 
+[19:49:00] partial: It
+[19:49:01] partial: It is kind
+[19:49:01] partial: It is kind of
+[19:49:02] partial: It is kind of annoying
+[19:49:02] partial: It is kind of annoying.
+[19:49:02] final: It is 
+[19:49:02] type_final: It is 
+[19:49:02] partial: kind of annoying.
+[19:49:03] final: kind of 
+[19:49:03] type_final: kind of 
+[19:49:03] partial: annoying
+[19:49:03] speechmatics: ForceEndOfUtterance sent
+[19:49:03] utterance: stop (duration=2.65s)
+[19:49:05] vad: speech detected
+[19:49:05] final: annoying. 
+[19:49:05] type_final: annoying. 
+[19:49:05] partial: 
+[19:49:06] partial: 
+[19:49:06] partial: That
+[19:49:06] partial: That
+[19:49:07] partial: That
+[19:49:07] speechmatics: ForceEndOfUtterance sent
+[19:49:07] utterance: stop (duration=1.88s)
+[19:49:07] final: That. 
+[19:49:07] type_final: That. 
+[19:49:07] partial: 
+[19:49:08] vad: speech detected
+[19:49:09] partial: 
+[19:49:09] partial: Things
+[19:49:09] partial: Things
+[19:49:10] partial: Things that I
+[19:49:10] partial: Things that I can't
+[19:49:10] partial: Things that I can't
+[19:49:11] final: Things 
+[19:49:11] type_final: Things 
+[19:49:11] partial: that I can't force
+[19:49:11] partial: that I can't force. All
+[19:49:11] final: that I 
+[19:49:11] type_final: that I 
+[19:49:11] partial: can't force all the
+[19:49:12] final: can't 
+[19:49:12] type_final: can't 
+[19:49:12] partial: force all the
+[19:49:12] partial: force. All the crap
+[19:49:12] final: force 
+[19:49:12] type_final: force 
+[19:49:13] partial: all the crap out
+[19:49:13] final: all 
+[19:49:13] type_final: all 
+[19:49:13] partial: the crap out
+[19:49:13] final: the 
+[19:49:13] type_final: the 
+[19:49:13] partial: crap out
+[19:49:14] partial: crap out
+[19:49:14] speechmatics: ForceEndOfUtterance sent
+[19:49:14] utterance: stop (duration=5.63s)
+[19:49:17] vad: speech detected
+[19:49:17] final: crap out. 
+[19:49:17] type_final: crap out. 
+[19:49:17] partial: 
+[19:49:18] partial: 
+[19:49:18] partial: Fuck
+[19:49:18] partial: Fuck
+[19:49:18] speechmatics: ForceEndOfUtterance sent
+[19:49:18] utterance: stop (duration=1.45s)
+[19:49:21] vad: speech detected
+[19:49:21] final: Fuck. 
+[19:49:21] type_final: Fuck. 
+[19:49:21] partial: 
+[19:49:21] partial: Hey.
+[19:49:22] partial: Hey. It was
+[19:49:22] partial: Hey. It allows me to
+[19:49:22] partial: Hey, it let me take care
+[19:49:23] partial: Hey, it loves me. Take care
+[19:49:23] final: Hey, it 
+[19:49:23] type_final: Hey, it 
+[19:49:23] partial: lets me take curse words so
+[19:49:23] final: allows me to 
+[19:49:23] type_final: allows me to 
+[19:49:24] partial: say curse words, so that's cool
+[19:49:24] final: say 
+[19:49:24] type_final: say 
+[19:49:24] partial: curse words, so that's cool.
+[19:49:24] final: curse 
+[19:49:24] type_final: curse 
+[19:49:24] partial: words, so that's cool.
+[19:49:24] speechmatics: ForceEndOfUtterance sent
+[19:49:24] utterance: stop (duration=3.76s)
+[19:49:25] final: words, so that's cool. 
+[19:49:25] type_final: words, so that's cool. 
+[19:49:25] partial: 
+[19:49:28] vad: speech detected
+[19:49:29] partial: 
+[19:49:29] partial: That's funny
+[19:49:30] partial: That's funny.
+[19:49:30] partial: That's funny.
+[19:49:30] speechmatics: ForceEndOfUtterance sent
+[19:49:30] utterance: stop (duration=1.88s)
+[19:49:30] partial: That's funny.
+[19:49:34] vad: speech detected
+[19:49:34] final: That's funny. 
+[19:49:34] type_final: That's funny. 
+[19:49:34] partial: 
+[19:49:34] partial: 
+[19:49:35] partial: Are
+[19:49:35] partial: Are
+[19:49:35] speechmatics: ForceEndOfUtterance sent
+[19:49:35] utterance: stop (duration=1.62s)
+[19:49:36] final: Ah. 
+[19:49:36] type_final: Ah. 
+[19:49:36] partial: 
+[19:49:37] vad: speech detected
+[19:49:37] partial: 
+[19:49:38] partial: Haha!
+[19:49:38] partial: Haha!
+[19:49:39] partial: Haha!
+[19:49:39] partial: Haha! Hehe
+[19:49:39] final: Haha! 
+[19:49:39] type_final: Haha! 
+[19:49:39] partial: Hehe.
+[19:49:40] partial: Hehe.
+[19:49:40] partial: Hehe
+[19:49:40] speechmatics: ForceEndOfUtterance sent
+[19:49:40] utterance: stop (duration=3.07s)
+[19:49:43] vad: speech detected
+[19:49:43] final: Hehe. 
+[19:49:43] type_final: Hehe. 
+[19:49:43] partial: 
+[19:49:44] partial: 
+[19:49:44] partial: LOL.
+[19:49:44] partial: LOL.
+[19:49:45] speechmatics: ForceEndOfUtterance sent
+[19:49:45] utterance: stop (duration=1.62s)
+[19:49:45] final: LOL. 
+[19:49:45] type_final: LOL. 
+[19:49:45] partial: 
+[19:49:50] vad: speech detected
+[19:49:50] partial: 
+[19:49:51] partial: That's
+[19:49:51] partial: That's so
+[19:49:51] partial: That's so
+[19:49:52] partial: That's so
+[19:49:52] partial: That's so fucking
+[19:49:52] final: That's 
+[19:49:52] type_final: That's 
+[19:49:52] partial: so fucking
+[19:49:53] final: so 
+[19:49:53] type_final: so 
+[19:49:53] partial: fucking funny
+[19:49:53] partial: fucking funny
+[19:49:53] partial: fucking funny. Bro
+[19:49:54] final: fucking 
+[19:49:54] type_final: fucking 
+[19:49:54] partial: funny, bro.
+[19:49:54] partial: funny bro. LOL.
+[19:49:55] final: funny 
+[19:49:55] type_final: funny 
+[19:49:55] partial: bro. LOL. La
+[19:49:55] partial: bro lol. Lmao
+[19:49:55] final: bro. 
+[19:49:55] type_final: bro. 
+[19:49:55] partial: LOL lmao
+[19:49:56] partial: LOL lmao. Raffle.
+[19:49:56] final: LOL 
+[19:49:56] type_final: LOL 
+[19:49:56] partial: lmao. Raffle.
+[19:49:56] speechmatics: ForceEndOfUtterance sent
+[19:49:56] utterance: stop (duration=6.40s)
+[19:49:56] final: lmao rofl. 
+[19:49:56] type_final: lmao rofl. 
+[19:49:56] partial: 
+[19:50:24] vad: speech detected
+[19:50:25] partial: 
+[19:50:25] partial: Okay so
+[19:50:25] partial: Okay, so this
+[19:50:26] partial: Okay, so this
+[19:50:26] partial: Okay, so this simpler
+[19:50:26] final: Okay, 
+[19:50:26] type_final: Okay, 
+[19:50:26] partial: so this simpler system
+[19:50:27] final: so 
+[19:50:27] type_final: so 
+[19:50:27] partial: this simpler system
+[19:50:27] final: this 
+[19:50:27] type_final: this 
+[19:50:27] partial: simpler system.
+[19:50:28] partial: simpler system
+[19:50:28] final: simpler 
+[19:50:28] type_final: simpler 
+[19:50:28] partial: system is
+[19:50:28] partial: system is 90
+[19:50:29] final: system 
+[19:50:29] type_final: system 
+[19:50:29] partial: is 95%
+[19:50:29] partial: is 95% of
+[19:50:29] final: is 
+[19:50:29] type_final: is 
+[19:50:29] partial: 95% of the way
+[19:50:30] partial: 95% of the way
+[19:50:30] partial: 95% of the way to
+[19:50:30] partial: 95% of the way to the
+[19:50:31] final: 95% of the 
+[19:50:31] type_final: 95% of the 
+[19:50:31] partial: way to the system
+[19:50:31] final: way 
+[19:50:31] type_final: way 
+[19:50:31] partial: to the system that
+[19:50:31] partial: to the system that I
+[19:50:32] final: to the 
+[19:50:32] type_final: to the 
+[19:50:32] partial: system that I want.
+[19:50:32] partial: system that I want. Long
+[19:50:33] final: system 
+[19:50:33] type_final: system 
+[19:50:33] partial: that I want long term
+[19:50:33] final: that 
+[19:50:33] type_final: that 
+[19:50:33] partial: I want long term
+[19:50:33] final: I 
+[19:50:33] type_final: I 
+[19:50:33] partial: want long term, which
+[19:50:34] final: want long 
+[19:50:34] type_final: want long 
+[19:50:34] partial: term, which shows that
+[19:50:34] partial: term, which shows that it was
+[19:50:34] final: term, 
+[19:50:34] type_final: term, 
+[19:50:34] partial: which shows that it was a good decision
+[19:50:35] partial: which shows that it was a good decision
+[19:50:35] final: which 
+[19:50:35] type_final: which 
+[19:50:35] partial: shows that it was a good decision to
+[19:50:35] final: shows that it 
+[19:50:35] type_final: shows that it 
+[19:50:36] partial: was a good decision to rip out
+[19:50:36] final: was a good 
+[19:50:36] type_final: was a good 
+[19:50:36] partial: decision to rip out those more
+[19:50:36] partial: decision to rip out those more
+[19:50:37] final: decision to 
+[19:50:37] type_final: decision to 
+[19:50:37] partial: rip out those more complicated
+[19:50:37] final: rip 
+[19:50:37] type_final: rip 
+[19:50:37] partial: out those more complicated rules
+[19:50:37] final: out those 
+[19:50:37] type_final: out those 
+[19:50:37] partial: more complicated rules
+[19:50:38] final: more 
+[19:50:38] type_final: more 
+[19:50:38] partial: complicated rules. How
+[19:50:38] partial: complicated rules. However
+[19:50:38] final: complicated 
+[19:50:38] type_final: complicated 
+[19:50:38] partial: rules. However
+[19:50:39] partial: rules. However, it
+[19:50:39] final: rules. 
+[19:50:39] type_final: rules. 
+[19:50:39] partial: However, it has a
+[19:50:39] partial: However, it has a couple
+[19:50:40] partial: However, it has a slight
+[19:50:40] final: However, 
+[19:50:40] type_final: However, 
+[19:50:40] partial: it has a couple slight problem
+[19:50:41] final: it has 
+[19:50:41] type_final: it has 
+[19:50:41] partial: a couple slight problems
+[19:50:41] final: a 
+[19:50:41] type_final: a 
+[19:50:41] partial: couple slight problems.
+[19:50:41] final: couple 
+[19:50:41] type_final: couple 
+[19:50:41] partial: slight problems.
+[19:50:42] final: slight 
+[19:50:42] type_final: slight 
+[19:50:42] partial: problems like
+[19:50:42] partial: problems like
+[19:50:42] final: problems 
+[19:50:42] type_final: problems 
+[19:50:42] partial: like the
+[19:50:43] partial: like the
+[19:50:43] partial: like the main
+[19:50:43] final: . Like 
+[19:50:43] type_final: . Like 
+[19:50:43] partial: the main problem is
+[19:50:44] partial: the main problem is
+[19:50:44] final: the 
+[19:50:44] type_final: the 
+[19:50:44] partial: main problem is just that
+[19:50:44] final: main 
+[19:50:44] type_final: main 
+[19:50:45] partial: problem is just that things
+[19:50:45] partial: problem is just that things can
+[19:50:45] final: problem is 
+[19:50:45] type_final: problem is 
+[19:50:45] partial: just that things can be
+[19:50:46] final: just 
+[19:50:46] type_final: just 
+[19:50:46] partial: that things can be stored
+[19:50:46] final: that 
+[19:50:46] type_final: that 
+[19:50:46] partial: things can be stored in
+[19:50:46] final: things 
+[19:50:46] type_final: things 
+[19:50:46] partial: can be stored in
+[19:50:47] final: can be 
+[19:50:47] type_final: can be 
+[19:50:47] partial: stored in
+[19:50:47] partial: stored in the
+[19:50:47] final: stored 
+[19:50:47] type_final: stored 
+[19:50:47] partial: in the
+[19:50:48] partial: in the buffer that
+[19:50:48] final: in 
+[19:50:48] type_final: in 
+[19:50:48] partial: the buffer that is
+[19:50:48] partial: the buffer that is apparently
+[19:50:49] final: the 
+[19:50:49] type_final: the 
+[19:50:49] partial: buffer that is apparently
+[19:50:49] partial: buffer that is apparently
+[19:50:49] final: buffer that is 
+[19:50:49] type_final: buffer that is 
+[19:50:50] partial: apparently on this
+[19:50:50] partial: apparently on this speech
+[19:50:50] partial: apparently on this speech
+[19:50:50] final: apparently 
+[19:50:50] type_final: apparently 
+[19:50:51] partial: on this speech
+[19:50:51] final: on 
+[19:50:51] type_final: on 
+[19:50:51] partial: this Speechmatics servers
+[19:50:51] final: the 
+[19:50:51] type_final: the 
+[19:50:51] partial: Speechmatics servers.
+[19:50:52] partial: Speechmatics servers and
+[19:50:52] final: Speechmatics 
+[19:50:52] type_final: Speechmatics 
+[19:50:52] partial: servers and not
+[19:50:52] partial: servers and not be
+[19:50:53] final: servers 
+[19:50:53] type_final: servers 
+[19:50:53] partial: and not be emitted
+[19:50:53] partial: and not be emitted as
+[19:50:53] final: and 
+[19:50:53] type_final: and 
+[19:50:53] partial: not be emitted as final
+[19:50:54] final: not be 
+[19:50:54] type_final: not be 
+[19:50:54] partial: emitted as final and
+[19:50:54] final: emitted 
+[19:50:54] type_final: emitted 
+[19:50:54] partial: as final. And then
+[19:50:55] final: as 
+[19:50:55] type_final: as 
+[19:50:55] partial: final. And then
+[19:50:55] partial: final. And then it's only
+[19:50:55] final: final. 
+[19:50:55] type_final: final. 
+[19:50:55] partial: And then it's only
+[19:50:56] final: And 
+[19:50:56] type_final: And 
+[19:50:56] partial: then it's only emitted as
+[19:50:56] final: then 
+[19:50:56] type_final: then 
+[19:50:56] partial: it's only emitted as final
+[19:50:56] final: it's 
+[19:50:56] type_final: it's 
+[19:50:56] partial: only emitted as final. When I
+[19:50:57] final: only 
+[19:50:57] type_final: only 
+[19:50:57] partial: emitted as final. When I start talking
+[19:50:57] final: emitted as 
+[19:50:57] type_final: emitted as 
+[19:50:57] partial: final. When I start talking about
+[19:50:57] partial: final. When I start talking again
+[19:50:58] final: final when I 
+[19:50:58] type_final: final when I 
+[19:50:58] partial: start talking again, which
+[19:50:58] final: start 
+[19:50:58] type_final: start 
+[19:50:58] partial: talking again, which might be
+[19:50:58] final: talking 
+[19:50:58] type_final: talking 
+[19:50:58] partial: again, which might be ten
+[19:50:59] partial: again, which might be 10 or 20
+[19:50:59] final: again, 
+[19:50:59] type_final: again, 
+[19:50:59] partial: which might be ten or 20s
+[19:51:00] final: which might 
+[19:51:00] type_final: which might 
+[19:51:00] partial: be ten or 20s later
+[19:51:00] final: be 
+[19:51:00] type_final: be 
+[19:51:00] partial: ten or 20s later.
+[19:51:00] final: ten or 
+[19:51:00] type_final: ten or 
+[19:51:00] partial: 20s later. So
+[19:51:01] partial: 20s later. So, for example
+[19:51:01] final: 20s 
+[19:51:01] type_final: 20s 
+[19:51:01] partial: later. So, for example, if
+[19:51:01] partial: later. So, for example, if I
+[19:51:02] final: later. 
+[19:51:02] type_final: later. 
+[19:51:02] partial: So for example, if I say
+[19:51:02] final: So for 
+[19:51:02] type_final: So for 
+[19:51:02] partial: example, if I say
+[19:51:02] partial: example, if I say
+[19:51:03] final: example, if 
+[19:51:03] type_final: example, if 
+[19:51:03] partial: I say the
+[19:51:03] final: I 
+[19:51:03] type_final: I 
+[19:51:03] partial: say the
+[19:51:04] final: say 
+[19:51:04] type_final: say 
+[19:51:04] partial: the keyword that
+[19:51:04] partial: the keyword that goes to
+[19:51:04] partial: the keyword that goes to a new
+[19:51:05] final: the 
+[19:51:05] type_final: the 
+[19:51:05] partial: keyword that goes to a new line
+[19:51:05] final: keyword 
+[19:51:05] type_final: keyword 
+[19:51:05] partial: that goes to a new line which I
+[19:51:05] final: that goes 
+[19:51:05] type_final: that goes 
+[19:51:05] partial: to a new line, which I can't
+[19:51:06] final: to a 
+[19:51:06] type_final: to a 
+[19:51:06] partial: new line, which I can't say
+[19:51:06] final: new 
+[19:51:06] type_final: new 
+[19:51:06] partial: line, which I can't say
+[19:51:06] final: line, which 
+[19:51:06] type_final: line, which 
+[19:51:06] partial: I can't say or
+[19:51:07] final: I 
+[19:51:07] type_final: I 
+[19:51:07] partial: can't say or
+[19:51:07] final: can't 
+[19:51:07] type_final: can't 
+[19:51:07] partial: say, or it's going
+[19:51:08] final: say, 
+[19:51:08] type_final: say, 
+[19:51:08] partial: or it's going to
+[19:51:08] final: or 
+[19:51:08] type_final: or 
+[19:51:08] partial: it's going to actually
+[19:51:08] partial: it's going to actually do it because
+[19:51:09] partial: it's going to actually do it because it
+[19:51:09] final: it's going 
+[19:51:09] type_final: it's going 
+[19:51:09] partial: to actually do it because it dictating
+[19:51:09] final: to 
+[19:51:09] type_final: to 
+[19:51:09] partial: actually do it because it dictating right now
+[19:51:10] final: actually do it 
+[19:51:10] type_final: actually do it 
+[19:51:10] partial: because it dictating right now.
+[19:51:10] final: because it 
+[19:51:10] type_final: because it 
+[19:51:10] partial: dictating right now. But if I
+[19:51:10] partial: dictating right now. But if I say
+[19:51:11] final: dictating right 
+[19:51:11] type_final: dictating right 
+[19:51:11] partial: now. But if I say that
+[19:51:11] final: now. 
+[19:51:11] type_final: now. 
+[19:51:11] partial: But if I say that
+[19:51:11] final: But 
+[19:51:11] type_final: But 
+[19:51:11] partial: if I say that
+[19:51:12] speechmatics: ForceEndOfUtterance sent
+[19:51:12] utterance: stop (duration=47.53s)
+[19:51:12] final: if I 
+[19:51:12] type_final: if I 
+[19:51:12] partial: say that
+[19:51:12] vad: speech detected
+[19:51:13] final: say that, then. 
+[19:51:13] type_final: say that, then. 
+[19:51:13] partial: 
+[19:51:13] partial: Then
+[19:51:13] partial: When
+[19:51:14] partial: Then I
+[19:51:14] partial: Then I need to
+[19:51:14] partial: Then I need to talk
+[19:51:15] final: Then 
+[19:51:15] type_final: Then 
+[19:51:15] partial: I need to talk about
+[19:51:15] partial: I need to talk. After
+[19:51:15] final: I 
+[19:51:15] type_final: I 
+[19:51:15] partial: need to talk after that
+[19:51:16] final: need to 
+[19:51:16] type_final: need to 
+[19:51:16] partial: talk after that to
+[19:51:16] partial: talk after that to have it
+[19:51:16] final: talk 
+[19:51:16] type_final: talk 
+[19:51:17] partial: after that to have it actually
+[19:51:17] final: after 
+[19:51:17] type_final: after 
+[19:51:17] partial: that to have it actually register
+[19:51:17] final: that 
+[19:51:17] type_final: that 
+[19:51:17] partial: to have it actually register
+[19:51:18] final: to have it 
+[19:51:18] type_final: to have it 
+[19:51:18] partial: actually register
+[19:51:18] final: actually 
+[19:51:18] type_final: actually 
+[19:51:18] speechmatics: ForceEndOfUtterance sent
+[19:51:18] utterance: stop (duration=5.89s)
+[19:51:18] partial: register
+[19:51:18] vad: speech detected
+[19:51:19] final: register. 
+[19:51:19] type_final: register. 
+[19:51:19] partial: 
+[19:51:19] partial: Which is a
+[19:51:19] partial: Which is a problem
+[19:51:20] partial: Which is a problem
+[19:51:20] partial: Which is a problem because a lot of
+[19:51:20] final: Which 
+[19:51:20] type_final: Which 
+[19:51:20] partial: is a problem because a lot of the
+[19:51:21] final: is a 
+[19:51:21] type_final: is a 
+[19:51:21] partial: problem because a lot of the times
+[19:51:21] final: problem, 
+[19:51:21] type_final: problem, 
+[19:51:21] partial: because a lot of the times that
+[19:51:21] final: because a 
+[19:51:21] type_final: because a 
+[19:51:21] partial: lot of the times that's how
+[19:51:22] final: lot of the 
+[19:51:22] type_final: lot of the 
+[19:51:22] partial: times that's how
+[19:51:22] partial: times that's how
+[19:51:22] final: times 
+[19:51:22] type_final: times 
+[19:51:22] partial: that's how
+[19:51:23] final: that's 
+[19:51:23] type_final: that's 
+[19:51:23] partial: how I
+[19:51:23] final: how 
+[19:51:23] type_final: how 
+[19:51:23] partial: I'm going to
+[19:51:23] partial: I'm going to end my
+[19:51:24] partial: I'm going to end my message
+[19:51:24] partial: I'm going to end my messages is
+[19:51:25] final: I'm going 
+[19:51:25] type_final: I'm going 
+[19:51:25] partial: to end my messages is by saying
+[19:51:25] final: to end 
+[19:51:25] type_final: to end 
+[19:51:25] partial: my messages is by saying that
+[19:51:25] final: my 
+[19:51:25] type_final: my 
+[19:51:25] partial: messages is by saying that keyword
+[19:51:26] final: messages 
+[19:51:26] type_final: messages 
+[19:51:26] partial: is by saying that keyword.
+[19:51:26] final: is by 
+[19:51:26] type_final: is by 
+[19:51:26] partial: saying that keyword. So
+[19:51:26] final: saying that 
+[19:51:26] type_final: saying that 
+[19:51:26] partial: keyword. So
+[19:51:27] partial: keyword. So
+[19:51:27] final: keyword. 
+[19:51:27] type_final: keyword. 
+[19:51:27] partial: So
+[19:51:27] partial: So try to
+[19:51:28] final: So 
+[19:51:28] type_final: So 
+[19:51:28] partial: try to brainstorm
+[19:51:28] partial: try to brainstorm
+[19:51:29] partial: try to brainstorm and
+[19:51:29] final: try to 
+[19:51:29] type_final: try to 
+[19:51:29] partial: brainstorm and
+[19:51:29] partial: brainstorm and
+[19:51:30] partial: brainstorm and
+[19:51:30] final: brainstorm 
+[19:51:30] type_final: brainstorm 
+[19:51:30] partial: and
+[19:51:30] partial: and C
+[19:51:31] final: and 
+[19:51:31] type_final: and 
+[19:51:31] partial: see what
+[19:51:31] partial: see what you think
+[19:51:31] partial: see what you think. And
+[19:51:32] partial: see what you think. And
+[19:51:32] final: see 
+[19:51:32] type_final: see 
+[19:51:32] partial: what you think. And you know
+[19:51:33] final: what you 
+[19:51:33] type_final: what you 
+[19:51:33] partial: think. And you know what
+[19:51:33] final: think. 
+[19:51:33] type_final: think. 
+[19:51:33] partial: And you know what. Approach
+[19:51:33] partial: And you know what approaches them
+[19:51:34] final: And you 
+[19:51:34] type_final: And you 
+[19:51:34] partial: know what approaches there
+[19:51:34] final: know 
+[19:51:34] type_final: know 
+[19:51:34] partial: what approaches there are
+[19:51:34] final: what 
+[19:51:34] type_final: what 
+[19:51:34] partial: approaches there are
+[19:51:35] final: approaches 
+[19:51:35] type_final: approaches 
+[19:51:35] partial: there are. Uh
+[19:51:35] final: there 
+[19:51:35] type_final: there 
+[19:51:35] partial: are. Uh, for us
+[19:51:35] final: are, 
+[19:51:35] type_final: are, 
+[19:51:36] partial: uh, for us to be able
+[19:51:36] partial: uh, for us to be able to
+[19:51:36] final: uh, 
+[19:51:36] type_final: uh, 
+[19:51:36] partial: for us to be able to fix
+[19:51:37] final: for 
+[19:51:37] type_final: for 
+[19:51:37] partial: us to be able to fix this
+[19:51:37] final: us to be 
+[19:51:37] type_final: us to be 
+[19:51:37] partial: able to fix this.
+[19:51:37] final: able to 
+[19:51:37] type_final: able to 
+[19:51:37] partial: fix this
+[19:51:38] partial: fix this
+[19:51:38] final: fix 
+[19:51:38] type_final: fix 
+[19:51:38] partial: this because
+[19:51:38] final: this 
+[19:51:38] type_final: this 
+[19:51:38] partial: because that's really
+[19:51:39] partial: , because that's really the only
+[19:51:39] partial: , because that's really the only problem
+[19:51:39] final: , because 
+[19:51:39] type_final: , because 
+[19:51:39] partial: that's really the only problem is
+[19:51:40] final: that's 
+[19:51:40] type_final: that's 
+[19:51:40] partial: really the only problem is that
+[19:51:40] final: really the 
+[19:51:40] type_final: really the 
+[19:51:40] partial: only problem is that
+[19:51:40] final: only 
+[19:51:40] type_final: only 
+[19:51:40] partial: problem is that
+[19:51:41] partial: problem is that I
+[19:51:41] final: problem is 
+[19:51:41] type_final: problem is 
+[19:51:41] partial: that I can't
+[19:51:41] partial: that I can't
+[19:51:42] final: that 
+[19:51:42] type_final: that 
+[19:51:42] partial: I can't force
+[19:51:42] partial: I can't force
+[19:51:43] final: I 
+[19:51:43] type_final: I 
+[19:51:43] partial: can't force out
+[19:51:43] final: can't 
+[19:51:43] type_final: can't 
+[19:51:43] partial: force out all of
+[19:51:43] partial: force out all of the
+[19:51:44] final: force 
+[19:51:44] type_final: force 
+[19:51:44] partial: out all of the
+[19:51:44] final: out 
+[19:51:44] type_final: out 
+[19:51:44] partial: all of the
+[19:51:44] final: all 
+[19:51:44] type_final: all 
+[19:51:44] partial: of the
+[19:51:45] speechmatics: ForceEndOfUtterance sent
+[19:51:45] utterance: stop (duration=26.37s)
+[19:51:45] vad: speech detected
+[19:51:45] final: of the. 
+[19:51:45] type_final: of the. 
+[19:51:45] partial: 
+[19:51:45] partial: 
+[19:51:46] partial: Speech
+[19:51:46] partial: Speech. That's
+[19:51:46] partial: Speech that's currently
+[19:51:47] partial: Speech that's currently in the
+[19:51:47] partial: Speech that's currently in the buffer
+[19:51:47] final: Speech that's 
+[19:51:47] type_final: Speech that's 
+[19:51:47] partial: currently in the buffer
+[19:51:48] partial: currently in the buffer. A
+[19:51:48] final: currently in the 
+[19:51:48] type_final: currently in the 
+[19:51:48] partial: buffer. Apparently
+[19:51:48] partial: buffer. Apparently, the A
+[19:51:49] final: buffer. 
+[19:51:49] type_final: buffer. 
+[19:51:49] partial: Apparently, the API
+[19:51:49] partial: Apparently, the API does give
+[19:51:49] partial: Apparently, the API doesn't give me a good
+[19:51:50] final: Apparently, the 
+[19:51:50] type_final: Apparently, the 
+[19:51:50] partial: API doesn't give me a good way to do
+[19:51:50] final: API 
+[19:51:50] type_final: API 
+[19:51:50] partial: doesn't give me a good way to do that
+[19:51:50] final: doesn't 
+[19:51:50] type_final: doesn't 
+[19:51:51] partial: give me a good way to do that. So
+[19:51:51] final: give me a 
+[19:51:51] type_final: give me a 
+[19:51:51] partial: good way to do that. So
+[19:51:51] final: good way to 
+[19:51:51] type_final: good way to 
+[19:51:51] partial: do that. So
+[19:51:52] final: do 
+[19:51:52] type_final: do 
+[19:51:52] partial: that. So
+[19:51:52] final: that. 
+[19:51:52] type_final: that. 
+[19:51:52] partial: So
+[19:51:52] partial: So how should
+[19:51:53] final: So 
+[19:51:53] type_final: So 
+[19:51:53] partial: how should we
+[19:51:53] partial: how should we tackle this
+[19:51:53] partial: how should we tackle this? Don't write
+[19:51:54] final: how 
+[19:51:54] type_final: how 
+[19:51:54] partial: should we tackle this? Don't write any code
+[19:51:54] final: should we 
+[19:51:54] type_final: should we 
+[19:51:54] partial: tackle this? Don't write any code
+[19:51:54] final: tackle 
+[19:51:54] type_final: tackle 
+[19:51:55] partial: this? Don't write any code yet.
+[19:51:55] final: this? Don't 
+[19:51:55] type_final: this? Don't 
+[19:51:55] partial: write any code yet.
+[19:51:55] speechmatics: ForceEndOfUtterance sent
+[19:51:55] utterance: stop (duration=10.41s)
+[19:51:55] final: write 
+[19:51:55] type_final: write 
+[19:51:55] partial: any code yet
+[19:51:59] vad: speech detected
+[19:52:00] final: any code yet. End. 
+[19:52:00] type_final: any code yet. End. 
+[19:52:00] partial: 
+[19:52:00] partial: 
+[19:52:00] partial: 
+[19:52:01] partial: 
+[19:52:01] speechmatics: ForceEndOfUtterance sent
+[19:52:01] utterance: stop (duration=1.62s)
+[19:53:35] vad: speech detected
+[19:53:35] final: 
+[19:53:35] final skipped: before first content of utterance
+[19:53:35] partial: 
+[19:53:36] partial: We
+[19:53:36] partial: We already
+[19:53:36] partial: We already tried the
+[19:53:37] partial: We already tried the time
+[19:53:37] final: We 
+[19:53:37] type_final: We 
+[19:53:37] partial: already tried the time bounded
+[19:53:37] final: already 
+[19:53:37] type_final: already 
+[19:53:37] partial: tried the time bounded
+[19:53:38] final: tried 
+[19:53:38] type_final: tried 
+[19:53:38] partial: the time bounded fallback
+[19:53:38] final: the 
+[19:53:38] type_final: the 
+[19:53:38] partial: time bounded fallback
+[19:53:38] final: time 
+[19:53:38] type_final: time 
+[19:53:38] partial: bounded fallback. So I
+[19:53:39] final: bounded 
+[19:53:39] type_final: bounded 
+[19:53:39] partial: fallback, so I don't want
+[19:53:39] partial: fallback, so I don't want to do
+[19:53:40] final: fallback, 
+[19:53:40] type_final: fallback, 
+[19:53:40] partial: so I don't want to do that
+[19:53:40] partial: so I don't want to do that.
+[19:53:40] final: so I don't 
+[19:53:40] type_final: so I don't 
+[19:53:40] speechmatics: ForceEndOfUtterance sent
+[19:53:40] utterance: stop (duration=5.38s)
+[19:53:40] partial: want to do that
+[19:54:01] vad: speech detected
+[19:54:02] final: want to do that. 
+[19:54:02] type_final: want to do that. 
+[19:54:02] partial: 
+[19:54:02] partial: It
+[19:54:02] partial: It introduced a
+[19:54:03] partial: It introduced a lot of
+[19:54:03] partial: It introduced a lot of problems
+[19:54:03] final: It 
+[19:54:03] type_final: It 
+[19:54:03] partial: introduced a lot of problems.
+[19:54:04] partial: introduced a lot of problems.
+[19:54:04] final: introduced a lot of 
+[19:54:04] type_final: introduced a lot of 
+[19:54:04] partial: problems.
+[19:54:04] speechmatics: ForceEndOfUtterance sent
+[19:54:04] utterance: stop (duration=2.90s)
+[19:54:10] vad: speech detected
+[19:54:11] final: problems. 
+[19:54:11] type_final: problems. 
+[19:54:11] partial: 
+[19:54:11] partial: De
+[19:54:11] partial: De Boulogne
+[19:54:12] partial: De Bordeaux.
+[19:54:12] partial: De Bordeaux. The
+[19:54:13] partial: See below the
+[19:54:13] final: See 
+[19:54:13] type_final: See 
+[19:54:13] partial: below the
+[19:54:13] final: below 
+[19:54:13] type_final: below 
+[19:54:13] partial: the API
+[19:54:14] partial: the API reference
+[19:54:14] final: the 
+[19:54:14] type_final: the 
+[19:54:14] partial: API reference
+[19:54:14] partial: API reference
+[19:54:15] partial: API reference
+[19:54:15] final: API 
+[19:54:15] type_final: API 
+[19:54:15] partial: reference
+[19:54:15] speechmatics: ForceEndOfUtterance sent
+[19:54:15] utterance: stop (duration=4.52s)
+[19:54:18] vad: speech detected
+[19:54:18] final: reference. 
+[19:54:18] type_final: reference. 
+[19:54:19] partial: 
+[19:54:19] partial: We
+[19:54:19] partial: We can end
+[19:54:20] partial: We can end the
+[19:54:20] partial: We can end the utterance
+[19:54:20] final: We 
+[19:54:20] type_final: We 
+[19:54:20] partial: can end the utterance, but
+[19:54:21] final: can 
+[19:54:21] type_final: can 
+[19:54:21] partial: end the utterance, but it's not
+[19:54:21] final: end the 
+[19:54:21] type_final: end the 
+[19:54:21] partial: utterance, but it's not clear
+[19:54:21] partial: utterance, but it's not clear that
+[19:54:22] final: utterance, 
+[19:54:22] type_final: utterance, 
+[19:54:22] partial: but it's not clear that ends the
+[19:54:22] final: but it's 
+[19:54:22] type_final: but it's 
+[19:54:22] partial: not clear that ends the
+[19:54:22] final: not 
+[19:54:22] type_final: not 
+[19:54:22] partial: clear that ends the stream
+[19:54:23] final: clear 
+[19:54:23] type_final: clear 
+[19:54:23] partial: that ends the stream
+[19:54:23] final: that 
+[19:54:23] type_final: that 
+[19:54:23] partial: ends the stream and
+[19:54:23] final: ends the 
+[19:54:23] type_final: ends the 
+[19:54:24] partial: stream and
+[19:54:24] partial: stream and
+[19:54:24] final: stream 
+[19:54:24] type_final: stream 
+[19:54:24] partial: and
+[19:54:25] partial: and forces
+[19:54:25] final: and 
+[19:54:25] type_final: and 
+[19:54:25] partial: forces
+[19:54:25] partial: forces everything
+[19:54:26] partial: forces everything to be
+[19:54:26] partial: forces everything to be finalized
+[19:54:26] final: forces 
+[19:54:26] type_final: forces 
+[19:54:26] partial: everything to be finalized
+[19:54:27] partial: everything to be finalized.
+[19:54:27] final: everything to be 
+[19:54:27] type_final: everything to be 
+[19:54:27] partial: finalized. But
+[19:54:27] partial: finalized. But I haven't
+[19:54:28] partial: finalized. But I haven't looked at it
+[19:54:28] final: finalized. 
+[19:54:28] type_final: finalized. 
+[19:54:28] partial: But I haven't looked at it too close
+[19:54:29] partial: But I haven't looked at it too closely
+[19:54:29] final: But I 
+[19:54:29] type_final: But I 
+[19:54:29] partial: haven't looked at it too closely. There
+[19:54:29] final: haven't looked 
+[19:54:29] type_final: haven't looked 
+[19:54:29] partial: at it too closely. There may be
+[19:54:30] final: at it too 
+[19:54:30] type_final: at it too 
+[19:54:30] partial: closely. There may be
+[19:54:30] partial: closely. There may be some
+[19:54:30] final: closely. 
+[19:54:30] type_final: closely. 
+[19:54:30] partial: There may be something like
+[19:54:31] final: There may 
+[19:54:31] type_final: There may 
+[19:54:31] partial: be something like a
+[19:54:31] partial: be something like a final
+[19:54:31] final: be 
+[19:54:31] type_final: be 
+[19:54:31] partial: something like a finalized
+[19:54:32] partial: something like a finalized call
+[19:54:32] final: something like 
+[19:54:32] type_final: something like 
+[19:54:32] partial: a finalized call
+[19:54:32] final: a 
+[19:54:32] type_final: a 
+[19:54:32] partial: finalized call, which
+[19:54:33] partial: finalized call, which would be
+[19:54:33] final: finalized 
+[19:54:33] type_final: finalized 
+[19:54:33] partial: call, which would be exactly
+[19:54:34] final: call, 
+[19:54:34] type_final: call, 
+[19:54:34] partial: which would be exactly what we
+[19:54:34] partial: which would be exactly what we want
+[19:54:34] final: which would 
+[19:54:34] type_final: which would 
+[19:54:34] partial: be exactly what we want
+[19:54:35] final: be 
+[19:54:35] type_final: be 
+[19:54:35] partial: exactly what we want
+[19:54:35] speechmatics: ForceEndOfUtterance sent
+[19:54:35] utterance: stop (duration=16.81s)
+[19:54:35] final: exactly what 
+[19:54:35] type_final: exactly what 
+[19:54:35] partial: we want
+[19:54:49] vad: speech detected
+[19:54:50] final: we want. So. 
+[19:54:50] type_final: we want. So. 
+[19:54:50] partial: 
+[19:54:50] partial: Just to be clear
+[19:54:50] partial: Just to be clear, I
+[19:54:51] partial: Just to be clear, I
+[19:54:51] partial: Just to be clear, I don't want
+[19:54:51] final: Just to 
+[19:54:51] type_final: Just to 
+[19:54:52] partial: be clear, I don't want to implement
+[19:54:52] final: be clear, 
+[19:54:52] type_final: be clear, 
+[19:54:52] partial: I don't want to implement the
+[19:54:52] final: I 
+[19:54:52] type_final: I 
+[19:54:52] partial: don't want to implement the
+[19:54:52] final: don't 
+[19:54:52] type_final: don't 
+[19:54:53] partial: want to implement the utterance
+[19:54:53] final: want to 
+[19:54:53] type_final: want to 
+[19:54:53] partial: implement the utterance level
+[19:54:53] final: implement 
+[19:54:53] type_final: implement 
+[19:54:53] partial: the utterance level watchdog
+[19:54:54] final: the 
+[19:54:54] type_final: the 
+[19:54:54] partial: utterance level watchdog
+[19:54:54] final: utterance 
+[19:54:54] type_final: utterance 
+[19:54:54] partial: level watchdog or the
+[19:54:54] final: level 
+[19:54:54] type_final: level 
+[19:54:54] partial: watchdog or the time
+[19:54:55] partial: watchdog or the time bound
+[19:54:55] final: watchdog 
+[19:54:55] type_final: watchdog 
+[19:54:55] partial: or the time bounded
+[19:54:55] final: or 
+[19:54:55] type_final: or 
+[19:54:55] partial: the time bounded fallback
+[19:54:56] final: the 
+[19:54:56] type_final: the 
+[19:54:56] partial: time bounded fallback
+[19:54:56] final: time 
+[19:54:56] type_final: time 
+[19:54:56] partial: bounded fallback
+[19:54:56] speechmatics: ForceEndOfUtterance sent
+[19:54:56] utterance: stop (duration=7.17s)
+[19:54:56] final: bounded 
+[19:54:56] type_final: bounded 
+[19:54:56] partial: fallback
+[19:55:03] vad: speech detected
+[19:55:03] final: fallback the. 
+[19:55:03] type_final: fallback the. 
+[19:55:03] partial: 
+[19:55:04] partial: 
+[19:55:04] partial: Silence
+[19:55:04] partial: Silence pad is a
+[19:55:05] partial: Silence pad is a
+[19:55:05] partial: Silence pad is a possibility
+[19:55:05] final: Silence 
+[19:55:05] type_final: Silence 
+[19:55:05] partial: pad is a possibility, but
+[19:55:06] final: pad 
+[19:55:06] type_final: pad 
+[19:55:06] partial: is a possibility, but
+[19:55:06] final: is a 
+[19:55:06] type_final: is a 
+[19:55:06] partial: possibility, but seems
+[19:55:06] partial: possibility, but seems
+[19:55:07] final: possibility, 
+[19:55:07] type_final: possibility, 
+[19:55:07] partial: but seems
+[19:55:07] final: but 
+[19:55:07] type_final: but 
+[19:55:07] partial: seems extremely
+[19:55:07] partial: seems extremely
+[19:55:08] final: seems 
+[19:55:08] type_final: seems 
+[19:55:08] partial: extremely intelligent
+[19:55:08] partial: extremely inelegant
+[19:55:09] partial: extremely inelegant. So
+[19:55:09] partial: extremely inelegant. So it should be
+[19:55:09] final: extremely 
+[19:55:09] type_final: extremely 
+[19:55:09] partial: inelegant. So it should be a last
+[19:55:10] partial: inelegant, so it should be a last resort
+[19:55:10] final: inelegant, 
+[19:55:10] type_final: inelegant, 
+[19:55:10] partial: so it should be a last resort. If
+[19:55:10] final: so it 
+[19:55:10] type_final: so it 
+[19:55:10] partial: should be a last resort. If we can't
+[19:55:11] final: should be a 
+[19:55:11] type_final: should be a 
+[19:55:11] partial: last resort. If we can't figure out
+[19:55:11] final: last 
+[19:55:11] type_final: last 
+[19:55:11] partial: resort if we can't figure out any
+[19:55:11] final: resort 
+[19:55:11] type_final: resort 
+[19:55:11] partial: if we can't figure out any other way
+[19:55:12] final: . If we 
+[19:55:12] type_final: . If we 
+[19:55:12] partial: can't figure out any other way to do
+[19:55:12] final: can't 
+[19:55:12] type_final: can't 
+[19:55:12] partial: figure out any other way to do this
+[19:55:12] final: figure out 
+[19:55:12] type_final: figure out 
+[19:55:13] partial: any other way to do this.
+[19:55:13] final: any other 
+[19:55:13] type_final: any other 
+[19:55:13] partial: way to do this
+[19:55:13] speechmatics: ForceEndOfUtterance sent
+[19:55:13] utterance: stop (duration=10.33s)
+[19:55:13] final: way to do this. 
+[19:55:13] type_final: way to do this. 
+[19:55:13] partial: 
+[20:01:43] vad: speech detected
+[20:01:44] partial: We'd
+[20:01:45] partial: We'd really like
+[20:01:45] partial: We'd really like to
+[20:01:45] partial: We'd really like to find some way
+[20:01:45] partial: We'd really like to find some way to do
+[20:01:46] final: We'd 
+[20:01:46] type_final: We'd 
+[20:01:46] partial: really like to find some way to do this
+[20:01:46] final: really like to 
+[20:01:46] type_final: really like to 
+[20:01:46] partial: find some way to do this without
+[20:01:46] final: find 
+[20:01:46] type_final: find 
+[20:01:46] partial: some way to do this without
+[20:01:47] final: some way to 
+[20:01:47] type_final: some way to 
+[20:01:47] partial: do this without flushing the
+[20:01:47] final: do 
+[20:01:47] type_final: do 
+[20:01:47] partial: this without flushing the
+[20:01:48] final: this 
+[20:01:48] type_final: this 
+[20:01:48] partial: without flushing the session
+[20:01:48] final: without 
+[20:01:48] type_final: without 
+[20:01:48] partial: flushing the session.
+[20:01:48] partial: flushing the session. So keep
+[20:01:49] final: flushing the 
+[20:01:49] type_final: flushing the 
+[20:01:49] partial: session. So keep that in
+[20:01:49] partial: session, so keep that in mind
+[20:01:49] final: session, 
+[20:01:49] type_final: session, 
+[20:01:49] partial: so keep that in mind.
+[20:01:50] final: so 
+[20:01:50] type_final: so 
+[20:01:50] partial: keep that in mind.
+[20:01:50] final: keep that 
+[20:01:50] type_final: keep that 
+[20:01:50] partial: in mind. But
+[20:01:50] final: in 
+[20:01:50] type_final: in 
+[20:01:50] partial: mind. But otherwise
+[20:01:51] final: mind. 
+[20:01:51] type_final: mind. 
+[20:01:51] partial: But otherwise
+[20:01:51] partial: But otherwise
+[20:01:51] partial: But otherwise
+[20:01:52] final: But 
+[20:01:52] type_final: But 
+[20:01:52] partial: otherwise sounds good
+[20:01:52] partial: otherwise sounds good
+[20:01:53] partial: otherwise sounds good.
+[20:01:53] final: otherwise 
+[20:01:53] type_final: otherwise 
+[20:01:53] partial: sounds good
+[20:01:53] partial: sounds good
+[20:01:53] speechmatics: ForceEndOfUtterance sent
+[20:01:53] utterance: stop (duration=9.98s)
+[20:01:54] vad: speech detected
+[20:01:54] final: sounds good. 
+[20:01:54] type_final: sounds good. 
+[20:01:54] partial: 
+[20:01:55] partial: 
+[20:01:55] partial: Uh
+[20:01:55] partial: Uh
+[20:01:56] partial: Uh
+[20:01:56] partial: Uh, attempt some
+[20:01:56] final: Uh, 
+[20:01:56] type_final: Uh, 
+[20:01:56] partial: attempt some
+[20:01:57] partial: attempt some fix
+[20:01:57] partial: attempt some fix
+[20:01:57] final: attempt 
+[20:01:57] type_final: attempt 
+[20:01:58] partial: some fix
+[20:01:58] speechmatics: ForceEndOfUtterance sent
+[20:01:58] utterance: stop (duration=3.58s)
+[20:02:04] vad: speech detected
+[20:02:04] final: some fix. 
+[20:02:04] type_final: some fix. 
+[20:02:05] partial: 
+[20:02:05] partial: 
+[20:02:05] partial: And
+[20:02:05] partial: And
+[20:02:06] partial: And definitely
+[20:02:06] partial: And definitely inspired
+[20:02:07] partial: And definitely expect to
+[20:02:07] final: And 
+[20:02:07] type_final: And 
+[20:02:07] partial: definitely inspect to see
+[20:02:07] partial: definitely inspect to see
+[20:02:08] final: definitely 
+[20:02:08] type_final: definitely 
+[20:02:08] partial: inspect to see
+[20:02:08] final: inspect 
+[20:02:08] type_final: inspect 
+[20:02:08] partial: to see
+[20:02:08] speechmatics: ForceEndOfUtterance sent
+[20:02:08] utterance: stop (duration=4.01s)
+[20:02:08] final: to 
+[20:02:08] type_final: to 
+[20:02:08] partial: see
+[20:02:09] vad: speech detected
+[20:02:09] final: see if we. 
+[20:02:09] type_final: see if we. 
+[20:02:09] partial: 
+[20:02:09] partial: De
+[20:02:10] partial: See? Currently
+[20:02:10] partial: We currently
+[20:02:11] partial: We currently
+[20:02:11] final: We 
+[20:02:11] type_final: We 
+[20:02:11] partial: currently
+[20:02:11] partial: currently
+[20:02:12] partial: currently properly
+[20:02:12] final: currently 
+[20:02:12] type_final: currently 
+[20:02:12] partial: properly
+[20:02:12] partial: properly. Send over
+[20:02:13] partial: properly send over the
+[20:02:13] partial: properly send over the a
+[20:02:13] final: properly 
+[20:02:13] type_final: properly 
+[20:02:14] partial: send over the API
+[20:02:14] partial: send over the API.
+[20:02:14] final: send over 
+[20:02:14] type_final: send over 
+[20:02:14] partial: the API
+[20:02:15] final: the 
+[20:02:15] type_final: the 
+[20:02:15] partial: API force
+[20:02:15] partial: API force end of
+[20:02:15] final: API 
+[20:02:15] type_final: API 
+[20:02:15] partial: force end of
+[20:02:16] partial: force. End of utterance.
+[20:02:16] partial: force. End of utterance.
+[20:02:16] final: force. End 
+[20:02:16] type_final: force. End 
+[20:02:16] partial: of utterance
+[20:02:17] speechmatics: ForceEndOfUtterance sent
+[20:02:17] utterance: stop (duration=7.94s)
+[20:02:17] final: of 
+[20:02:17] type_final: of 
+[20:02:17] partial: utterance
