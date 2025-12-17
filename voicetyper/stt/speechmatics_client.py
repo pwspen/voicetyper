@@ -7,6 +7,7 @@ from typing import Callable
 
 from httpx import HTTPStatusError
 import speechmatics
+from speechmatics import models, client
 
 from voicetyper.config import AppConfig
 from voicetyper.stt.base import ErrorHandler, FinalHandler, PartialHandler, TranscriptionBackend
@@ -26,7 +27,7 @@ def _change_sessions(delta: int) -> int:
 class SpeechmaticsBackend(TranscriptionBackend):
     def __init__(self, config: AppConfig, log_fn: Callable[[str], None] | None = None):
         self.config = config
-        self._ws: speechmatics.client.WebsocketClient | None = None
+        self._ws: client.WebsocketClient | None = None
         self._thread: threading.Thread | None = None
         self._loop: asyncio.AbstractEventLoop | None = None
         self._stop_event = threading.Event()
@@ -79,29 +80,29 @@ class SpeechmaticsBackend(TranscriptionBackend):
     ):
         self._running = True
         try:
-            conn_settings = speechmatics.models.ConnectionSettings(
+            conn_settings = models.ConnectionSettings(
                 url=self.config.connection_url,
                 auth_token=self.config.resolve_api_key(),
             )
-            audio_settings = speechmatics.models.AudioSettings(
+            audio_settings = models.AudioSettings(
                 sample_rate=self.config.sample_rate,
                 encoding="pcm_s16le",
             )
-            transcription_config = speechmatics.models.TranscriptionConfig(
+            transcription_config = models.TranscriptionConfig(
                 operating_point="enhanced",
                 language=self.config.language,
                 enable_partials=True,
-                max_delay=1,
+                max_delay=self.config.max_delay,
             )
-            ws = speechmatics.client.WebsocketClient(conn_settings)
+            ws = client.WebsocketClient(conn_settings)
             self._ws = ws
 
             ws.add_event_handler(
-                event_name=speechmatics.models.ServerMessageType.AddPartialTranscript,
+                event_name=models.ServerMessageType.AddPartialTranscript,
                 event_handler=lambda msg: on_partial(msg["metadata"]["transcript"]),
             )
             ws.add_event_handler(
-                event_name=speechmatics.models.ServerMessageType.AddTranscript,
+                event_name=models.ServerMessageType.AddTranscript,
                 event_handler=lambda msg: on_final(msg["metadata"]["transcript"]),
             )
 

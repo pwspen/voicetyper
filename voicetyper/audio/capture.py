@@ -63,7 +63,7 @@ class MicrophoneStream:
         self,
         device_index: int,
         sample_rate: int,
-        chunk_ms: int,
+        chunk_ms: int = 50,
         channels: int = 1,
         level_meter: AudioLevelMeter | None = None,
     ):
