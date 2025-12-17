@@ -182,7 +182,17 @@ class VoiceController:
                 backend_errors.append(exc)
                 self.sink.exception(f"speechmatics error: {exc}")
 
-            backend.start_session(router.on_partial, router.on_final, on_error)
+            def backend_running() -> bool:
+                if not backend:
+                    return False
+                is_running = getattr(backend, "is_running", None)
+                return bool(is_running()) if is_running else False
+
+            def ensure_backend():
+                if not backend_running():
+                    backend.start_session(router.on_partial, router.on_final, on_error)
+
+            ensure_backend()
             level_meter = AudioLevelMeter()
             mic = MicrophoneStream(
                 device_index=self.device.index,
@@ -191,6 +201,8 @@ class VoiceController:
                 level_meter=level_meter,
             )
             mic.start()
+            last_vad_speech = time.time()
+            idle_timeout = self.config.ws_idle_timeout
             try:
                 while self.enabled:
                     # Wait for speech to start
@@ -200,12 +212,24 @@ class VoiceController:
                             return
                         if backend_errors:
                             return
+                        now = time.time()
+                        if (
+                            idle_timeout > 0
+                            and backend_running()
+                            and not self.listening
+                            and (now - last_vad_speech) >= idle_timeout
+                        ):
+                            self._log("speechmatics: idle timeout; closing session")
+                            backend.stop()
+                            continue
                         if self.vad.is_speech(frame):
+                            last_vad_speech = now
                             self._force_end_event.clear()
                             router.start_utterance()
                             self._log("vad: speech detected")
+                            ensure_backend()
                             self.listening = True
-                            last_speech = time.time()
+                            last_speech = now
                             start_time = last_speech
                             session_start = time.time()
                             backend.send_audio(frame)
@@ -229,6 +253,7 @@ class VoiceController:
                                 speech = self.vad.is_speech(frame2)
                                 if speech:
                                     last_speech = time.time()
+                                    last_vad_speech = last_speech
                                 silence = time.time() - last_speech
                                 elapsed = time.time() - start_time
                                 silence_limit = self.config.silence_timeout

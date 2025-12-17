@@ -118,11 +118,15 @@ class SpeechmaticsBackend(TranscriptionBackend):
             duration = time.time() - session_start
             self._log(f"speechmatics: session end (active={active}, duration={duration:.2f}s)")
             self._running = False
+            self._audio_stream = None
 
     def send_audio(self, data: bytes) -> None:
-        if not self._running or not self._audio_stream:
+        if not self._audio_stream:
             return
         self._audio_stream.push(data)
+
+    def is_running(self) -> bool:
+        return self._running
 
     def end_utterance(self) -> None:
         """
@@ -153,3 +157,4 @@ class SpeechmaticsBackend(TranscriptionBackend):
             self._thread = None
         self._ws = None
         self._running = False
+        self._audio_stream = None

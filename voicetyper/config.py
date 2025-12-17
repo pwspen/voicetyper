@@ -19,6 +19,7 @@ class AppConfig:
     end_utterance_keyword: str = "stop"
     enter_keyword: str = "enter"
     max_delay: float = 2.0
+    ws_idle_timeout: float = 10.0
 
     def resolve_api_key(self) -> str:
         api_key = self.api_key or os.environ.get("SPEECHMATICS_API_KEY") or ""
