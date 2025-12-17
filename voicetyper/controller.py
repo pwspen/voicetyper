@@ -20,7 +20,6 @@ class TranscriptRouter:
         prefer_partials: bool,
         end_keyword: str,
         enter_keyword: str,
-        keyword_final_grace: float,
         request_force_end: Callable[[str], None],
         send_enter: Callable[[], None],
         log_fn: Callable[[str], None] | None = None,
@@ -28,19 +27,16 @@ class TranscriptRouter:
         self.prefer_partials = prefer_partials
         self.end_keyword = end_keyword.strip().lower()
         self.enter_keyword = enter_keyword.strip().lower()
-        self.keyword_final_grace = keyword_final_grace  # retained for signature compatibility
         self.request_force_end = request_force_end
         self.send_enter = send_enter
         self.log = log_fn or (lambda _msg: None)
         self._suppress_output = False
-        self._last_force_end_time: float | None = None
         self._content_seen: bool = False
         self._committed: str = ""
         self._keyword_triggered: bool = False
 
     def start_utterance(self):
         self._suppress_output = False
-        self._last_force_end_time = None
         self._content_seen = False
         self._committed = ""
         self._keyword_triggered = False
@@ -102,10 +98,6 @@ class TranscriptRouter:
 
     def on_final(self, text: str):
         self.log(f"final: {text}")
-        now = time.time()
-        if self._last_force_end_time and (now - self._last_force_end_time) <= 1.0:
-            self.log("final skipped: within post-force-end window")
-            return
         has_content = self._has_content(text)
         if not self._content_seen and not has_content:
             self.log("final skipped: before first content of utterance")
@@ -125,7 +117,6 @@ class TranscriptRouter:
                 self.send_enter()
             elif keyword == self.end_keyword:
                 self.log(f"keyword: end utterance ({self.end_keyword})")
-            self._last_force_end_time = time.time()
             self.request_force_end(keyword)
             return
         self._append_text(text, "type_final")
@@ -179,7 +170,6 @@ class VoiceController:
                 prefer_partials=self.config.prefer_partials,
                 end_keyword=self.config.end_utterance_keyword,
                 enter_keyword=self.config.enter_keyword,
-                keyword_final_grace=self.config.keyword_final_grace_seconds,
                 request_force_end=self._request_force_end,
                 send_enter=self._send_enter_key,
                 log_fn=self._log if self.config.debug else None,
@@ -241,7 +231,7 @@ class VoiceController:
                                     last_speech = time.time()
                                 silence = time.time() - last_speech
                                 elapsed = time.time() - start_time
-                                silence_limit = max(self.config.silence_timeout, self.config.auto_finalize_silence)
+                                silence_limit = self.config.silence_timeout
                                 if elapsed >= self.config.min_stream_seconds and silence >= silence_limit:
                                     router.flush_partial_as_final()
                                     break

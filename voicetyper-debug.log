@@ -10240,3 +10240,1038 @@ TypeError: TranscriptRouter.__init__() missing 1 required positional argument: '
 [20:02:17] final: of 
 [20:02:17] type_final: of 
 [20:02:17] partial: utterance
+[20:02:34] vad: speech detected
+[20:02:35] final: utterance I. 
+[20:02:35] type_final: utterance I. 
+[20:02:35] partial: 
+[20:02:35] partial: I love this
+[20:02:35] partial: Love this
+[20:02:36] partial: Love this shit.
+[20:02:36] partial: Love this shit.
+[20:02:36] speechmatics: ForceEndOfUtterance sent
+[20:02:36] utterance: stop (duration=2.13s)
+[20:02:37] final: Love 
+[20:02:37] type_final: Love 
+[20:02:37] partial: this shit.
+[20:02:39] vad: speech detected
+[20:02:39] final: this shit. 
+[20:02:39] type_final: this shit. 
+[20:02:40] partial: 
+[20:02:40] partial: La
+[20:02:40] partial: La
+[20:02:41] partial: La
+[20:02:41] speechmatics: ForceEndOfUtterance sent
+[20:02:41] utterance: stop (duration=1.45s)
+[20:04:58] listening enabled
+[20:04:58] speechmatics: session start (active=1)
+[20:04:59] vad: speech detected
+[20:05:00] partial: 
+[20:05:00] partial: I'm not sure
+[20:05:01] partial: I'm not sure if
+[20:05:01] partial: I'm not sure if you
+[20:05:02] partial: I'm not sure if you fully understand
+[20:05:02] final: I'm 
+[20:05:02] type_final: I'm 
+[20:05:02] partial: not sure if you fully understand
+[20:05:02] final: not sure 
+[20:05:02] type_final: not sure 
+[20:05:02] partial: if you fully understand the
+[20:05:02] final: if you 
+[20:05:02] type_final: if you 
+[20:05:03] partial: fully understand the end
+[20:05:03] final: fully 
+[20:05:03] type_final: fully 
+[20:05:03] partial: understand the end of
+[20:05:03] partial: understand the end of text
+[20:05:04] final: understand 
+[20:05:04] type_final: understand 
+[20:05:04] partial: the end of text issue that
+[20:05:04] final: the 
+[20:05:04] type_final: the 
+[20:05:04] partial: end of text issue that I'm talking
+[20:05:04] final: end of 
+[20:05:04] type_final: end of 
+[20:05:04] partial: text issue that I'm talking about
+[20:05:05] final: text 
+[20:05:05] type_final: text 
+[20:05:05] partial: issue that I'm talking about
+[20:05:05] final: issue 
+[20:05:05] type_final: issue 
+[20:05:05] partial: that I'm talking about. The
+[20:05:05] final: that I'm 
+[20:05:05] type_final: that I'm 
+[20:05:05] partial: talking about the problem I'm
+[20:05:06] final: talking 
+[20:05:06] type_final: talking 
+[20:05:06] partial: about the problem. I'm talking
+[20:05:06] partial: about the problem. I'm talking about
+[20:05:07] final: about. The 
+[20:05:07] type_final: about. The 
+[20:05:07] partial: problem I'm talking about is
+[20:05:07] final: problem 
+[20:05:07] type_final: problem 
+[20:05:07] partial: I'm talking about is that
+[20:05:07] final: I'm 
+[20:05:07] type_final: I'm 
+[20:05:07] partial: talking about is that
+[20:05:08] final: talking 
+[20:05:08] type_final: talking 
+[20:05:08] partial: about is that
+[20:05:08] speechmatics: ForceEndOfUtterance sent
+[20:05:08] utterance: stop (duration=8.36s)
+[20:05:08] vad: speech detected
+[20:05:08] final: about is that. 
+[20:05:08] type_final: about is that. 
+[20:05:08] partial: 
+[20:05:08] partial: The
+[20:05:09] partial: The
+[20:05:09] partial: The word or
+[20:05:09] partial: The word or
+[20:05:10] partial: The word or the
+[20:05:10] final: The 
+[20:05:10] type_final: The 
+[20:05:10] partial: word or the
+[20:05:11] final: word 
+[20:05:11] type_final: word 
+[20:05:11] partial: or the key
+[20:05:11] final: or 
+[20:05:11] type_final: or 
+[20:05:11] partial: the keyword
+[20:05:11] partial: the keyword or
+[20:05:12] final: the 
+[20:05:12] type_final: the 
+[20:05:12] partial: keyword or whatever
+[20:05:12] partial: keyword or whatever it is
+[20:05:12] partial: keyword or whatever it is at
+[20:05:13] final: keyword 
+[20:05:13] type_final: keyword 
+[20:05:13] partial: or whatever it is at the
+[20:05:13] final: or 
+[20:05:13] type_final: or 
+[20:05:13] partial: whatever it is at the end of
+[20:05:13] final: whatever it 
+[20:05:13] type_final: whatever it 
+[20:05:13] partial: is at the end of one
+[20:05:14] final: is 
+[20:05:14] type_final: is 
+[20:05:14] partial: at the end of one
+[20:05:14] final: at the 
+[20:05:14] type_final: at the 
+[20:05:14] partial: end of one
+[20:05:14] final: end 
+[20:05:14] type_final: end 
+[20:05:14] partial: of one
+[20:05:15] final: of 
+[20:05:15] type_final: of 
+[20:05:15] partial: one speech
+[20:05:15] partial: one speech or
+[20:05:16] final: one 
+[20:05:16] type_final: one 
+[20:05:16] partial: speech or
+[20:05:16] partial: speech or utterance
+[20:05:16] partial: speech or utterance
+[20:05:17] final: speech 
+[20:05:17] type_final: speech 
+[20:05:17] partial: or utterance, period.
+[20:05:17] final: or 
+[20:05:17] type_final: or 
+[20:05:17] partial: utterance, period.
+[20:05:17] partial: utterance period
+[20:05:18] final: utterance 
+[20:05:18] type_final: utterance 
+[20:05:18] partial: period, it
+[20:05:18] final: period. 
+[20:05:18] type_final: period. 
+[20:05:18] partial: It doesn't actually
+[20:05:18] partial: It doesn't actually
+[20:05:19] partial: It doesn't actually get
+[20:05:19] final: It 
+[20:05:19] type_final: It 
+[20:05:19] partial: doesn't actually get typed in
+[20:05:19] final: doesn't 
+[20:05:19] type_final: doesn't 
+[20:05:20] partial: actually get typed until the
+[20:05:20] final: actually 
+[20:05:20] type_final: actually 
+[20:05:20] partial: get typed until the
+[20:05:20] final: get 
+[20:05:20] type_final: get 
+[20:05:20] partial: typed until the start of the
+[20:05:20] final: typed 
+[20:05:20] type_final: typed 
+[20:05:21] partial: until the start of the next
+[20:05:21] partial: until the start of the next feature
+[20:05:21] final: until the 
+[20:05:21] type_final: until the 
+[20:05:21] partial: start of the next feature utterance.
+[20:05:22] final: start of 
+[20:05:22] type_final: start of 
+[20:05:22] partial: the next feature utterance period
+[20:05:22] final: the 
+[20:05:22] type_final: the 
+[20:05:22] partial: next feature utterance period.
+[20:05:22] final: next 
+[20:05:22] type_final: next 
+[20:05:22] partial: feature utterance period. And
+[20:05:23] final: feature 
+[20:05:23] type_final: feature 
+[20:05:23] partial: utterance period. And I might
+[20:05:23] final: utterance 
+[20:05:23] type_final: utterance 
+[20:05:23] partial: period. And I might stop
+[20:05:23] final: period. 
+[20:05:23] type_final: period. 
+[20:05:23] partial: And I might stop
+[20:05:24] partial: And I might stop talking
+[20:05:24] final: And 
+[20:05:24] type_final: And 
+[20:05:24] partial: I might stop talking for
+[20:05:25] final: I might 
+[20:05:25] type_final: I might 
+[20:05:25] partial: stop talking for
+[20:05:25] final: stop 
+[20:05:25] keyword: end utterance (stop)
+[20:05:25] utterance: force end (keyword=stop)
+[20:05:25] speechmatics: ForceEndOfUtterance sent
+[20:05:25] partial: talking for
+[20:05:25] utterance: stop (keyword)
+[20:05:25] speechmatics: ForceEndOfUtterance sent
+[20:05:25] utterance: stop (duration=17.06s)
+[20:05:25] vad: speech detected
+[20:05:25] final: talking for ten. 
+[20:05:25] type_final: talking for ten. 
+[20:05:25] partial: 
+[20:05:26] partial: 20
+[20:05:26] partial: 20
+[20:05:26] partial: 20 30s
+[20:05:27] partial: 20 30s
+[20:05:27] partial: 20 30s.
+[20:05:27] final: 20 
+[20:05:27] type_final: 20 
+[20:05:27] partial: 30s.
+[20:05:28] partial: 30s
+[20:05:28] partial: 30s and I
+[20:05:29] final: 30s 
+[20:05:29] type_final: 30s 
+[20:05:29] partial: and I need
+[20:05:29] partial: and I need some way
+[20:05:29] partial: and I need some way to
+[20:05:30] partial: and I need some way to
+[20:05:30] final: . And I 
+[20:05:30] type_final: . And I 
+[20:05:30] partial: need some way to force
+[20:05:30] final: need 
+[20:05:30] type_final: need 
+[20:05:30] partial: some way to force out
+[20:05:31] final: some way 
+[20:05:31] type_final: some way 
+[20:05:31] partial: to force out that
+[20:05:31] final: to 
+[20:05:31] type_final: to 
+[20:05:31] partial: force out that
+[20:05:31] final: force 
+[20:05:31] type_final: force 
+[20:05:31] partial: out that final
+[20:05:32] final: out 
+[20:05:32] type_final: out 
+[20:05:32] partial: that final
+[20:05:32] partial: that final
+[20:05:32] final: that 
+[20:05:32] type_final: that 
+[20:05:32] partial: final
+[20:05:33] partial: final word
+[20:05:33] final: final 
+[20:05:33] type_final: final 
+[20:05:33] partial: word or words
+[20:05:34] partial: word or words
+[20:05:34] partial: word or words
+[20:05:34] partial: word or words
+[20:05:35] final: word or 
+[20:05:35] type_final: word or 
+[20:05:35] partial: words
+[20:05:35] partial: words. Does
+[20:05:35] final: words. 
+[20:05:35] type_final: words. 
+[20:05:35] partial: Does that make sense
+[20:05:36] partial: Does that make sense
+[20:05:36] partial: Does that make sense?
+[20:05:36] partial: Does that make sense? Please don't
+[20:05:37] final: Does that 
+[20:05:37] type_final: Does that 
+[20:05:37] partial: make sense? Please don't write any
+[20:05:37] final: make 
+[20:05:37] type_final: make 
+[20:05:37] partial: sense? Please don't write any code
+[20:05:38] final: sense? 
+[20:05:38] type_final: sense? 
+[20:05:38] partial: Please don't write any code
+[20:05:38] final: Please 
+[20:05:38] type_final: Please 
+[20:05:38] partial: don't write any code
+[20:05:38] speechmatics: ForceEndOfUtterance sent
+[20:05:38] utterance: stop (duration=13.22s)
+[20:05:38] final: don't write any code. 
+[20:05:38] type_final: don't write any code. 
+[20:05:38] partial: 
+[20:06:28] vad: speech detected
+[20:06:29] partial: 
+[20:06:29] partial: Okay. Don't
+[20:06:30] partial: Okay. Don't worry about
+[20:06:30] partial: Okay. Don't worry about keeping
+[20:06:30] partial: Okay. Don't worry about keywords
+[20:06:31] final: Okay. 
+[20:06:31] type_final: Okay. 
+[20:06:31] partial: Don't worry about keywords for now
+[20:06:31] final: Don't 
+[20:06:31] type_final: Don't 
+[20:06:31] partial: worry about keywords for now.
+[20:06:31] final: worry about 
+[20:06:31] type_final: worry about 
+[20:06:31] partial: keywords for now.
+[20:06:32] partial: keywords for now. It
+[20:06:32] final: keywords for 
+[20:06:32] type_final: keywords for 
+[20:06:32] partial: now. It seems
+[20:06:32] final: now. 
+[20:06:32] type_final: now. 
+[20:06:32] partial: It seems like
+[20:06:33] partial: It seems like
+[20:06:33] final: It 
+[20:06:33] type_final: It 
+[20:06:33] partial: seems like we're
+[20:06:33] partial: seems like we're
+[20:06:34] final: seems 
+[20:06:34] type_final: seems 
+[20:06:34] partial: like we're not
+[20:06:34] final: like 
+[20:06:34] type_final: like 
+[20:06:34] partial: we're not sending
+[20:06:35] partial: we're not sending
+[20:06:35] partial: we're not sending forced
+[20:06:35] final: we're not 
+[20:06:35] type_final: we're not 
+[20:06:35] partial: sending forced utterance
+[20:06:36] partial: sending forced utterance.
+[20:06:36] final: sending 
+[20:06:36] type_final: sending 
+[20:06:36] partial: forced utterance.
+[20:06:36] final: forced 
+[20:06:36] type_final: forced 
+[20:06:37] partial: utterance.
+[20:06:37] partial: utterance after
+[20:06:37] partial: utterance after a period
+[20:06:38] final: utterance 
+[20:06:38] type_final: utterance 
+[20:06:38] partial: after a period
+[20:06:38] partial: after a period of
+[20:06:38] partial: after a period of
+[20:06:39] final: after a 
+[20:06:39] type_final: after a 
+[20:06:39] partial: period of not
+[20:06:39] partial: period of not
+[20:06:39] final: period 
+[20:06:39] type_final: period 
+[20:06:39] partial: of not
+[20:06:40] final: of 
+[20:06:40] type_final: of 
+[20:06:40] partial: not talking
+[20:06:40] partial: not talking
+[20:06:40] partial: not talking
+[20:06:41] final: not 
+[20:06:41] type_final: not 
+[20:06:41] partial: talking about
+[20:06:41] partial: talking. Is that correct
+[20:06:41] partial: talking. Is that correct
+[20:06:42] final: talking. 
+[20:06:42] type_final: talking. 
+[20:06:42] partial: Is that correct?
+[20:06:42] partial: Is that correct
+[20:06:43] final: Is 
+[20:06:43] type_final: Is 
+[20:06:43] partial: that correct
+[20:06:43] final: that 
+[20:06:43] type_final: that 
+[20:06:43] partial: correct? If
+[20:06:43] final: correct? 
+[20:06:43] type_final: correct? 
+[20:06:43] partial: If so
+[20:06:44] partial: If so
+[20:06:44] partial: If so
+[20:06:44] partial: If so, we
+[20:06:45] final: If 
+[20:06:45] type_final: If 
+[20:06:45] partial: so, we should
+[20:06:45] final: so, 
+[20:06:45] type_final: so, 
+[20:06:45] partial: we should be doing
+[20:06:45] partial: we should be doing that
+[20:06:46] partial: we should be doing that.
+[20:06:46] final: we 
+[20:06:46] type_final: we 
+[20:06:46] partial: should be doing that
+[20:06:46] final: should be 
+[20:06:46] type_final: should be 
+[20:06:47] partial: doing that to
+[20:06:47] final: doing 
+[20:06:47] type_final: doing 
+[20:06:47] partial: that to fix this issue
+[20:06:47] partial: that to fix this issue
+[20:06:48] final: that 
+[20:06:48] type_final: that 
+[20:06:48] partial: to fix this issue. I'm talking about
+[20:06:48] final: to 
+[20:06:48] type_final: to 
+[20:06:48] partial: fix this issue. I'm talking about
+[20:06:48] final: fix 
+[20:06:48] type_final: fix 
+[20:06:48] partial: this issue. I'm talking about
+[20:06:49] final: this issue. I'm 
+[20:06:49] type_final: this issue. I'm 
+[20:06:49] partial: talking about
+[20:06:49] speechmatics: ForceEndOfUtterance sent
+[20:06:49] utterance: stop (duration=20.31s)
+[20:06:52] vad: speech detected
+[20:06:52] final: talking about. 
+[20:06:52] type_final: talking about. 
+[20:06:52] partial: 
+[20:06:52] partial: Enter
+[20:06:53] partial: Enter
+[20:06:53] partial: Enter
+[20:06:53] partial: Enter
+[20:06:53] speechmatics: ForceEndOfUtterance sent
+[20:06:53] utterance: stop (duration=1.79s)
+[20:06:57] vad: speech detected
+[20:06:57] final: Enter. 
+[20:06:57] keyword: enter (final)
+[20:06:57] utterance: force end (keyword=enter)
+[20:06:57] speechmatics: ForceEndOfUtterance sent
+[20:06:57] partial: 
+[20:06:57] utterance: stop (keyword)
+[20:06:57] speechmatics: ForceEndOfUtterance sent
+[20:06:57] utterance: stop (duration=0.34s)
+[20:07:34] vad: speech detected
+[20:07:34] final: Enter. 
+[20:07:34] keyword: enter (final)
+[20:07:34] utterance: force end (keyword=enter)
+[20:07:34] speechmatics: ForceEndOfUtterance sent
+[20:07:34] partial: 
+[20:07:34] utterance: stop (keyword)
+[20:07:34] speechmatics: ForceEndOfUtterance sent
+[20:07:34] utterance: stop (duration=0.34s)
+[20:07:34] vad: speech detected
+[20:07:35] final: Are you. 
+[20:07:35] type_final: Are you. 
+[20:07:35] partial: 
+[20:07:35] partial: 
+[20:07:35] partial: Absolutely
+[20:07:36] partial: Absolutely sure that
+[20:07:36] partial: Absolutely. Sure there's nothing
+[20:07:37] partial: Absolutely. Sure there's nothing we can
+[20:07:37] partial: Absolutely. Sure there's nothing we can
+[20:07:37] final: Absolutely. 
+[20:07:37] type_final: Absolutely. 
+[20:07:37] partial: Sure there's nothing we can send to the
+[20:07:38] final: Sure there's 
+[20:07:38] type_final: Sure there's 
+[20:07:38] partial: nothing we can send to the
+[20:07:38] final: nothing 
+[20:07:38] type_final: nothing 
+[20:07:38] partial: we can send to the API?
+[20:07:38] final: we can 
+[20:07:38] type_final: we can 
+[20:07:38] partial: send to the API
+[20:07:39] final: send to 
+[20:07:39] type_final: send to 
+[20:07:39] partial: the API to make
+[20:07:39] final: the 
+[20:07:39] type_final: the 
+[20:07:39] partial: API to make it
+[20:07:39] partial: API to make it flush
+[20:07:40] final: API 
+[20:07:40] type_final: API 
+[20:07:40] partial: to make it flush? All of
+[20:07:40] final: to 
+[20:07:40] type_final: to 
+[20:07:40] partial: make it flush? All of its
+[20:07:40] final: make it 
+[20:07:40] type_final: make it 
+[20:07:40] partial: flush all of its current
+[20:07:41] partial: flush all of its current
+[20:07:41] final: flush all of 
+[20:07:41] type_final: flush all of 
+[20:07:41] partial: its current
+[20:07:42] final: its 
+[20:07:42] type_final: its 
+[20:07:42] partial: current
+[20:07:42] partial: current, uh
+[20:07:42] final: current, 
+[20:07:42] type_final: current, 
+[20:07:42] partial: uh
+[20:07:43] partial: uh
+[20:07:43] partial: uh, words
+[20:07:43] final: uh, 
+[20:07:43] type_final: uh, 
+[20:07:43] partial: words
+[20:07:44] partial: words
+[20:07:44] speechmatics: ForceEndOfUtterance sent
+[20:07:44] utterance: stop (duration=9.63s)
+[20:07:44] partial: words
+[20:07:47] vad: speech detected
+[20:07:47] final: words and. 
+[20:07:47] type_final: words and. 
+[20:07:47] partial: 
+[20:07:47] partial: Outer
+[20:07:48] partial: Outer
+[20:07:48] partial: Outer
+[20:07:48] speechmatics: ForceEndOfUtterance sent
+[20:07:48] utterance: stop (duration=1.62s)
+[20:08:48] vad: speech detected
+[20:08:48] final: Outer. 
+[20:08:48] type_final: Outer. 
+[20:08:48] partial: 
+[20:08:48] partial: Please
+[20:08:49] partial: Please explain
+[20:08:49] partial: Please explore for
+[20:08:50] partial: Please explore for me
+[20:08:50] partial: Please explore for me.
+[20:08:50] final: Please 
+[20:08:50] type_final: Please 
+[20:08:50] partial: explore for me
+[20:08:51] final: explore 
+[20:08:51] type_final: explore 
+[20:08:51] partial: for me. Uh.
+[20:08:51] final: for 
+[20:08:51] type_final: for 
+[20:08:51] partial: me. Uh, based
+[20:08:51] final: me. 
+[20:08:51] type_final: me. 
+[20:08:52] partial: Uh, based on
+[20:08:52] partial: Uh, based on the
+[20:08:52] final: Uh, 
+[20:08:52] type_final: Uh, 
+[20:08:52] partial: based on the voice
+[20:08:52] partial: based on the voice activity
+[20:08:53] final: based 
+[20:08:53] type_final: based 
+[20:08:53] partial: on the voice activity.
+[20:08:53] final: on the 
+[20:08:53] type_final: on the 
+[20:08:53] partial: voice activity
+[20:08:54] partial: voice activity
+[20:08:54] final: voice 
+[20:08:54] type_final: voice 
+[20:08:54] partial: activity detector
+[20:08:54] partial: activity detector.
+[20:08:55] final: activity 
+[20:08:55] type_final: activity 
+[20:08:55] partial: detector. What
+[20:08:55] partial: detector. What exactly
+[20:08:55] partial: detector. What exactly are
+[20:08:56] final: detector. 
+[20:08:56] type_final: detector. 
+[20:08:56] partial: What exactly are we
+[20:08:56] partial: What exactly are we sending
+[20:08:57] final: What 
+[20:08:57] type_final: What 
+[20:08:57] partial: exactly are we sending to the
+[20:08:57] partial: exactly are we sending? To the
+[20:08:57] final: exactly are 
+[20:08:57] type_final: exactly are 
+[20:08:57] partial: we sending to the API?
+[20:08:58] final: we 
+[20:08:58] type_final: we 
+[20:08:58] partial: sending to the API?
+[20:08:58] final: sending to 
+[20:08:58] type_final: sending to 
+[20:08:58] partial: the API? Because I'm
+[20:08:58] final: the 
+[20:08:58] type_final: the 
+[20:08:58] partial: API? Because I'm thinking
+[20:08:59] partial: API? Because I'm thinking the
+[20:08:59] final: API? 
+[20:08:59] type_final: API? 
+[20:08:59] partial: Because I'm thinking the problem might
+[20:08:59] final: Because 
+[20:08:59] type_final: Because 
+[20:08:59] partial: I'm thinking the problem might be
+[20:09:00] final: I'm 
+[20:09:00] type_final: I'm 
+[20:09:00] partial: thinking the problem might be that
+[20:09:00] final: thinking the 
+[20:09:00] type_final: thinking the 
+[20:09:00] partial: problem might be that
+[20:09:00] final: problem 
+[20:09:00] type_final: problem 
+[20:09:00] partial: might be that
+[20:09:01] final: might 
+[20:09:01] type_final: might 
+[20:09:01] partial: be that normally
+[20:09:01] final: be 
+[20:09:01] type_final: be 
+[20:09:01] partial: that normally the
+[20:09:02] partial: that normally the API
+[20:09:02] final: that 
+[20:09:02] type_final: that 
+[20:09:02] partial: normally the API is
+[20:09:02] partial: normally the API is intended to
+[20:09:03] final: normally the 
+[20:09:03] type_final: normally the 
+[20:09:03] partial: API is intended to always
+[20:09:03] partial: API is intended to always be
+[20:09:03] final: API is 
+[20:09:03] type_final: API is 
+[20:09:03] partial: intended to always be
+[20:09:04] final: intended 
+[20:09:04] type_final: intended 
+[20:09:04] partial: to always be consuming
+[20:09:04] final: to 
+[20:09:04] type_final: to 
+[20:09:04] partial: always be consuming the
+[20:09:04] final: always be 
+[20:09:04] type_final: always be 
+[20:09:04] partial: consuming the speech in
+[20:09:05] partial: consuming the speech, including
+[20:09:05] partial: consuming the speech, including the
+[20:09:05] final: consuming the 
+[20:09:05] type_final: consuming the 
+[20:09:05] partial: speech, including the empty parking
+[20:09:06] partial: speech, including the empty parts
+[20:09:06] final: speech, 
+[20:09:06] type_final: speech, 
+[20:09:06] partial: including the empty parts, but
+[20:09:06] final: including the 
+[20:09:06] type_final: including the 
+[20:09:07] partial: empty parts. But
+[20:09:07] final: empty 
+[20:09:07] type_final: empty 
+[20:09:07] partial: parts. But because we're
+[20:09:07] partial: parts. But because we're putting in
+[20:09:07] final: parts, 
+[20:09:07] type_final: parts, 
+[20:09:08] partial: but because we're putting it behind
+[20:09:08] final: but 
+[20:09:08] type_final: but 
+[20:09:08] partial: because we're putting it behind
+[20:09:08] final: because 
+[20:09:08] type_final: because 
+[20:09:08] partial: we're putting it behind a
+[20:09:09] final: we're 
+[20:09:09] type_final: we're 
+[20:09:09] partial: putting it behind a
+[20:09:09] final: putting it 
+[20:09:09] type_final: putting it 
+[20:09:09] partial: behind a VAD
+[20:09:09] partial: behind a VAD
+[20:09:10] final: behind 
+[20:09:10] type_final: behind 
+[20:09:10] partial: a VAD
+[20:09:10] final: a 
+[20:09:10] type_final: a 
+[20:09:10] partial: VAD, it
+[20:09:10] partial: VAD, it doesn't
+[20:09:11] final: VAD, 
+[20:09:11] type_final: VAD, 
+[20:09:11] partial: it doesn't really seem
+[20:09:11] partial: it doesn't really see
+[20:09:12] final: it 
+[20:09:12] type_final: it 
+[20:09:12] partial: doesn't really see much
+[20:09:12] final: doesn't 
+[20:09:12] type_final: doesn't 
+[20:09:12] partial: really see much, if any
+[20:09:12] final: really 
+[20:09:12] type_final: really 
+[20:09:12] partial: see much, if any empty
+[20:09:13] partial: see much, if any empty
+[20:09:13] final: see 
+[20:09:13] type_final: see 
+[20:09:13] partial: much, if any empty parts
+[20:09:13] final: much, if 
+[20:09:13] type_final: much, if 
+[20:09:13] partial: any empty parts
+[20:09:14] final: any, 
+[20:09:14] type_final: any, 
+[20:09:14] partial: empty parts. Except
+[20:09:14] final: empty 
+[20:09:14] type_final: empty 
+[20:09:14] partial: parts except
+[20:09:14] partial: parts except
+[20:09:15] final: parts 
+[20:09:15] type_final: parts 
+[20:09:15] partial: except between
+[20:09:15] partial: except between speech
+[20:09:15] final: except 
+[20:09:15] type_final: except 
+[20:09:15] partial: between speech.
+[20:09:16] partial: between speech
+[20:09:16] final: between 
+[20:09:16] type_final: between 
+[20:09:16] partial: speech. So
+[20:09:16] partial: speech. So please
+[20:09:17] final: speech. 
+[20:09:17] type_final: speech. 
+[20:09:17] partial: So please investigate
+[20:09:17] partial: So please investigate that
+[20:09:18] partial: So please investigate that. Still
+[20:09:18] final: So please 
+[20:09:18] type_final: So please 
+[20:09:18] partial: investigate that. Still don't. Type
+[20:09:18] partial: investigate that. Still don't type any
+[20:09:19] final: investigate 
+[20:09:19] type_final: investigate 
+[20:09:19] partial: that. Still don't type any code
+[20:09:19] final: that. 
+[20:09:19] type_final: that. 
+[20:09:19] partial: Still don't type any code
+[20:09:19] speechmatics: ForceEndOfUtterance sent
+[20:09:19] utterance: stop (duration=31.32s)
+[20:09:19] vad: speech detected
+[20:09:19] final: Still don't type any code. 
+[20:09:19] type_final: Still don't type any code. 
+[20:09:20] partial: 
+[20:09:20] partial: 
+[20:09:20] partial: Enter
+[20:09:20] partial: Enter
+[20:09:21] partial: Enter
+[20:09:21] speechmatics: ForceEndOfUtterance sent
+[20:09:21] utterance: stop (duration=1.62s)
+[20:10:48] vad: speech detected
+[20:10:48] final: Enter. 
+[20:10:48] keyword: enter (final)
+[20:10:48] utterance: force end (keyword=enter)
+[20:10:48] speechmatics: ForceEndOfUtterance sent
+[20:10:48] partial: 
+[20:10:48] utterance: stop (keyword)
+[20:10:48] speechmatics: ForceEndOfUtterance sent
+[20:10:48] utterance: stop (duration=0.26s)
+[20:10:48] vad: speech detected
+[20:10:49] final: So we. 
+[20:10:49] type_final: So we. 
+[20:10:49] partial: 
+[20:10:49] partial: Should
+[20:10:49] partial: Should at the very
+[20:10:50] partial: Should at the very least
+[20:10:50] partial: Should, at the very least in
+[20:10:50] partial: Should at the very least
+[20:10:51] final: Should at the 
+[20:10:51] type_final: Should at the 
+[20:10:51] partial: very least include
+[20:10:51] final: very 
+[20:10:51] type_final: very 
+[20:10:51] partial: least include the
+[20:10:51] final: least 
+[20:10:51] type_final: least 
+[20:10:51] partial: include the
+[20:10:52] partial: include the
+[20:10:52] partial: include the timeout
+[20:10:52] final: include 
+[20:10:52] type_final: include 
+[20:10:52] partial: the timeout.
+[20:10:53] final: the 
+[20:10:53] type_final: the 
+[20:10:53] partial: timeout period
+[20:10:53] partial: timeout period.
+[20:10:54] partial: timeout period.
+[20:10:54] final: timeout 
+[20:10:54] type_final: timeout 
+[20:10:54] partial: period.
+[20:10:54] partial: period. Silence
+[20:10:55] final: period. 
+[20:10:55] type_final: period. 
+[20:10:55] partial: Silence.
+[20:10:55] partial: Silence is
+[20:10:55] partial: Silence in what
+[20:10:56] partial: Silence in what we send
+[20:10:56] final: Silence 
+[20:10:56] type_final: Silence 
+[20:10:56] partial: in what we send to the
+[20:10:56] partial: in what we send to the server is
+[20:10:57] final: in 
+[20:10:57] type_final: in 
+[20:10:57] partial: what we send to the server is that
+[20:10:57] final: what we 
+[20:10:57] type_final: what we 
+[20:10:57] partial: send to the server is that currently
+[20:10:58] final: send to the 
+[20:10:58] type_final: send to the 
+[20:10:58] partial: server. Is that currently happening
+[20:10:58] final: server. 
+[20:10:58] type_final: server. 
+[20:10:58] partial: Is that currently happening or not
+[20:10:58] final: Is that 
+[20:10:58] type_final: Is that 
+[20:10:58] partial: currently happening or not?
+[20:10:59] partial: currently happening or not?
+[20:10:59] speechmatics: ForceEndOfUtterance sent
+[20:10:59] utterance: stop (duration=10.66s)
+[20:10:59] final: currently happening or not? 
+[20:10:59] type_final: currently happening or not? 
+[20:10:59] partial: 
+[20:11:00] vad: speech detected
+[20:11:00] partial: 
+[20:11:00] partial: Enter
+[20:11:01] partial: Enter
+[20:11:01] partial: Enter
+[20:11:01] speechmatics: ForceEndOfUtterance sent
+[20:11:01] utterance: stop (duration=1.62s)
+[20:13:33] listening enabled
+[20:13:33] ERROR: listener loop error: 'AppConfig' object has no attribute 'keyword_final_grace_seconds'; see voicetyper-debug.log
+[20:13:33] listener loop error: 'AppConfig' object has no attribute 'keyword_final_grace_seconds'
+Traceback (most recent call last):
+  File "/home/synapso/voicetyper/voicetyper/controller.py", line 175, in _listener_loop
+    keyword_final_grace=self.config.keyword_final_grace_seconds,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AppConfig' object has no attribute 'keyword_final_grace_seconds'
+
+[20:13:51] listening enabled
+[20:13:51] speechmatics: session start (active=1)
+[20:13:55] vad: speech detected
+[20:13:55] partial: 
+[20:13:56] partial: 
+[20:13:56] partial: Already. This
+[20:13:57] partial: Already. This is a
+[20:13:57] partial: Already. This is a test
+[20:13:57] partial: Already. This is a test
+[20:13:57] final: Already. 
+[20:13:57] type_final: Already. 
+[20:13:58] partial: This is a test
+[20:13:58] final: This is a 
+[20:13:58] type_final: This is a 
+[20:13:58] partial: test
+[20:13:58] partial: test. I
+[20:13:59] final: test. 
+[20:13:59] type_final: test. 
+[20:13:59] partial: I
+[20:13:59] partial: I keep
+[20:13:59] partial: I keep
+[20:14:00] final: I 
+[20:14:00] type_final: I 
+[20:14:00] partial: kept
+[20:14:00] partial: keep just
+[20:14:00] partial: kept just removing
+[20:14:01] partial: kept just removing
+[20:14:01] final: keep 
+[20:14:01] type_final: keep 
+[20:14:01] partial: just removing crap.
+[20:14:01] final: just 
+[20:14:01] type_final: just 
+[20:14:02] partial: removing crap that
+[20:14:02] partial: removing crap that we don't
+[20:14:02] final: removing 
+[20:14:02] type_final: removing 
+[20:14:02] partial: crap that we don't need
+[20:14:03] partial: crap that we don't need to
+[20:14:03] final: crap 
+[20:14:03] type_final: crap 
+[20:14:03] partial: that we don't need. So
+[20:14:03] final: that we 
+[20:14:03] type_final: that we 
+[20:14:03] partial: don't need. So
+[20:14:04] final: don't 
+[20:14:04] type_final: don't 
+[20:14:04] partial: need. So hopefully
+[20:14:04] final: need. 
+[20:14:04] type_final: need. 
+[20:14:04] partial: So hopefully
+[20:14:04] partial: So hopefully
+[20:14:05] final: So 
+[20:14:05] type_final: So 
+[20:14:05] partial: hopefully
+[20:14:05] partial: hopefully
+[20:14:05] partial: hopefully
+[20:14:06] speechmatics: ForceEndOfUtterance sent
+[20:14:06] utterance: stop (duration=11.18s)
+[20:14:06] final: hopefully 
+[20:14:06] type_final: hopefully 
+[20:14:06] partial: 
+[20:14:06] final: . 
+[20:14:06] type_final: . 
+[20:14:06] vad: speech detected
+[20:14:06] partial: 
+[20:14:07] partial: Okay
+[20:14:07] partial: Okay. Seems
+[20:14:08] partial: Okay. Seems to be working
+[20:14:08] partial: Okay. Seems to be working
+[20:14:08] partial: Okay. Seems to be working
+[20:14:09] final: Okay. 
+[20:14:09] type_final: Okay. 
+[20:14:09] partial: Seems to be working
+[20:14:09] final: Seems to be 
+[20:14:09] type_final: Seems to be 
+[20:14:09] partial: working
+[20:14:09] partial: working
+[20:14:10] speechmatics: ForceEndOfUtterance sent
+[20:14:10] utterance: stop (duration=3.33s)
+[20:14:10] final: working. 
+[20:14:10] type_final: working. 
+[20:14:10] partial: 
+[20:14:12] vad: speech detected
+[20:14:12] partial: 
+[20:14:13] partial: Good
+[20:14:13] partial: Good
+[20:14:13] partial: Good
+[20:14:14] partial: Good
+[20:14:14] partial: Good
+[20:14:14] speechmatics: ForceEndOfUtterance sent
+[20:14:14] utterance: stop (duration=2.47s)
+[20:14:15] final: Good. 
+[20:14:15] type_final: Good. 
+[20:14:15] partial: 
+[20:14:22] vad: speech detected
+[20:14:23] partial: 
+[20:14:23] partial: Enter
+[20:14:24] partial: Enter
+[20:14:24] partial: Enter
+[20:14:24] partial: Enter
+[20:14:25] partial: Enter
+[20:14:25] speechmatics: ForceEndOfUtterance sent
+[20:14:25] utterance: stop (duration=2.47s)
+[20:14:25] final: Enter. 
+[20:14:25] keyword: enter (final)
+[20:14:25] utterance: force end (keyword=enter)
+[20:14:25] speechmatics: ForceEndOfUtterance sent
+[20:14:25] partial: 
+[20:14:32] vad: speech detected
+[20:14:33] final: 
+[20:14:33] final skipped: before first content of utterance
+[20:14:33] partial: 
+[20:14:33] partial: One. Two
+[20:14:34] partial: One. Two three
+[20:14:34] partial: One. Two. Three. Four
+[20:14:34] partial: One. Two. Three. Four
+[20:14:35] partial: One. Two. Three. Four. Five.
+[20:14:35] final: One. Two. 
+[20:14:35] type_final: One. Two. 
+[20:14:35] partial: Three. Four. Five. Enter
+[20:14:35] final: Three. 
+[20:14:35] type_final: Three. 
+[20:14:35] partial: Four. Five. Enter one
+[20:14:36] partial: Four. Five. Enter one
+[20:14:36] final: Four. 
+[20:14:36] type_final: Four. 
+[20:14:36] partial: Five. Enter. One. Two
+[20:14:36] final: Five. 
+[20:14:36] type_final: Five. 
+[20:14:37] partial: Enter. One. Two three
+[20:14:37] final: Enter. 
+[20:14:37] keyword: enter (final)
+[20:14:37] utterance: force end (keyword=enter)
+[20:14:37] speechmatics: ForceEndOfUtterance sent
+[20:14:37] partial: One. 234
+[20:14:37] utterance: stop (keyword)
+[20:14:37] speechmatics: ForceEndOfUtterance sent
+[20:14:37] utterance: stop (duration=4.52s)
+[20:14:37] vad: speech detected
+[20:14:37] final: One. Two three. Four. Five. 
+[20:14:37] type_final: One. Two three. Four. Five. 
+[20:14:38] partial: 
+[20:14:38] partial: 
+[20:14:38] partial: Six
+[20:14:38] partial: Six. Seven
+[20:14:39] partial: Six. Seven. Enter
+[20:14:39] partial: Six. Seven. Enter
+[20:14:40] final: Six. 
+[20:14:40] type_final: Six. 
+[20:14:40] partial: Seven. Enter one
+[20:14:40] final: Seven. 
+[20:14:40] type_final: Seven. 
+[20:14:40] partial: Enter. One. Two
+[20:14:40] partial: Enter. 123
+[20:14:41] final: Enter. 
+[20:14:41] keyword: enter (final)
+[20:14:41] utterance: force end (keyword=enter)
+[20:14:41] speechmatics: ForceEndOfUtterance sent
+[20:14:41] partial: 1234
+[20:14:41] utterance: stop (keyword)
+[20:14:41] speechmatics: ForceEndOfUtterance sent
+[20:14:41] utterance: stop (duration=3.67s)
+[20:14:41] vad: speech detected
+[20:14:41] final: One. Two. 345. 
+[20:14:41] type_final: One. Two. 345. 
+[20:14:41] partial: 
+[20:14:41] partial: 
+[20:14:42] partial: Six
+[20:14:42] partial: Six. Seven. Eight
+[20:14:43] partial: Six. Seven. Eight. Nine
+[20:14:43] partial: Six. Seven. Eight. Nine. Enter
+[20:14:43] final: Six. 
+[20:14:43] type_final: Six. 
+[20:14:43] partial: Seven. Eight. Nine. Enter
+[20:14:44] final: Seven. 
+[20:14:44] type_final: Seven. 
+[20:14:44] partial: Eight. Nine. Enter
+[20:14:44] final: Eight. 
+[20:14:44] type_final: Eight. 
+[20:14:44] partial: Nine. Enter
+[20:14:44] final: Nine. 
+[20:14:44] type_final: Nine. 
+[20:14:44] partial: Enter
+[20:14:45] final: Enter 
+[20:14:45] keyword: enter (final)
+[20:14:45] utterance: force end (keyword=enter)
+[20:14:45] speechmatics: ForceEndOfUtterance sent
+[20:14:45] partial: 
+[20:14:45] utterance: stop (keyword)
+[20:14:45] speechmatics: ForceEndOfUtterance sent
+[20:14:45] utterance: stop (duration=3.92s)
+[20:14:58] vad: speech detected
+[20:14:59] final: . 
+[20:14:59] final skipped: before first content of utterance
+[20:14:59] partial: 
+[20:14:59] partial: Enter
+[20:14:59] partial: Enter
+[20:15:00] partial: Enter
+[20:15:00] partial: Enter
+[20:15:00] partial: Enter
+[20:15:01] speechmatics: ForceEndOfUtterance sent
+[20:15:01] utterance: stop (duration=2.30s)
+[20:15:01] final: Enter. 
+[20:15:01] keyword: enter (final)
+[20:15:01] utterance: force end (keyword=enter)
+[20:15:01] speechmatics: ForceEndOfUtterance sent
+[20:15:01] partial: 
+[20:15:12] vad: speech detected
+[20:15:13] final: Enter. 
+[20:15:13] keyword: enter (final)
+[20:15:13] utterance: force end (keyword=enter)
+[20:15:13] speechmatics: ForceEndOfUtterance sent
+[20:15:13] partial: 
+[20:15:13] utterance: stop (keyword)
+[20:15:13] speechmatics: ForceEndOfUtterance sent
+[20:15:13] utterance: stop (duration=0.68s)
+[20:15:15] vad: speech detected
+[20:15:15] final: 
+[20:15:15] final skipped: before first content of utterance
+[20:15:15] partial: 
+[20:15:16] partial: Enter
+[20:15:16] partial: Enter
+[20:15:16] partial: Enter
+[20:15:17] partial: Enter
+[20:15:17] partial: Enter
+[20:15:17] speechmatics: ForceEndOfUtterance sent
+[20:15:17] utterance: stop (duration=2.39s)
+[20:15:17] final: Enter. 
+[20:15:17] keyword: enter (final)
+[20:15:17] utterance: force end (keyword=enter)
+[20:15:17] speechmatics: ForceEndOfUtterance sent
+[20:15:17] partial: 
+[20:15:25] vad: speech detected
+[20:15:25] final: 
+[20:15:25] final skipped: before first content of utterance
+[20:15:25] partial: 
+[20:15:26] partial: Enter
+[20:15:26] partial: Enter
+[20:15:26] partial: Enter
+[20:15:27] partial: Enter
+[20:15:27] partial: Enter
+[20:15:27] speechmatics: ForceEndOfUtterance sent
+[20:15:27] utterance: stop (duration=2.30s)
+[20:15:30] vad: speech detected
+[20:15:30] final: Enter. 
+[20:15:30] keyword: enter (final)
+[20:15:30] utterance: force end (keyword=enter)
+[20:15:30] speechmatics: ForceEndOfUtterance sent
+[20:15:30] partial: 
+[20:15:30] utterance: stop (keyword)
+[20:15:30] speechmatics: ForceEndOfUtterance sent
+[20:15:30] utterance: stop (duration=0.34s)

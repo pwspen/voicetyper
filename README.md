@@ -18,3 +18,7 @@ Terminal-based voice typing using Speechmatics Realtime API, Silero VAD, and xdo
 - Speechmatics partial vs final handling:
   - Speechmatics emits fast, revisable partials and slower, stable finals. By default, the client types finals only; set `prefer_partials=True` in `voicetyper/config.py` to type partials live.
   - The client listens for keywords in both partials and finals. Saying the end-utterance keyword (default: `stop`) drops any pending partial text and sends a `ForceEndOfUtterance` to Speechmatics. Saying the enter keyword (default: `enter`) sends an Enter keypress (without typing the word). If a final contains a keyword, everything from the keyword onward is discarded; only the text before it is typed.
+
+
+### Dev Log
+- Extending silence_timeout *mostly* fixed an issue where we had the following happen: The ends of utterances would "stick around" and only be reported as final upon the start of the next utterance. This caused issues like "enter" only being pressed on the start of the next line - which ends up ok but the user doesn't get quick feedback. This can be held in the buffer for an indefinite period of time due to the way Speechmatics API works.
