@@ -3,7 +3,7 @@ name = "voicetyper"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 dependencies = [
     "speechmatics-python>=1.8.2",
     "sounddevice>=0.4.6",
@@ -14,3 +14,7 @@ dependencies = [
 
 [project.scripts]
 voicetyper = "voicetyper.main:main"
+voicetyper-tray = "voicetyper.tray:main"
+
+[tool.uv]
+package = true

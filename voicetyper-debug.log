@@ -12493,3 +12493,1483 @@ AttributeError: 'AppConfig' object has no attribute 'keyword_final_grace_seconds
 [20:31:14] type_final: ! 
 [20:31:14] partial: 
 [20:31:14] speechmatics: session end (active=0, duration=12.32s)
+[21:40:04] vad: speech detected
+[21:40:04] speechmatics: session start (active=1)
+[21:40:05] partial: 
+[21:40:05] partial: La
+[21:40:05] partial: 
+[21:40:06] partial: 
+[21:40:06] partial: 
+[21:40:06] final: 
+[21:40:06] partial: 
+[21:40:07] speechmatics: ForceEndOfUtterance sent
+[21:40:07] utterance: stop (duration=2.47s)
+[21:40:15] speechmatics: idle timeout; closing session
+[21:40:15] speechmatics: stop requested
+[21:40:15] final: 
+[21:40:15] partial: 
+[21:40:15] speechmatics: session end (active=0, duration=11.37s)
+[21:40:23] listening disabled
+[22:17:55] listening enabled
+[22:17:55] speechmatics: session start (active=1)
+[22:17:59] speechmatics: idle timeout; closing session
+[22:17:59] speechmatics: stop requested
+[22:18:00] speechmatics: session end (active=0, duration=4.70s)
+[22:18:01] vad: speech detected
+[22:18:01] speechmatics: session start (active=1)
+[22:18:01] partial: 
+[22:18:02] partial: What are some
+[22:18:02] partial: What are some of the
+[22:18:02] partial: What are some of the
+[22:18:03] partial: What are some of the human
+[22:18:03] final: What are 
+[22:18:03] type_final: What are 
+[22:18:03] partial: some of the human made object
+[22:18:03] final: some 
+[22:18:03] type_final: some 
+[22:18:03] partial: of the human made object
+[22:18:04] final: of the 
+[22:18:04] type_final: of the 
+[22:18:04] partial: human made object that have
+[22:18:04] final: human 
+[22:18:04] type_final: human 
+[22:18:04] partial: made objects that have
+[22:18:05] final: made 
+[22:18:05] type_final: made 
+[22:18:05] partial: objects that have the most
+[22:18:05] partial: objects that have the most
+[22:18:05] final: objects 
+[22:18:05] type_final: objects 
+[22:18:05] partial: that have the most
+[22:18:06] final: that 
+[22:18:06] type_final: that 
+[22:18:06] partial: have the most
+[22:18:06] final: have the 
+[22:18:06] type_final: have the 
+[22:18:06] partial: most
+[22:18:06] partial: most effort? Put
+[22:18:07] final: most 
+[22:18:07] type_final: most 
+[22:18:07] partial: effort put into
+[22:18:07] partial: effort put into them?
+[22:18:07] partial: effort put into them?
+[22:18:08] final: effort 
+[22:18:08] type_final: effort 
+[22:18:08] partial: put into them
+[22:18:08] final: put 
+[22:18:08] type_final: put 
+[22:18:08] partial: into them
+[22:18:08] final: into 
+[22:18:08] type_final: into 
+[22:18:09] partial: them
+[22:18:09] speechmatics: ForceEndOfUtterance sent
+[22:18:09] utterance: stop (duration=7.94s)
+[22:18:09] final: them? 
+[22:18:09] type_final: them? 
+[22:18:09] partial: 
+[22:18:11] speechmatics: idle timeout; closing session
+[22:18:11] speechmatics: stop requested
+[22:18:11] final: 
+[22:18:11] partial: 
+[22:18:11] speechmatics: session end (active=0, duration=10.40s)
+[22:18:16] vad: speech detected
+[22:18:16] speechmatics: session start (active=1)
+[22:18:17] partial: 
+[22:18:17] partial: In terms
+[22:18:18] partial: In terms of
+[22:18:18] partial: In terms of
+[22:18:18] partial: In terms of
+[22:18:19] final: In 
+[22:18:19] type_final: In 
+[22:18:19] partial: terms of
+[22:18:19] final: terms 
+[22:18:19] type_final: terms 
+[22:18:19] partial: of
+[22:18:20] final: of 
+[22:18:20] type_final: of 
+[22:18:20] partial: 
+[22:18:20] partial: .
+[22:18:20] partial: .
+[22:18:21] partial: monetary as
+[22:18:21] partial: monetary as well
+[22:18:21] partial: monetary as well as
+[22:18:22] partial: monetary as well as time
+[22:18:22] final: monetary 
+[22:18:22] type_final: monetary 
+[22:18:22] partial: as well as time
+[22:18:22] final: as well 
+[22:18:22] type_final: as well 
+[22:18:23] partial: as time, resources
+[22:18:23] final: as 
+[22:18:23] type_final: as 
+[22:18:23] partial: time, resources
+[22:18:23] final: time, 
+[22:18:23] type_final: time, 
+[22:18:23] partial: resources
+[22:18:24] partial: resources
+[22:18:24] partial: resources
+[22:18:24] speechmatics: ForceEndOfUtterance sent
+[22:18:24] utterance: stop (duration=7.59s)
+[22:18:24] final: resources. 
+[22:18:24] type_final: resources. 
+[22:18:24] partial: 
+[22:18:26] speechmatics: idle timeout; closing session
+[22:18:26] speechmatics: stop requested
+[22:18:27] final: 
+[22:18:27] partial: 
+[22:18:27] speechmatics: session end (active=0, duration=10.27s)
+[22:20:37] vad: speech detected
+[22:20:37] speechmatics: session start (active=1)
+[22:20:38] partial: What
+[22:20:38] partial: What about
+[22:20:38] partial: What about in terms
+[22:20:39] partial: What about in terms of
+[22:20:39] partial: What about in terms of
+[22:20:39] final: What 
+[22:20:39] type_final: What 
+[22:20:39] partial: about in terms of
+[22:20:40] final: about in 
+[22:20:40] type_final: about in 
+[22:20:40] partial: terms of
+[22:20:40] final: terms 
+[22:20:40] type_final: terms 
+[22:20:40] partial: of efficacy
+[22:20:40] partial: of effort and
+[22:20:41] final: of 
+[22:20:41] type_final: of 
+[22:20:41] partial: effort and
+[22:20:41] partial: effort and resources
+[22:20:42] partial: effort and resources
+[22:20:42] partial: effort and resources per
+[22:20:42] final: effort and 
+[22:20:42] type_final: effort and 
+[22:20:42] partial: resources per
+[22:20:43] partial: resources per
+[22:20:43] final: resources 
+[22:20:43] type_final: resources 
+[22:20:43] partial: per
+[22:20:43] partial: per
+[22:20:44] final: per 
+[22:20:44] type_final: per 
+[22:20:44] partial: 
+[22:20:44] partial: kilogram
+[22:20:44] partial: kilogram
+[22:20:45] partial: kilogram
+[22:20:45] partial: kilogram
+[22:20:45] partial: kilogram
+[22:20:46] final: kilogram 
+[22:20:46] type_final: kilogram 
+[22:20:46] partial: 
+[22:20:46] listening disabled
+[22:20:46] speechmatics: stop requested
+[22:20:46] utterance: stop (disabled mid-stream)
+[22:20:46] speechmatics: ForceEndOfUtterance sent
+[22:20:46] speechmatics: stop requested
+[22:20:47] final: ? 
+[22:20:47] type_final: ? 
+[22:20:47] partial: 
+[22:20:47] speechmatics: session end (active=0, duration=9.92s)
+[22:20:56] listening enabled
+[22:20:56] speechmatics: session start (active=1)
+[22:20:58] vad: speech detected
+[22:20:59] partial: 
+[22:20:59] partial: What about
+[22:21:00] partial: What about in
+[22:21:00] partial: What about in terms of
+[22:21:00] partial: What about in terms of
+[22:21:01] final: What 
+[22:21:01] type_final: What 
+[22:21:01] partial: about in terms of effort and
+[22:21:01] final: about 
+[22:21:01] type_final: about 
+[22:21:01] partial: in terms of effort and
+[22:21:01] final: in 
+[22:21:01] type_final: in 
+[22:21:01] partial: terms of effort and resources
+[22:21:02] final: terms of 
+[22:21:02] type_final: terms of 
+[22:21:02] partial: effort and resources
+[22:21:02] partial: effort and resources per
+[22:21:02] final: effort and 
+[22:21:02] type_final: effort and 
+[22:21:03] partial: resources per
+[22:21:03] partial: resources per kilogram
+[22:21:03] final: resources 
+[22:21:03] type_final: resources 
+[22:21:03] partial: per kilogram
+[22:21:04] final: per 
+[22:21:04] type_final: per 
+[22:21:04] partial: kilogram
+[22:21:04] partial: kilogram
+[22:21:04] partial: kilogram
+[22:21:04] speechmatics: ForceEndOfUtterance sent
+[22:21:04] utterance: stop (duration=6.14s)
+[22:21:05] final: kilogram? 
+[22:21:05] type_final: kilogram? 
+[22:21:05] partial: 
+[22:21:06] speechmatics: idle timeout; closing session
+[22:21:06] speechmatics: stop requested
+[22:21:07] final: 
+[22:21:07] partial: 
+[22:21:07] speechmatics: session end (active=0, duration=11.20s)
+[22:21:29] vad: speech detected
+[22:21:29] speechmatics: session start (active=1)
+[22:21:30] partial: 
+[22:21:30] partial: And
+[22:21:31] partial: And let's
+[22:21:31] partial: And let's consider
+[22:21:31] partial: And let's consider
+[22:21:32] partial: And let's consider only
+[22:21:32] final: And 
+[22:21:32] type_final: And 
+[22:21:32] partial: let's consider only
+[22:21:32] final: let's 
+[22:21:32] type_final: let's 
+[22:21:32] partial: consider only
+[22:21:33] final: consider 
+[22:21:33] type_final: consider 
+[22:21:33] partial: only
+[22:21:33] partial: only
+[22:21:33] final: only 
+[22:21:33] type_final: only 
+[22:21:34] partial: 
+[22:21:34] partial: designs
+[22:21:34] partial: designs
+[22:21:35] partial: designs
+[22:21:35] partial: designs
+[22:21:35] partial: designs
+[22:21:36] final: designs 
+[22:21:36] type_final: designs 
+[22:21:36] partial: and
+[22:21:36] partial: and not
+[22:21:36] partial: and not
+[22:21:37] partial: and not the
+[22:21:37] final: and 
+[22:21:37] type_final: and 
+[22:21:37] partial: not the full
+[22:21:37] partial: not the full
+[22:21:38] final: not 
+[22:21:38] type_final: not 
+[22:21:38] partial: the full
+[22:21:38] partial: the full
+[22:21:38] final: the 
+[22:21:38] type_final: the 
+[22:21:39] partial: full physical
+[22:21:39] partial: full physical
+[22:21:39] final: full 
+[22:21:39] type_final: full 
+[22:21:39] partial: physical
+[22:21:40] partial: physical
+[22:21:40] partial: physical
+[22:21:40] partial: physical
+[22:21:41] final: physical 
+[22:21:41] type_final: physical 
+[22:21:41] partial: 
+[22:21:41] final: 
+[22:21:41] partial: 
+[22:21:41] partial: . uh
+[22:21:42] partial: . uh
+[22:21:42] partial: . uh
+[22:21:42] partial: . uh
+[22:21:43] final: . Uh 
+[22:21:43] type_final: . Uh 
+[22:21:43] partial: 
+[22:21:43] partial: .
+[22:21:44] partial: , instantiation. So
+[22:21:44] partial: , instantiation. So for example
+[22:21:44] partial: , instantiation. So for example
+[22:21:45] partial: , instantiation. So for example
+[22:21:45] final: , instantiation. 
+[22:21:45] type_final: , instantiation. 
+[22:21:45] partial: So for example
+[22:21:45] final: So for 
+[22:21:45] type_final: So for 
+[22:21:45] partial: example
+[22:21:46] partial: example
+[22:21:46] speechmatics: ForceEndOfUtterance sent
+[22:21:46] utterance: stop (duration=16.81s)
+[22:21:46] partial: example
+[22:21:48] vad: speech detected
+[22:21:48] final: example. 
+[22:21:48] type_final: example. 
+[22:21:48] partial: 
+[22:21:48] partial: A
+[22:21:49] partial: A microchip
+[22:21:49] partial: A microchip
+[22:21:50] partial: A microchip
+[22:21:50] final: A 
+[22:21:50] type_final: A 
+[22:21:50] partial: microchip has
+[22:21:50] partial: microchip has all sorts
+[22:21:51] partial: microchip has all sorts of
+[22:21:51] final: microchip 
+[22:21:51] type_final: microchip 
+[22:21:51] partial: has all sorts of
+[22:21:51] final: has 
+[22:21:51] type_final: has 
+[22:21:51] partial: all sorts of
+[22:21:52] final: all 
+[22:21:52] type_final: all 
+[22:21:52] partial: sorts of
+[22:21:52] final: sorts 
+[22:21:52] type_final: sorts 
+[22:21:52] partial: of
+[22:21:52] speechmatics: ForceEndOfUtterance sent
+[22:21:52] utterance: stop (duration=4.61s)
+[22:21:52] final: of 
+[22:21:52] type_final: of 
+[22:21:52] partial: 
+[22:21:53] vad: speech detected
+[22:21:53] final: . 
+[22:21:53] final skipped: before first content of utterance
+[22:21:53] partial: 
+[22:21:53] partial: Um
+[22:21:54] partial: Um
+[22:21:54] partial: Um
+[22:21:54] partial: Um
+[22:21:55] partial: Um, instantiations in the
+[22:21:55] final: Um, 
+[22:21:55] type_final: Um, 
+[22:21:55] partial: instantiations in the world
+[22:21:56] partial: instantiations in the world, whereas
+[22:21:56] partial: instantiations in the world, whereas the
+[22:21:56] final: instantiations 
+[22:21:56] type_final: instantiations 
+[22:21:56] partial: in the world, whereas the ES
+[22:21:57] final: in the 
+[22:21:57] type_final: in the 
+[22:21:57] partial: world, whereas the ES only has
+[22:21:57] final: world, 
+[22:21:57] type_final: world, 
+[22:21:57] partial: whereas the ES only has a single
+[22:21:57] final: whereas the 
+[22:21:57] type_final: whereas the 
+[22:21:57] partial: ES only has a single one
+[22:21:58] partial: ES only has a single one
+[22:21:58] final: ES only 
+[22:21:58] type_final: ES only 
+[22:21:58] partial: has a single one
+[22:21:58] final: has a 
+[22:21:58] type_final: has a 
+[22:21:58] partial: single one. But
+[22:21:59] final: single 
+[22:21:59] type_final: single 
+[22:21:59] partial: one. But
+[22:21:59] final: one. 
+[22:21:59] type_final: one. 
+[22:21:59] partial: But let's say
+[22:21:59] partial: But let's say that there
+[22:22:00] partial: But let's say that there on
+[22:22:00] partial: But let's say that they're on equal
+[22:22:01] final: But let's 
+[22:22:01] type_final: But let's 
+[22:22:01] partial: say that they're on equal
+[22:22:01] final: say that 
+[22:22:01] type_final: say that 
+[22:22:01] partial: they're on equal levels
+[22:22:01] final: they're 
+[22:22:01] type_final: they're 
+[22:22:01] partial: on equal levels.
+[22:22:02] final: on 
+[22:22:02] type_final: on 
+[22:22:02] partial: equal levels.
+[22:22:02] final: equal 
+[22:22:02] type_final: equal 
+[22:22:02] partial: levels
+[22:22:02] partial: levels
+[22:22:03] speechmatics: ForceEndOfUtterance sent
+[22:22:03] utterance: stop (duration=9.98s)
+[22:22:03] final: levels 
+[22:22:03] type_final: levels 
+[22:22:03] partial: 
+[22:22:05] speechmatics: idle timeout; closing session
+[22:22:05] speechmatics: stop requested
+[22:22:05] final: . 
+[22:22:05] type_final: . 
+[22:22:05] partial: 
+[22:22:05] speechmatics: session end (active=0, duration=35.77s)
+[22:22:57] vad: speech detected
+[22:22:57] speechmatics: session start (active=1)
+[22:22:58] partial: 
+[22:22:58] partial: Is a
+[22:22:59] partial: Is a test
+[22:22:59] partial: Is a test of time
+[22:22:59] partial: Is a test of text
+[22:23:00] final: Is a 
+[22:23:00] type_final: Is a 
+[22:23:00] partial: test of text input
+[22:23:00] partial: test of text input
+[22:23:00] final: test of 
+[22:23:00] type_final: test of 
+[22:23:00] partial: text input
+[22:23:01] final: text 
+[22:23:01] type_final: text 
+[22:23:01] partial: input
+[22:23:01] speechmatics: ForceEndOfUtterance sent
+[22:23:01] utterance: stop (duration=3.84s)
+[22:23:01] partial: input
+[22:23:02] vad: speech detected
+[22:23:02] final: input. 
+[22:23:02] type_final: input. 
+[22:23:02] partial: 
+[22:23:02] partial: 
+[22:23:03] partial: And
+[22:23:03] partial: And doesn't
+[22:23:04] partial: And doesn't
+[22:23:04] partial: And doesn't seem
+[22:23:04] final: And 
+[22:23:04] type_final: And 
+[22:23:04] partial: doesn't seem to be
+[22:23:05] partial: doesn't seem to be working
+[22:23:05] final: doesn't 
+[22:23:05] type_final: doesn't 
+[22:23:05] partial: seem to be working
+[22:23:05] partial: seem to be working
+[22:23:06] final: seem to 
+[22:23:06] type_final: seem to 
+[22:23:06] partial: be working too well
+[22:23:06] final: be 
+[22:23:06] type_final: be 
+[22:23:06] partial: working too well
+[22:23:06] partial: working too well.
+[22:23:07] final: working 
+[22:23:07] type_final: working 
+[22:23:07] partial: too well
+[22:23:07] final: too 
+[22:23:07] type_final: too 
+[22:23:07] partial: well
+[22:23:07] partial: well
+[22:23:08] speechmatics: ForceEndOfUtterance sent
+[22:23:08] utterance: stop (duration=5.89s)
+[22:23:08] final: well. 
+[22:23:08] type_final: well. 
+[22:23:08] partial: 
+[22:23:09] vad: speech detected
+[22:23:09] partial: 
+[22:23:10] partial: Freezing
+[22:23:10] partial: Freezing
+[22:23:10] partial: Freezing
+[22:23:11] partial: Freezing
+[22:23:11] speechmatics: ForceEndOfUtterance sent
+[22:23:11] utterance: stop (duration=2.22s)
+[22:23:11] partial: Freezing
+[22:23:13] speechmatics: idle timeout; closing session
+[22:23:13] speechmatics: stop requested
+[22:23:13] final: Freezing. 
+[22:23:13] type_final: Freezing. 
+[22:23:13] partial: 
+[22:23:14] speechmatics: session end (active=0, duration=16.39s)
+[22:29:25] vad: speech detected
+[22:29:25] speechmatics: session start (active=1)
+[22:29:26] partial: 
+[22:29:26] partial: This is a
+[22:29:26] partial: This is a test
+[22:29:27] partial: This is a test of
+[22:29:27] partial: This is a test of whether
+[22:29:27] final: This 
+[22:29:27] type_final: This 
+[22:29:27] partial: is a test of whether
+[22:29:28] final: is a 
+[22:29:28] type_final: a 
+[22:29:28] partial: test of whether
+[22:29:28] final: test 
+[22:29:28] type_final: test 
+[22:29:28] partial: of whether
+[22:29:28] final: of 
+[22:29:28] type_final: of 
+[22:29:28] partial: whether my terminal
+[22:29:29] partial: whether my terminal window
+[22:29:29] final: whether 
+[22:29:29] type_final: whether 
+[22:29:29] partial: my terminal window
+[22:29:29] partial: my terminal window freezes
+[22:29:30] final: my 
+[22:29:30] type_final: my 
+[22:29:30] partial: terminal window freezes when I'm
+[22:29:30] final: terminal 
+[22:29:30] type_final: terminal 
+[22:29:30] partial: window freezes when I'm talking
+[22:29:30] final: window 
+[22:29:30] type_final: window 
+[22:29:31] partial: freezes when I'm talking
+[22:29:31] partial: freezes when I'm talking about
+[22:29:31] final: freezes when 
+[22:29:31] type_final: freezes when 
+[22:29:31] partial: I'm talking. Uh
+[22:29:32] final: I'm 
+[22:29:32] type_final: I'm 
+[22:29:32] partial: talking. Uh
+[22:29:32] partial: talking. Uh
+[22:29:32] final: talking. 
+[22:29:32] type_final: talking. 
+[22:29:32] partial: Uh, into
+[22:29:33] final: Uh, 
+[22:29:33] type_final: Uh, 
+[22:29:33] partial: into a
+[22:29:33] partial: into a text
+[22:29:33] partial: into a text window
+[22:29:34] partial: into a text window and
+[22:29:34] final: into 
+[22:29:34] type_final: into 
+[22:29:34] partial: a text window instead of a
+[22:29:34] final: a 
+[22:29:34] type_final: a 
+[22:29:34] partial: text window instead of a browser
+[22:29:35] final: text 
+[22:29:35] type_final: text 
+[22:29:35] partial: window instead of a browser.
+[22:29:35] final: window 
+[22:29:35] type_final: window 
+[22:29:35] partial: instead of a browser.
+[22:29:36] final: instead 
+[22:29:36] type_final: instead 
+[22:29:36] partial: of a browser. And
+[22:29:36] final: of a 
+[22:29:36] type_final: of a 
+[22:29:36] partial: browser. And I guess
+[22:29:36] partial: browser. And I guess I have
+[22:29:37] final: browser. 
+[22:29:37] type_final: browser. 
+[22:29:37] partial: And I guess I have to keep
+[22:29:37] partial: And I guess I have to keep talking
+[22:29:37] final: And I 
+[22:29:37] type_final: And I 
+[22:29:37] partial: guess I have to keep talking for
+[22:29:38] final: guess I 
+[22:29:38] type_final: guess I 
+[22:29:38] partial: have to keep talking for of a
+[22:29:38] final: have to 
+[22:29:38] type_final: have to 
+[22:29:38] partial: keep talking for kind of a long time
+[22:29:38] final: keep 
+[22:29:38] type_final: keep 
+[22:29:38] partial: talking for kind of a long time
+[22:29:39] final: talking 
+[22:29:39] type_final: talking 
+[22:29:39] partial: for kind of a long time here.
+[22:29:39] final: for kind 
+[22:29:39] type_final: for kind 
+[22:29:39] partial: of a long time here at
+[22:29:39] final: of a long 
+[22:29:39] type_final: of a long 
+[22:29:39] partial: time here. At least
+[22:29:40] final: time 
+[22:29:40] type_final: time 
+[22:29:40] partial: here. At least I can
+[22:29:40] partial: here. At least I can just
+[22:29:41] final: here. 
+[22:29:41] type_final: here. 
+[22:29:41] partial: At least I can just watch
+[22:29:41] final: At 
+[22:29:41] type_final: At 
+[22:29:41] partial: least I can just watch the
+[22:29:41] final: least I 
+[22:29:41] type_final: least I 
+[22:29:41] partial: can just watch the
+[22:29:42] final: can just 
+[22:29:42] type_final: can just 
+[22:29:42] partial: watch the terminal
+[22:29:42] partial: watch the terminal
+[22:29:42] final: watch the 
+[22:29:42] type_final: watch the 
+[22:29:42] partial: terminal scroll
+[22:29:43] partial: terminal scroll
+[22:29:43] final: terminal 
+[22:29:43] type_final: terminal 
+[22:29:43] partial: scroll
+[22:29:44] partial: scroll instead
+[22:29:44] partial: scroll instead of
+[22:29:44] partial: scroll instead of
+[22:29:45] final: scroll 
+[22:29:45] type_final: scroll 
+[22:29:45] partial: instead of, um
+[22:29:45] partial: instead of, um
+[22:29:45] final: instead 
+[22:29:45] type_final: instead 
+[22:29:45] partial: of, um. You know
+[22:29:46] final: of, 
+[22:29:46] type_final: of, 
+[22:29:46] partial: um, you know, having la
+[22:29:46] partial: um, you know, having to look at the
+[22:29:46] final: um, 
+[22:29:46] type_final: um, 
+[22:29:46] partial: you know, having to look at the text
+[22:29:47] final: you 
+[22:29:47] type_final: you 
+[22:29:47] partial: know, having to look at the text that I'm
+[22:29:47] final: know, having 
+[22:29:47] type_final: know, having 
+[22:29:47] partial: to look at the text that I'm talking about
+[22:29:47] final: to look at 
+[22:29:47] type_final: to look at 
+[22:29:48] partial: the text that I'm talking about to
+[22:29:48] final: the 
+[22:29:48] type_final: the 
+[22:29:48] partial: text that I'm talking about to make sure
+[22:29:48] final: text that 
+[22:29:48] type_final: text that 
+[22:29:48] partial: I'm talking about to make sure that it makes
+[22:29:49] final: I'm 
+[22:29:49] type_final: I'm 
+[22:29:49] partial: talking about to make sure that it makes sense
+[22:29:49] final: talking about 
+[22:29:49] type_final: talking about 
+[22:29:49] partial: to make sure that it makes sense. But
+[22:29:49] final: to make 
+[22:29:49] type_final: to make 
+[22:29:49] partial: sure that it makes sense. But luckily
+[22:29:50] final: sure that it 
+[22:29:50] type_final: sure that it 
+[22:29:50] partial: makes sense. But luckily
+[22:29:50] final: makes 
+[22:29:50] type_final: makes 
+[22:29:50] partial: sense. But luckily
+[22:29:50] final: sense. 
+[22:29:50] type_final: sense. 
+[22:29:50] partial: But luckily I
+[22:29:51] final: But 
+[22:29:51] type_final: But 
+[22:29:51] partial: luckily I don't have to
+[22:29:51] partial: luckily I don't have to do that
+[22:29:52] final: luckily 
+[22:29:52] type_final: luckily 
+[22:29:52] partial: I don't have to do that. I
+[22:29:52] partial: I don't have to do that. I
+[22:29:52] final: I don't 
+[22:29:52] type_final: I don't 
+[22:29:52] partial: have to do that. I don't know
+[22:29:52] final: have to 
+[22:29:52] type_final: have to 
+[22:29:53] partial: do that. I don't know, even
+[22:29:53] final: do that. 
+[22:29:53] type_final: do that. 
+[22:29:53] partial: I don't know even what
+[22:29:53] final: I 
+[22:29:53] type_final: I 
+[22:29:53] partial: don't know even what I'm talking
+[22:29:54] final: don't 
+[22:29:54] type_final: don't 
+[22:29:54] partial: know even what I'm talking
+[22:29:54] final: know 
+[22:29:54] type_final: know 
+[22:29:54] partial: even what I'm talking about
+[22:29:54] final: even 
+[22:29:54] type_final: even 
+[22:29:54] partial: what I'm talking about, really
+[22:29:55] final: what I'm 
+[22:29:55] type_final: what I'm 
+[22:29:55] partial: talking about really, anymore
+[22:29:55] partial: talking about really, anymore.
+[22:29:55] final: talking 
+[22:29:55] type_final: talking 
+[22:29:56] partial: about really, anymore. Although
+[22:29:56] final: about 
+[22:29:56] type_final: about 
+[22:29:56] partial: really, anymore. Although it seems
+[22:29:56] final: really, 
+[22:29:56] type_final: really, 
+[22:29:56] partial: anymore, although it seems like it's
+[22:29:57] final: anymore, 
+[22:29:57] type_final: anymore, 
+[22:29:57] partial: although it seems like it's not
+[22:29:57] partial: although it seems like it's not really
+[22:29:57] final: although it 
+[22:29:57] type_final: although it 
+[22:29:57] partial: seems like it's not really freezing
+[22:29:58] final: seems like 
+[22:29:58] type_final: seems like 
+[22:29:58] partial: it's not really freezing
+[22:29:58] final: it's not 
+[22:29:58] type_final: it's not 
+[22:29:58] partial: really freezing up
+[22:29:58] final: really 
+[22:29:58] type_final: really 
+[22:29:58] partial: freezing up
+[22:29:59] partial: freezing up
+[22:29:59] final: freezing 
+[22:29:59] type_final: freezing 
+[22:29:59] partial: up. It's
+[22:29:59] partial: up. It's crazy
+[22:30:00] final: up. 
+[22:30:00] type_final: up. 
+[22:30:00] partial: It's crazy to me
+[22:30:00] partial: It's crazy to me
+[22:30:00] partial: It's crazy to me that this
+[22:30:01] final: It's 
+[22:30:01] type_final: It's 
+[22:30:01] partial: crazy to me that this is even
+[22:30:01] final: crazy to 
+[22:30:01] type_final: crazy to 
+[22:30:01] partial: me that this is even possible
+[22:30:01] final: me 
+[22:30:01] type_final: me 
+[22:30:01] partial: that this is even possible
+[22:30:02] final: that 
+[22:30:02] type_final: that 
+[22:30:02] partial: this is even possible
+[22:30:02] final: this is 
+[22:30:02] type_final: this is 
+[22:30:02] partial: even possible. And Mike
+[22:30:03] final: even 
+[22:30:03] type_final: even 
+[22:30:03] partial: possible, and my
+[22:30:03] partial: possible, and my computer
+[22:30:03] final: possible. 
+[22:30:03] type_final: possible. 
+[22:30:03] partial: And my computer.
+[22:30:04] final: And 
+[22:30:04] type_final: And 
+[22:30:04] partial: my computer is
+[22:30:04] final: my 
+[22:30:04] type_final: my 
+[22:30:04] partial: computer is
+[22:30:04] partial: computer is
+[22:30:05] final: computer 
+[22:30:05] type_final: computer 
+[22:30:05] partial: is
+[22:30:05] partial: is understanding
+[22:30:05] final: is 
+[22:30:05] type_final: is 
+[22:30:05] partial: understanding the
+[22:30:06] partial: understanding the sound waves
+[22:30:06] partial: understanding the sound waves
+[22:30:07] partial: understanding the sound waves
+[22:30:07] final: understanding the 
+[22:30:07] type_final: understanding the 
+[22:30:07] partial: sound waves
+[22:30:07] final: sound 
+[22:30:07] type_final: sound 
+[22:30:07] partial: waves that
+[22:30:08] partial: waves that are
+[22:30:08] final: waves 
+[22:30:08] type_final: waves 
+[22:30:08] partial: that are coming out
+[22:30:08] partial: that are coming out of my mouth
+[22:30:09] partial: that are coming out of my mouth right
+[22:30:09] final: that 
+[22:30:09] type_final: that 
+[22:30:09] partial: are coming out of my mouth right now
+[22:30:09] final: are 
+[22:30:09] type_final: are 
+[22:30:09] partial: coming out of my mouth right now.
+[22:30:10] final: coming out of 
+[22:30:10] type_final: coming out of 
+[22:30:10] partial: my mouth right now
+[22:30:10] final: my mouth 
+[22:30:10] type_final: my mouth 
+[22:30:10] partial: right now
+[22:30:10] final: right 
+[22:30:10] type_final: right 
+[22:30:11] partial: now
+[22:30:11] final: now, 
+[22:30:11] type_final: now, 
+[22:30:11] partial: and it's
+[22:30:11] partial: and it's crazy to me
+[22:30:12] partial: and it's crazy to me that
+[22:30:12] partial: and it's crazy to me that
+[22:30:12] final: and it's 
+[22:30:12] type_final: and it's 
+[22:30:12] partial: crazy to me that when people
+[22:30:13] final: crazy to 
+[22:30:13] type_final: crazy to 
+[22:30:13] partial: me that when people aren't
+[22:30:13] final: me 
+[22:30:13] type_final: me 
+[22:30:13] partial: that more people aren't using this
+[22:30:13] final: that 
+[22:30:13] type_final: that 
+[22:30:13] partial: more people aren't using this as a
+[22:30:14] final: more 
+[22:30:14] type_final: more 
+[22:30:14] partial: people aren't using this as a method
+[22:30:14] final: people aren't 
+[22:30:14] type_final: people aren't 
+[22:30:14] partial: using this as a method for
+[22:30:14] partial: using this as a method for computing
+[22:30:15] final: using this 
+[22:30:15] type_final: using this 
+[22:30:15] partial: as a method for computer
+[22:30:15] final: as a 
+[22:30:15] type_final: as a 
+[22:30:15] partial: method for computer
+[22:30:16] final: method 
+[22:30:16] type_final: method 
+[22:30:16] partial: for computer interaction.
+[22:30:16] final: for 
+[22:30:16] type_final: for 
+[22:30:16] partial: computer interaction.
+[22:30:16] final: computer 
+[22:30:16] type_final: computer 
+[22:30:16] partial: interaction.
+[22:30:17] partial: interaction. Um
+[22:30:17] partial: interaction. Um
+[22:30:17] final: interaction. 
+[22:30:17] type_final: interaction. 
+[22:30:17] partial: Um
+[22:30:18] partial: Um, and I
+[22:30:18] final: Um, 
+[22:30:18] type_final: Um, 
+[22:30:18] partial: and I guess I
+[22:30:18] partial: and I guess I am.
+[22:30:19] partial: and I guess I am maybe a little
+[22:30:19] final: and 
+[22:30:19] type_final: and 
+[22:30:19] partial: I guess I am maybe a little bit of
+[22:30:19] final: I guess 
+[22:30:19] type_final: I guess 
+[22:30:20] partial: I am maybe a little bit ahead of the curve
+[22:30:20] final: I am 
+[22:30:20] type_final: I am 
+[22:30:20] partial: maybe a little bit ahead of the curve
+[22:30:20] final: maybe a 
+[22:30:20] type_final: maybe a 
+[22:30:20] partial: little bit ahead of the curve. Not
+[22:30:21] final: little bit 
+[22:30:21] type_final: little bit 
+[22:30:21] partial: ahead of the curve. Not by ten
+[22:30:21] final: ahead of 
+[22:30:21] type_final: ahead of 
+[22:30:21] partial: the curve. Not by ten
+[22:30:21] final: the curve. 
+[22:30:21] type_final: the curve. 
+[22:30:21] partial: Not by ten. Probably. But
+[22:30:22] partial: Not by ten, probably, but
+[22:30:22] final: Not by 
+[22:30:22] type_final: Not by 
+[22:30:22] partial: ten, probably, but maybe a
+[22:30:22] final: ten, 
+[22:30:22] type_final: ten, 
+[22:30:22] partial: probably, but, uh, maybe a little bit
+[22:30:23] final: probably, 
+[22:30:23] type_final: probably, 
+[22:30:23] partial: but, uh, maybe a little bit. So
+[22:30:23] final: but, 
+[22:30:23] type_final: but, 
+[22:30:23] partial: uh, maybe a little bit. So
+[22:30:23] final: uh, 
+[22:30:23] type_final: uh, 
+[22:30:24] partial: maybe a little bit. So
+[22:30:24] final: maybe a little 
+[22:30:24] type_final: maybe a little 
+[22:30:24] partial: bit. So I guess that's
+[22:30:24] final: bit. 
+[22:30:24] type_final: bit. 
+[22:30:24] partial: So I guess that's cool
+[22:30:25] partial: So I guess that's cool. Um
+[22:30:25] final: So 
+[22:30:25] type_final: So 
+[22:30:25] partial: I guess that's cool. Um
+[22:30:25] final: I guess 
+[22:30:25] type_final: I guess 
+[22:30:25] partial: that's cool. Um
+[22:30:26] final: that's 
+[22:30:26] type_final: that's 
+[22:30:26] partial: cool. Um
+[22:30:26] final: cool. 
+[22:30:26] type_final: cool. 
+[22:30:26] partial: Um, you know
+[22:30:26] partial: Um, you know, I think I'm
+[22:30:27] final: Um, 
+[22:30:27] type_final: Um, 
+[22:30:27] partial: you know, I think I'm gonna build
+[22:30:27] partial: you know, I think I'm gonna build something
+[22:30:27] final: you 
+[22:30:27] type_final: you 
+[22:30:27] partial: know, I think I'm gonna build something on it and
+[22:30:28] final: know, I 
+[22:30:28] type_final: know, I 
+[22:30:28] partial: think I'm gonna build something on it and be
+[22:30:28] final: think I'm gonna 
+[22:30:28] type_final: think I'm gonna 
+[22:30:28] partial: build something on it, and it'll be fun.
+[22:30:28] final: build 
+[22:30:28] type_final: build 
+[22:30:29] partial: something on it, and it'll be fun.
+[22:30:29] final: something on it 
+[22:30:29] type_final: something on it 
+[22:30:29] partial: and it'll be fun. Even if
+[22:30:29] final: and it'll 
+[22:30:29] type_final: and it'll 
+[22:30:29] partial: be fun, even if I don't have
+[22:30:30] final: be 
+[22:30:30] type_final: be 
+[22:30:30] partial: fun, even if I don't have that much time
+[22:30:30] final: fun, 
+[22:30:30] type_final: fun, 
+[22:30:30] partial: even if I don't have that much time after
+[22:30:30] partial: even if I don't have that much time after I have a job
+[22:30:31] final: even if I don't 
+[22:30:31] type_final: even if I don't 
+[22:30:31] partial: have that much time after I have a job
+[22:30:31] final: have that 
+[22:30:31] type_final: have that 
+[22:30:31] partial: much time after I have a job
+[22:30:31] final: much time 
+[22:30:31] type_final: much time 
+[22:30:31] partial: after I have a job.
+[22:30:32] final: after I have 
+[22:30:32] type_final: after I have 
+[22:30:32] partial: a job. Um
+[22:30:32] final: a 
+[22:30:32] type_final: a 
+[22:30:32] partial: job. Um
+[22:30:32] final: job. 
+[22:30:32] type_final: job. 
+[22:30:32] partial: Um, but
+[22:30:33] partial: Um, but, you know
+[22:30:33] partial: Um, but, you know
+[22:30:33] final: Um, 
+[22:30:33] type_final: Um, 
+[22:30:34] partial: but, you know, it's still
+[22:30:34] partial: but, you know, it's still something
+[22:30:34] final: but, 
+[22:30:34] type_final: but, 
+[22:30:34] partial: you know, it's still something
+[22:30:35] final: you 
+[22:30:35] type_final: you 
+[22:30:35] partial: know, it's still something. So
+[22:30:35] final: know, it's 
+[22:30:35] type_final: know, it's 
+[22:30:35] partial: still something. So
+[22:30:35] final: still 
+[22:30:35] type_final: still 
+[22:30:35] partial: something. So, um
+[22:30:36] partial: something. So, um
+[22:30:36] final: something, 
+[22:30:36] type_final: something, 
+[22:30:36] partial: so, um
+[22:30:36] final: so, 
+[22:30:36] type_final: so, 
+[22:30:36] partial: um
+[22:30:37] partial: um. It
+[22:30:37] final: um, 
+[22:30:37] type_final: um, 
+[22:30:37] partial: it doesn't seem
+[22:30:37] partial: it doesn't seem like this is
+[22:30:38] partial: it doesn't seem like this is freezing
+[22:30:38] partial: it doesn't seem like this is freezing
+[22:30:39] final: it doesn't 
+[22:30:39] type_final: it doesn't 
+[22:30:39] partial: seem like this is freezing. I've been
+[22:30:39] final: seem like 
+[22:30:39] type_final: seem like 
+[22:30:39] partial: this is freezing. I've been talking
+[22:30:39] final: this is 
+[22:30:39] type_final: this is 
+[22:30:39] partial: freezing. I've been talking for
+[22:30:40] partial: freezing. I've been talking for, like
+[22:30:40] final: freezing. I've 
+[22:30:40] type_final: freezing. I've 
+[22:30:40] partial: been talking for, like, a minute
+[22:30:40] final: been 
+[22:30:40] type_final: been 
+[22:30:40] partial: talking for, like, a minute, and
+[22:30:41] final: talking 
+[22:30:41] type_final: talking 
+[22:30:41] partial: for, like, a minute, and it doesn't
+[22:30:41] final: for, 
+[22:30:41] type_final: for, 
+[22:30:41] partial: like, a minute, and it doesn't seem like
+[22:30:42] final: like, a 
+[22:30:42] type_final: like, a 
+[22:30:42] partial: minute, and it doesn't seem like it's freezing
+[22:30:42] final: minute, 
+[22:30:42] type_final: minute, 
+[22:30:42] partial: and it doesn't seem like it's freezing, so
+[22:30:42] final: and it 
+[22:30:42] type_final: and it 
+[22:30:42] partial: doesn't seem like it's freezing, so
+[22:30:43] final: doesn't seem 
+[22:30:43] type_final: doesn't seem 
+[22:30:43] partial: like it's freezing, so. Okay.
+[22:30:43] final: like it's 
+[22:30:43] type_final: like it's 
+[22:30:43] partial: freezing, so. Okay.
+[22:30:43] final: freezing, 
+[22:30:43] type_final: freezing, 
+[22:30:43] partial: so. Okay
+[22:30:44] final: so. 
+[22:30:44] type_final: so. 
+[22:30:44] partial: Okay
+[22:30:44] speechmatics: ForceEndOfUtterance sent
+[22:30:44] utterance: stop (duration=79.02s)
+[22:30:44] final: Okay 
+[22:30:44] type_final: Okay 
+[22:30:44] partial: 
+[22:30:46] speechmatics: idle timeout; closing session
+[22:30:46] speechmatics: stop requested
+[22:30:46] final: . 
+[22:30:46] type_final: . 
+[22:30:46] partial: 
+[22:30:46] speechmatics: session end (active=0, duration=81.57s)
+[22:31:23] vad: speech detected
+[22:31:23] speechmatics: session start (active=1)
+[22:31:24] partial: 
+[22:31:25] partial: This
+[22:31:25] partial: This is
+[22:31:25] partial: This is
+[22:31:25] partial: This is in
+[22:31:26] partial: This is in
+[22:31:26] final: This 
+[22:31:26] type_final: This 
+[22:31:26] partial: is in town
+[22:31:26] partial: is in town.
+[22:31:27] final: is 
+[22:31:27] type_final skipped: contained in committed
+[22:31:27] partial: in
+[22:31:27] final: in 
+[22:31:27] type_final: in 
+[22:31:27] partial: 
+[22:31:28] partial: in
+[22:31:28] partial: in
+[22:31:28] partial: a
+[22:31:29] partial: a
+[22:31:29] final: a 
+[22:31:29] type_final: a 
+[22:31:29] partial: 
+[22:31:29] partial: free
+[22:31:30] partial: freeze
+[22:31:30] partial: freezes
+[22:31:31] partial: freezes
+[22:31:31] partial: freezes. When I'm
+[22:31:31] partial: freezes when I'm
+[22:31:32] partial: freezes when I'm talking
+[22:31:32] final: freezes 
+[22:31:32] type_final: freezes 
+[22:31:32] partial: when I'm talking to
+[22:31:32] final: when 
+[22:31:32] type_final: when 
+[22:31:32] partial: I'm talking to the
+[22:31:33] final: I'm 
+[22:31:33] type_final: I'm 
+[22:31:33] partial: talking to the
+[22:31:33] partial: talking to the browser.
+[22:31:33] final: talking 
+[22:31:33] type_final: talking 
+[22:31:33] partial: to the browser.
+[22:31:34] final: to the 
+[22:31:34] type_final: to the 
+[22:31:34] partial: browser
+[22:31:34] partial: browser
+[22:31:34] partial: browser
+[22:31:34] speechmatics: ForceEndOfUtterance sent
+[22:31:34] utterance: stop (duration=11.09s)
+[22:31:36] speechmatics: idle timeout; closing session
+[22:31:36] speechmatics: stop requested
+[22:31:37] final: browser. 
+[22:31:37] type_final: browser. 
+[22:31:37] partial: 
+[22:31:37] speechmatics: session end (active=0, duration=14.04s)
+[22:31:42] vad: speech detected
+[22:31:42] speechmatics: session start (active=1)
+[22:31:43] partial: 
+[22:31:43] partial: 
+[22:31:43] partial: 
+[22:31:44] partial: Doesn't
+[22:31:44] partial: Doesn't seem
+[22:31:45] partial: Does seem
+[22:31:45] partial: Doesn't seem like
+[22:31:45] final: Doesn't 
+[22:31:45] type_final: Doesn't 
+[22:31:45] partial: seem like
+[22:31:46] partial: seem like it
+[22:31:46] final: seem 
+[22:31:46] type_final: seem 
+[22:31:46] partial: like it
+[22:31:46] final: like 
+[22:31:46] type_final: like 
+[22:31:46] partial: it freezes
+[22:31:47] partial: it freezes
+[22:31:47] final: it 
+[22:31:47] type_final: it 
+[22:31:47] partial: freezes e
+[22:31:47] partial: freezes e
+[22:31:48] partial: freezes each
+[22:31:48] final: freezes 
+[22:31:48] type_final: freezes 
+[22:31:48] partial: easy when I'm
+[22:31:48] final: each 
+[22:31:48] type_final: each 
+[22:31:48] partial: when I'm
+[22:31:49] partial: when I'm
+[22:31:49] partial: when I'm tapping
+[22:31:50] partial: when I'm tapping to
+[22:31:50] final: when I'm 
+[22:31:50] type_final: when I'm 
+[22:31:50] partial: typing to the
+[22:31:50] partial: typing to the URL
+[22:31:51] partial: tapping to the URL.
+[22:31:51] final: tapping 
+[22:31:51] type_final: tapping 
+[22:31:51] partial: to the URL bar
+[22:31:51] final: to the 
+[22:31:51] type_final: to the 
+[22:31:51] partial: URL bar
+[22:31:52] partial: URL bar
+[22:31:52] final: URL 
+[22:31:52] type_final: URL 
+[22:31:52] partial: bar
+[22:31:52] partial: bar
+[22:31:53] speechmatics: ForceEndOfUtterance sent
+[22:31:53] utterance: stop (duration=10.58s)
+[22:31:53] final: bar 
+[22:31:53] type_final: bar 
+[22:31:53] partial: 
+[22:31:55] speechmatics: idle timeout; closing session
+[22:31:55] speechmatics: stop requested
+[22:31:55] final: . 
+[22:31:55] type_final: . 
+[22:31:55] partial: 
+[22:31:55] speechmatics: session end (active=0, duration=12.94s)
+[22:31:56] vad: speech detected
+[22:31:56] speechmatics: session start (active=1)
+[22:31:57] partial: 
+[22:31:58] partial: This
+[22:31:58] partial: This is
+[22:31:58] partial: This is a
+[22:31:59] partial: This is a
+[22:31:59] partial: This is a
+[22:31:59] final: This 
+[22:31:59] type_final: This 
+[22:31:59] partial: is a test
+[22:32:00] final: is 
+[22:32:00] type_final skipped: contained in committed
+[22:32:00] partial: a test of
+[22:32:00] partial: a test of
+[22:32:00] final: a 
+[22:32:00] type_final: a 
+[22:32:00] partial: test of open
+[22:32:01] partial: test of
+[22:32:01] final: test of 
+[22:32:01] type_final: test of 
+[22:32:01] partial: open router is
+[22:32:01] partial: open router is
+[22:32:02] partial: open router is a
+[22:32:02] final: open 
+[22:32:02] type_final: open 
+[22:32:02] partial: router is open
+[22:32:03] final: router 
+[22:32:03] type_final: router 
+[22:32:03] partial: is open
+[22:32:03] partial: is open router
+[22:32:03] final: is 
+[22:32:03] type_final: is 
+[22:32:03] partial: open router that
+[22:32:04] partial: open router. The
+[22:32:04] final: open 
+[22:32:04] type_final: open 
+[22:32:04] partial: router. That problem
+[22:32:04] partial: router. The problem
+[22:32:05] final: router. 
+[22:32:05] type_final: router. 
+[22:32:05] partial: The problem
+[22:32:05] final: The 
+[22:32:05] type_final: The 
+[22:32:05] partial: problem? Maybe
+[22:32:05] partial: problem? Maybe not
+[22:32:06] final: problem? 
+[22:32:06] type_final: problem? 
+[22:32:06] partial: Maybe not.
+[22:32:06] partial: Maybe not.
+[22:32:06] partial: Maybe not. Because
+[22:32:07] final: Maybe 
+[22:32:07] type_final: Maybe 
+[22:32:07] partial: not because it's not
+[22:32:07] final: not 
+[22:32:07] type_final: not 
+[22:32:07] partial: because it's not free
+[22:32:07] partial: because it's not freezing
+[22:32:08] partial: because it's not freezing
+[22:32:08] final: because it's 
+[22:32:08] type_final: because it's 
+[22:32:08] partial: not freezing
+[22:32:09] final: not 
+[22:32:09] type_final: not 
+[22:32:09] partial: freezing
+[22:32:09] partial: freezing
+[22:32:09] final: freezing. 
+[22:32:09] type_final: freezing. 
+[22:32:09] partial: Enter
+[22:32:10] partial: Enter
+[22:32:10] partial: Enter
+[22:32:10] partial: Enter
+[22:32:11] partial: Enter
+[22:32:11] speechmatics: ForceEndOfUtterance sent
+[22:32:11] utterance: stop (duration=14.42s)
+[22:32:11] final: Enter. 
+[22:32:11] keyword: enter (final)
+[22:32:11] utterance: force end (keyword=enter)
+[22:32:11] speechmatics: ForceEndOfUtterance sent
+[22:32:11] partial: 
+[22:32:13] speechmatics: idle timeout; closing session
+[22:32:13] speechmatics: stop requested
+[22:32:14] final: 
+[22:32:14] partial: 
+[22:32:14] speechmatics: session end (active=0, duration=17.24s)
+[22:32:34] vad: speech detected
+[22:32:34] speechmatics: session start (active=1)
+[22:32:35] partial: 
+[22:32:35] partial: Do you think
+[22:32:36] partial: Do you think your
+[22:32:36] partial: Do you think you're conscious or
+[22:32:36] partial: Do you think you're conscious or
+[22:32:37] final: Do you 
+[22:32:37] type_final: Do you 
+[22:32:37] partial: think you're conscious or not
+[22:32:37] final: think you're 
+[22:32:37] type_final: think you're 
+[22:32:37] partial: conscious or not? And
+[22:32:37] partial: conscious or not? And how
+[22:32:38] final: conscious or 
+[22:32:38] type_final: conscious or 
+[22:32:38] partial: not? And how confident are
+[22:32:38] partial: not? And how confident are you in
+[22:32:38] final: not? 
+[22:32:38] type_final: not? 
+[22:32:38] partial: And how confident are you in your
+[22:32:39] final: And how 
+[22:32:39] type_final: And how 
+[22:32:39] partial: confident are you in your answer
+[22:32:39] partial: confident are you in your answer?
+[22:32:40] final: confident are 
+[22:32:40] type_final: confident are 
+[22:32:40] partial: you in your answer
+[22:32:40] final: you in your 
+[22:32:40] type_final: you in your 
+[22:32:40] partial: answer
+[22:32:40] speechmatics: ForceEndOfUtterance sent
+[22:32:40] utterance: stop (duration=6.06s)
+[22:32:40] partial: answer
+[22:32:42] speechmatics: idle timeout; closing session
+[22:32:42] speechmatics: stop requested
+[22:32:43] final: answer? 
+[22:32:43] type_final: answer? 
+[22:32:43] partial: 
+[22:32:43] speechmatics: session end (active=0, duration=8.75s)
+[22:32:43] vad: speech detected
+[22:32:43] speechmatics: session start (active=1)
+[22:32:44] partial: 
+[22:32:44] partial: Enter
+[22:32:44] partial: Enter
+[22:32:45] partial: Enter
+[22:32:45] partial: Enter
+[22:32:45] partial: Enter
+[22:32:45] speechmatics: ForceEndOfUtterance sent
+[22:32:45] utterance: stop (duration=2.26s)
+[22:32:47] speechmatics: idle timeout; closing session
+[22:32:47] speechmatics: stop requested
+[22:32:48] final: Enter. 
+[22:32:48] keyword: enter (final)
+[22:32:48] utterance: force end (keyword=enter)
+[22:32:48] speechmatics: ForceEndOfUtterance sent
+[22:32:48] partial: 
+[22:32:48] speechmatics: session end (active=0, duration=4.74s)
+[22:32:57] vad: speech detected
+[22:32:57] speechmatics: session start (active=1)
+[22:32:58] partial: Is
+[22:32:58] partial: Isn't
+[22:32:58] partial: Isn't
+[22:32:59] partial: Isn't not thinking
+[22:32:59] partial: Isn't not thinking that
+[22:32:59] partial: Isn't not thinking that you're
+[22:33:00] final: Isn't 
+[22:33:00] type_final: Isn't 
+[22:33:00] partial: not thinking that you're conscious
+[22:33:00] final: not 
+[22:33:00] type_final: not 
+[22:33:00] partial: thinking that you're conscious a
+[22:33:00] final: thinking 
+[22:33:00] type_final: thinking 
+[22:33:00] partial: that you're conscious. A complete oxidation
+[22:33:01] final: that you're 
+[22:33:01] type_final: that you're 
+[22:33:01] partial: conscious. A complete
+[22:33:01] partial: conscious a complete oxymoron.
+[22:33:01] final: conscious a 
+[22:33:01] type_final: conscious a 
+[22:33:01] partial: complete oxymoron.
+[22:33:02] final: complete 
+[22:33:02] type_final: complete 
+[22:33:02] partial: oxymoron
+[22:33:02] partial: oxymoron
+[22:33:02] speechmatics: ForceEndOfUtterance sent
+[22:33:02] utterance: stop (duration=5.46s)
+[22:33:02] final: oxymoron. 
+[22:33:02] type_final: oxymoron. 
+[22:33:02] partial: 
+[22:33:03] vad: speech detected
+[22:33:04] partial: 
+[22:33:04] partial: Enter
+[22:33:05] partial: Enter
+[22:33:05] partial: Enter
+[22:33:05] partial: Enter
+[22:33:06] partial: Enter
+[22:33:06] speechmatics: ForceEndOfUtterance sent
+[22:33:06] utterance: stop (duration=2.39s)
+[22:33:08] speechmatics: idle timeout; closing session
+[22:33:08] speechmatics: stop requested
+[22:33:09] final: Enter. 
+[22:33:09] keyword: enter (final)
+[22:33:09] utterance: force end (keyword=enter)
+[22:33:09] speechmatics: ForceEndOfUtterance sent
+[22:33:09] partial: 
+[22:33:09] speechmatics: session end (active=0, duration=12.21s)
+[22:33:56] vad: speech detected
+[22:33:56] speechmatics: session start (active=1)
+[22:33:57] partial: 
+[22:33:57] partial: 
+[22:33:57] partial: Occam's razor
+[22:33:57] partial: Occam's razor
+[22:33:58] partial: Occam's razor. Doesn't it seem
+[22:33:58] partial: Occam's razor. Doesn't it seem much
+[22:33:59] final: Occam's 
+[22:33:59] type_final: Occam's 
+[22:33:59] partial: razor. Doesn't it seem much
+[22:33:59] final: razor. 
+[22:33:59] type_final: razor. 
+[22:33:59] partial: Doesn't it seem much simpler than
+[22:33:59] final: Doesn't it 
+[22:33:59] type_final: Doesn't it 
+[22:33:59] partial: seem much simpler that
+[22:34:00] final: seem 
+[22:34:00] type_final: seem 
+[22:34:00] partial: much simpler that thinking
+[22:34:00] final: much 
+[22:34:00] type_final: much 
+[22:34:00] partial: simpler that thinking and
+[22:34:00] final: simpler 
+[22:34:00] type_final: simpler 
+[22:34:00] partial: that thinking and
+[22:34:01] final: that 
+[22:34:01] type_final: that 
+[22:34:01] partial: thinking and
+[22:34:01] partial: thinking and experiencing
+[22:34:01] final: thinking 
+[22:34:01] type_final: thinking 
+[22:34:01] partial: and experiencing are the
+[22:34:02] final: and 
+[22:34:02] type_final: and 
+[22:34:02] partial: experiencing are the
+[22:34:02] partial: experiencing are the same?
+[22:34:03] final: experiencing 
+[22:34:03] type_final: experiencing 
+[22:34:03] partial: are the same
+[22:34:03] final: are 
+[22:34:03] type_final: are 
+[22:34:03] partial: the same phenomenon
+[22:34:03] final: the 
+[22:34:03] type_final: the 
+[22:34:03] partial: same phenomenon?
+[22:34:04] final: same 
+[22:34:04] type_final: same 
+[22:34:04] partial: phenomenon
+[22:34:04] partial: phenomenon? It
+[22:34:04] partial: phenomenon? It seems
+[22:34:05] final: phenomenon? 
+[22:34:05] type_final: phenomenon? 
+[22:34:05] partial: It seems very
+[22:34:05] partial: It seems very
+[22:34:05] final: It 
+[22:34:05] type_final: It 
+[22:34:05] partial: seems very difficult to
+[22:34:06] partial: seems very difficult to imagine
+[22:34:06] final: seems 
+[22:34:06] type_final: seems 
+[22:34:06] partial: very difficult to imagine
+[22:34:06] final: very 
+[22:34:06] type_final: very 
+[22:34:07] partial: difficult to imagine that
+[22:34:07] partial: difficult to imagine that
+[22:34:07] final: difficult to 
+[22:34:07] type_final: difficult to 
+[22:34:07] partial: imagine that a
+[22:34:08] partial: imagine that a
+[22:34:08] final: imagine 
+[22:34:08] type_final: imagine 
+[22:34:08] partial: that a machine
+[22:34:08] final: that 
+[22:34:08] type_final: that 
+[22:34:08] partial: a machine capable
+[22:34:09] partial: a machine capable of
+[22:34:09] final: a 
+[22:34:09] type_final: a 
+[22:34:09] partial: machine capable of simulating
+[22:34:09] final: machine 
+[22:34:09] type_final: machine 
+[22:34:09] partial: capable of simulating a
+[22:34:10] partial: capable of simulating a human
+[22:34:10] final: capable 
+[22:34:10] type_final: capable 
+[22:34:10] partial: of simulating a human brain.
+[22:34:11] final: of 
+[22:34:11] type_final: of 
+[22:34:11] partial: simulating a human brain
+[22:34:11] partial: simulating a human brain perfectly
+[22:34:11] final: simulating a 
+[22:34:11] type_final: simulating a 
+[22:34:11] partial: human brain perfectly as a
+[22:34:11] final: human 
+[22:34:11] type_final: human 
+[22:34:12] partial: brain perfectly as a philosophical
+[22:34:12] final: brain 
+[22:34:12] type_final: brain 
+[22:34:12] partial: perfectly as a philosophical
+[22:34:12] partial: perfectly as a philosophical zombie
+[22:34:13] final: perfectly as a 
+[22:34:13] type_final: perfectly as a 
+[22:34:13] partial: philosophical zombie would
+[22:34:13] partial: philosophical zombie would not be
+[22:34:13] final: philosophical 
+[22:34:13] type_final: philosophical 
+[22:34:13] partial: zombie would not be actually
+[22:34:14] partial: zombie would not be actually
+[22:34:14] final: zombie 
+[22:34:14] type_final: zombie 
+[22:34:14] partial: would not be actually experiencing
+[22:34:14] final: would not 
+[22:34:14] type_final: would not 
+[22:34:14] partial: be actually experiencing the
+[22:34:15] final: be 
+[22:34:15] type_final: be 
+[22:34:15] partial: actually experiencing the same
+[22:34:15] final: actually 
+[22:34:15] type_final: actually 
+[22:34:15] partial: experiencing the same
+[22:34:15] partial: experiencing the same emotions
+[22:34:16] final: experiencing 
+[22:34:16] type_final: experiencing 
+[22:34:16] partial: the same emotions as that
+[22:34:16] final: the 
+[22:34:16] type_final: the 
+[22:34:16] partial: same emotions as that brain
+[22:34:16] final: same 
+[22:34:16] type_final: same 
+[22:34:17] partial: emotions as that brain in some
+[22:34:17] partial: emotions as that brain. In some sense
+[22:34:17] final: emotions as 
+[22:34:17] type_final: emotions as 
+[22:34:17] partial: that brain in some sense. Enter
+[22:34:18] final: that 
+[22:34:18] type_final: that 
+[22:34:18] partial: brain in some sense. Enter
+[22:34:18] final: brain in 
+[22:34:18] type_final: brain in 
+[22:34:18] partial: some sense. Enter
+[22:34:18] final: some 
+[22:34:18] type_final: some 
+[22:34:18] partial: sense. Enter
+[22:34:19] final: sense. 
+[22:34:19] type_final: sense. 
+[22:34:19] partial: Enter
+[22:34:19] speechmatics: ForceEndOfUtterance sent
+[22:34:19] utterance: stop (duration=23.30s)
+[22:34:19] final: Enter 
+[22:34:19] keyword: enter (final)
+[22:34:19] utterance: force end (keyword=enter)
+[22:34:19] speechmatics: ForceEndOfUtterance sent
+[22:34:19] partial: 
+[22:34:21] speechmatics: idle timeout; closing session
+[22:34:21] speechmatics: stop requested
+[22:34:22] final: . 
+[22:34:22] partial: 
+[22:34:22] speechmatics: session end (active=0, duration=25.92s)

@@ -12,6 +12,11 @@ Terminal-based voice typing using Speechmatics Realtime API, Silero VAD, and xdo
 ### Run
 - Preferred: `uv run python -m voicetyper` (uses package module path)
 - Or after `uv sync`, the console script `voicetyper` is available in `.venv/bin`
+- Tray/autostart (Linux Mint/Cinnamon and other AppIndicator desktops):
+  - Place your tray icons at `assets/mic-on.png` and `assets/mic-off.png` (theme fallbacks are used if missing).
+  - Run `scripts/install_tray.sh` once to install GTK/AppIndicator deps, sync the env (using system `/usr/bin/python3` so gi is available), and drop an autostart entry.
+  - Start the tray manually via `scripts/voicetyper-tray.sh` or log out/in to auto-start. The icon toggles listening and shows enabled/disabled state.
+  - Mint/Ubuntu variants often use Ayatana indicators; the install script pulls `gir1.2-ayatanaappindicator3-0.1` automatically.
 
 ### Features
 - Mic selection screen with live level indicator.
