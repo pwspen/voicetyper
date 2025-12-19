@@ -59,10 +59,15 @@ prime_env() {
     if [[ -x ".venv/bin/python" ]]; then
         current_py="$(readlink -f .venv/bin/python)"
         target_py="$(readlink -f "${TARGET_PYTHON}")"
-        if [[ "${current_py}" != "${target_py}" ]]; then
-            echo "Recreating venv with ${TARGET_PYTHON} for gi compatibility..."
+        # Check if venv has system-site-packages enabled
+        if [[ "${current_py}" != "${target_py}" ]] || ! grep -q "include-system-site-packages = true" .venv/pyvenv.cfg 2>/dev/null; then
+            echo "Recreating venv with ${TARGET_PYTHON} and system-site-packages for gi compatibility..."
             rm -rf .venv
         fi
+    fi
+    # Create venv with system-site-packages if it doesn't exist
+    if [[ ! -d ".venv" ]]; then
+        uv venv --python "${TARGET_PYTHON}" --system-site-packages
     fi
     UV_PYTHON="${TARGET_PYTHON}" uv sync --python "${TARGET_PYTHON}"
 }
