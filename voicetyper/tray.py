@@ -4,6 +4,7 @@ import signal
 import sys
 import threading
 from pathlib import Path
+import time
 
 try:
     import gi
@@ -32,7 +33,7 @@ except Exception:  # pragma: no cover - only runs when deps are missing
     sys.exit(1)
 
 from voicetyper.audio.devices import InputDevice, default_input_device_index, list_input_devices
-from voicetyper.config import load_config, AppConfig
+from voicetyper.config import load_config, AppConfig, KeywordAction
 from voicetyper.controller import VoiceController
 from voicetyper.logging_utils import DebugSink
 from voicetyper.stt.speechmatics_client import SpeechmaticsBackend
@@ -270,6 +271,29 @@ class TrayApp:
         api_entry.set_width_chars(40)
         grid.attach(api_entry, 1, row, 1, 1)
 
+        # Keyword actions section
+        row += 1
+        keyword_label = Gtk.Label(label="Keyword actions:")
+        keyword_label.set_halign(Gtk.Align.START)
+        grid.attach(keyword_label, 0, row, 1, 1)
+
+        keyword_rows: list[dict] = []
+        keywords_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
+        keywords_box.set_hexpand(True)
+
+        scrolled = Gtk.ScrolledWindow()
+        scrolled.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
+        scrolled.set_min_content_height(180)
+        scrolled.add(keywords_box)
+        grid.attach(scrolled, 1, row, 1, 2)
+
+        self._build_keyword_rows(keywords_box, keyword_rows)
+
+        add_keyword_button = Gtk.Button(label="Add keyword")
+        add_keyword_button.set_halign(Gtk.Align.START)
+        add_keyword_button.connect("clicked", lambda *_args: self._add_keyword_row(keywords_box, keyword_rows, None, False))
+        grid.attach(add_keyword_button, 1, row + 2, 1, 1)
+
         content.pack_start(grid, True, True, 0)
 
         # Add Save/Cancel buttons
@@ -286,9 +310,10 @@ class TrayApp:
             if new_hotkey == "None":
                 new_hotkey = None
             new_api_key = api_entry.get_text().strip() or None
+            new_keyword_actions = self._collect_keyword_actions(keyword_rows)
 
             # Apply changes
-            self._apply_settings(new_notifications, new_hotkey, new_api_key)
+            self._apply_settings(new_notifications, new_hotkey, new_api_key, new_keyword_actions)
 
         dialog.destroy()
 
@@ -342,18 +367,179 @@ class TrayApp:
         capture_window.connect("destroy", on_destroy)
         capture_window.show_all()
 
-    def _apply_settings(self, notifications_enabled: bool, hotkey: str | None, api_key: str | None):
+    def _build_keyword_rows(self, container: Gtk.Box, rows: list[dict]):
+        """Create UI rows for keyword actions, keeping one force-end row fixed."""
+        actions = list(self.config.keyword_actions or [])
+        force_action = next((a for a in actions if a.force_end), KeywordAction(word="", keys=[], force_end=True))
+        non_force_actions = [a for a in actions if not a.force_end]
+
+        # Fixed force-end row (cannot remove, force flag locked on)
+        self._add_keyword_row(container, rows, force_action, is_force_row=True)
+
+        # Other rows remain fully editable/removable
+        if non_force_actions:
+            for action in non_force_actions:
+                self._add_keyword_row(container, rows, action, is_force_row=False)
+        else:
+            # Provide one editable row to start with
+            self._add_keyword_row(container, rows, KeywordAction(word="", keys=[], force_end=False), is_force_row=False)
+
+        container.show_all()
+
+    def _add_keyword_row(
+        self,
+        container: Gtk.Box,
+        rows: list[dict],
+        action: KeywordAction | None,
+        is_force_row: bool,
+    ):
+        row_box = Gtk.Box(spacing=6)
+        keyword_entry = Gtk.Entry()
+        keyword_entry.set_placeholder_text("Keyword (spoken)")
+        if action and action.word:
+            keyword_entry.set_text(action.word)
+        keyword_entry.set_width_chars(18)
+
+        binding = ""
+        if action and action.keys:
+            binding = action.keys[0]
+
+        capture_button = Gtk.Button(label=binding or "Set keys")
+        force_check = Gtk.CheckButton(label="Force end")
+        force_check.set_active(bool(action.force_end) if action else False)
+        force_check.set_sensitive(not is_force_row)
+
+        remove_button = Gtk.Button(label="Remove")
+        remove_button.set_sensitive(not is_force_row)
+
+        row_data = {
+            "box": row_box,
+            "entry": keyword_entry,
+            "capture_button": capture_button,
+            "force_check": force_check,
+            "binding": binding,
+            "is_force": is_force_row,
+        }
+
+        capture_button.connect("clicked", lambda _btn: self._open_keyword_capture(row_data))
+        if not is_force_row:
+            remove_button.connect("clicked", lambda _btn: self._remove_keyword_row(container, rows, row_data))
+
+        row_box.pack_start(keyword_entry, False, False, 0)
+        row_box.pack_start(capture_button, False, False, 0)
+        row_box.pack_start(force_check, False, False, 0)
+        row_box.pack_start(remove_button, False, False, 0)
+
+        rows.append(row_data)
+        container.pack_start(row_box, False, False, 0)
+        container.show_all()
+
+    def _remove_keyword_row(self, container: Gtk.Box, rows: list[dict], row_data: dict):
+        if row_data.get("is_force"):
+            return
+        if row_data in rows:
+            rows.remove(row_data)
+        box = row_data.get("box")
+        if box:
+            container.remove(box)
+        container.show_all()
+
+    def _open_keyword_capture(self, row_data: dict):
+        """Capture key presses for keyword binding."""
+        capture_window = Gtk.Window(title="Capture key press")
+        capture_window.set_default_size(320, 120)
+        capture_window.set_modal(True)
+        capture_window.set_type_hint(Gdk.WindowTypeHint.DIALOG)
+
+        label = Gtk.Label(label="Press the key combination to send when this keyword is spoken")
+        label.set_margin_top(30)
+        label.set_margin_bottom(30)
+        capture_window.add(label)
+
+        def on_key_press(widget, event):
+            result = self._binding_from_event(event)
+            if not result:
+                return True
+            display, binding = result
+            row_data["binding"] = binding
+            button: Gtk.Button = row_data["capture_button"]
+            button.set_label(display or binding or "Set keys")
+            capture_window.destroy()
+            return True
+
+        capture_window.connect("key-press-event", on_key_press)
+        capture_window.show_all()
+
+    def _binding_from_event(self, event) -> tuple[str, str] | None:
+        """Translate a GTK key event into (display, xdotool_binding)."""
+        keyval = event.keyval
+        state = event.state
+
+        # Ignore pure modifier presses
+        if keyval in (
+            Gdk.KEY_Control_L, Gdk.KEY_Control_R,
+            Gdk.KEY_Alt_L, Gdk.KEY_Alt_R,
+            Gdk.KEY_Shift_L, Gdk.KEY_Shift_R,
+            Gdk.KEY_Super_L, Gdk.KEY_Super_R,
+        ):
+            return None
+
+        display = Gtk.accelerator_name(keyval, state)
+        base = Gdk.keyval_name(keyval) or ""
+        if not base:
+            return None
+
+        mods = []
+        if state & Gdk.ModifierType.CONTROL_MASK:
+            mods.append("ctrl")
+        if state & Gdk.ModifierType.SHIFT_MASK:
+            mods.append("shift")
+        if state & Gdk.ModifierType.MOD1_MASK:
+            mods.append("alt")
+        if state & Gdk.ModifierType.SUPER_MASK:
+            mods.append("super")
+
+        binding_parts = mods + [base]
+        binding = "+".join(binding_parts)
+        return display, binding
+
+    def _collect_keyword_actions(self, rows: list[dict]) -> list[KeywordAction]:
+        """Gather keyword actions from UI rows."""
+        actions: list[KeywordAction] = []
+        for row in rows:
+            word = row["entry"].get_text().strip()
+            if not word:
+                continue
+            binding = row.get("binding") or ""
+            keys = [binding] if binding else []
+            force_end = row["force_check"].get_active()
+            actions.append(KeywordAction(word=word, keys=keys, force_end=force_end))
+
+        if not actions:
+            # Ensure at least one action exists
+            actions.append(KeywordAction(word="enter", keys=["KP_Enter"], force_end=True))
+        return actions
+
+    def _apply_settings(
+        self,
+        notifications_enabled: bool,
+        hotkey: str | None,
+        api_key: str | None,
+        keyword_actions: list[KeywordAction],
+    ):
         """Apply new settings and persist to config file."""
         from voicetyper.config import save_config
 
         # Track changes
         hotkey_changed = hotkey != self.config.hotkey_toggle_listening
         api_key_changed = api_key != self.config.api_key
+        keywords_changed = keyword_actions != self.config.keyword_actions
 
         # Update config
         self.config.notifications_enabled = notifications_enabled
         self.config.hotkey_toggle_listening = hotkey
         self.config.api_key = api_key
+        self.config.keyword_actions = keyword_actions
 
         # Save to disk
         if not save_config(self.config):
@@ -363,6 +549,12 @@ class TrayApp:
         # Apply hotkey changes
         if hotkey_changed:
             self._update_hotkey(hotkey)
+
+        # Apply keyword changes by restarting if currently enabled
+        if keywords_changed and self.controller.enabled:
+            self.controller.set_enabled(False)
+            time.sleep(0.2)
+            self.controller.set_enabled(True)
 
         # Handle API key changes
         if api_key_changed:

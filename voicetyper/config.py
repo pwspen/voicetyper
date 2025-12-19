@@ -3,8 +3,74 @@ from __future__ import annotations
 import json
 import os
 import sys
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
+
+
+@dataclass
+class KeywordAction:
+    word: str
+    keys: list[str] = field(default_factory=list)
+    force_end: bool = True
+
+
+def default_keyword_actions() -> list[KeywordAction]:
+    return [
+        KeywordAction(word="enter", keys=["KP_Enter"], force_end=True),
+    ]
+
+
+def parse_keyword_actions(raw: object) -> list[KeywordAction]:
+    """
+    Convert user-provided keyword config into KeywordAction instances.
+
+    Supports legacy dict format with "end_utterance"/"enter" strings and
+    new formats:
+      - list of {"word": "...", "keys": [...], "force_end": bool}
+      - dict mapping word -> {"keys": [...], "force_end": bool}
+    """
+    actions: list[KeywordAction] = []
+
+    if isinstance(raw, dict):
+        # Legacy format: keep enter; ignore deprecated end_utterance keyword
+        if "end_utterance" in raw or "enter" in raw:
+            enter_word = raw.get("enter")
+            if enter_word:
+                actions.append(KeywordAction(word=str(enter_word), keys=["KP_Enter"], force_end=True))
+            return actions
+
+        # Mapping of word -> options
+        candidates: list[dict] = []
+        for word, cfg in raw.items():
+            if isinstance(cfg, dict):
+                item = cfg.copy()
+                item["word"] = word
+            else:
+                item = {"word": word}
+            candidates.append(item)
+    elif isinstance(raw, list):
+        candidates = [item for item in raw if isinstance(item, dict)]
+    else:
+        return actions
+
+    for item in candidates:
+        word = str(item.get("word") or "").strip()
+        if not word:
+            continue
+        keys_raw = item.get("keys", [])
+        if isinstance(keys_raw, str):
+            keys = [keys_raw]
+        elif isinstance(keys_raw, list):
+            keys = [str(k) for k in keys_raw if str(k).strip()]
+        else:
+            keys = []
+        force_end_raw = item.get("force_end")
+        force_end = True if force_end_raw is None else bool(force_end_raw)
+        actions.append(KeywordAction(word=word, keys=keys, force_end=force_end))
+
+    # Stop keyword is deprecated/disabled.
+    actions = [a for a in actions if a.word.strip().lower() != "stop"]
+    return actions
 
 
 @dataclass
@@ -19,8 +85,7 @@ class AppConfig:
     debug: bool = True
     debug_log_path: str = "voicetyper-debug.log"
     min_stream_seconds: float = 1.0
-    end_utterance_keyword: str = "stop"
-    enter_keyword: str = "enter"
+    keyword_actions: list[KeywordAction] = field(default_factory=default_keyword_actions)
     max_delay: float = 2.0
     ws_idle_timeout: float = 4.0
     notifications_enabled: bool = False
@@ -66,10 +131,13 @@ def create_default_config_file(path: Path) -> None:
             "max_delay": 2.0,
             "ws_idle_timeout": 4.0
         },
-        "keywords": {
-            "end_utterance": "stop",
-            "enter": "enter"
-        },
+        "keywords": [
+            {
+                "word": "enter",
+                "keys": ["KP_Enter"],
+                "force_end": True
+            }
+        ],
         "debug": {
             "enabled": True,
             "log_path": "voicetyper-debug.log"
@@ -147,11 +215,9 @@ def load_config() -> AppConfig:
 
                 # Keywords
                 if "keywords" in data:
-                    keywords = data["keywords"]
-                    if "end_utterance" in keywords:
-                        config.end_utterance_keyword = keywords["end_utterance"]
-                    if "enter" in keywords:
-                        config.enter_keyword = keywords["enter"]
+                    parsed_keywords = parse_keyword_actions(data["keywords"])
+                    if parsed_keywords:
+                        config.keyword_actions = parsed_keywords
 
                 # Debug
                 if "debug" in data:
@@ -210,10 +276,14 @@ def save_config(config: AppConfig, path: Path | None = None) -> bool:
             "max_delay": config.max_delay,
             "ws_idle_timeout": config.ws_idle_timeout
         },
-        "keywords": {
-            "end_utterance": config.end_utterance_keyword,
-            "enter": config.enter_keyword
-        },
+        "keywords": [
+            {
+                "word": action.word,
+                "keys": action.keys,
+                "force_end": action.force_end
+            }
+            for action in config.keyword_actions
+        ],
         "debug": {
             "enabled": config.debug,
             "log_path": config.debug_log_path

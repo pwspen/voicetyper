@@ -9,7 +9,7 @@ from voicetyper import output
 from voicetyper.audio.capture import AudioLevelMeter, MicrophoneStream
 from voicetyper.audio.devices import InputDevice
 from voicetyper.audio.vad import SileroVoiceActivityDetector
-from voicetyper.config import AppConfig
+from voicetyper.config import AppConfig, KeywordAction
 from voicetyper.logging_utils import DebugSink
 from voicetyper.stt.base import TranscriptionBackend
 
@@ -18,17 +18,23 @@ class TranscriptRouter:
     def __init__(
         self,
         prefer_partials: bool,
-        end_keyword: str,
-        enter_keyword: str,
+        keyword_actions: list[KeywordAction],
         request_force_end: Callable[[str], None],
-        send_enter: Callable[[], None],
+        send_keys: Callable[[list[str]], None],
         log_fn: Callable[[str], None] | None = None,
     ):
         self.prefer_partials = prefer_partials
-        self.end_keyword = end_keyword.strip().lower()
-        self.enter_keyword = enter_keyword.strip().lower()
+        self.keyword_actions = [
+            KeywordAction(
+                word=action.word.strip().lower(),
+                keys=[k for k in action.keys if str(k).strip()],
+                force_end=action.force_end,
+            )
+            for action in keyword_actions
+            if action.word.strip()
+        ]
         self.request_force_end = request_force_end
-        self.send_enter = send_enter
+        self.send_keys = send_keys
         self.log = log_fn or (lambda _msg: None)
         self._suppress_output = False
         self._content_seen: bool = False
@@ -43,23 +49,19 @@ class TranscriptRouter:
 
     def _strip_keywords(self, text: str) -> str:
         cleaned = text
-        for keyword in (self.end_keyword, self.enter_keyword):
-            if not keyword:
-                continue
-            pattern = rf"\b{re.escape(keyword)}\b[^\w\s]*"
+        for action in self.keyword_actions:
+            pattern = rf"\b{re.escape(action.word)}\b[^\w\s]*"
             cleaned = re.sub(pattern, " ", cleaned, flags=re.IGNORECASE)
         cleaned = re.sub(r"\s+", " ", cleaned)
         return cleaned if cleaned.strip() else ""
 
-    def _first_keyword_pos(self, text: str) -> tuple[str | None, int | None]:
-        first: tuple[str | None, int | None] = (None, None)
-        for keyword in (self.end_keyword, self.enter_keyword):
-            if not keyword:
-                continue
-            match = re.search(rf"\b{re.escape(keyword)}\b[^\w\s]*", text, flags=re.IGNORECASE)
+    def _first_keyword_pos(self, text: str) -> tuple[KeywordAction | None, int | None]:
+        first: tuple[KeywordAction | None, int | None] = (None, None)
+        for action in self.keyword_actions:
+            match = re.search(rf"\b{re.escape(action.word)}\b[^\w\s]*", text, flags=re.IGNORECASE)
             if match:
                 if first[1] is None or match.start() < first[1]:
-                    first = (keyword, match.start())
+                    first = (action, match.start())
         return first
 
     def _has_content(self, text: str) -> bool:
@@ -106,18 +108,19 @@ class TranscriptRouter:
             self._content_seen = True
         if self._suppress_output or self._keyword_triggered:
             return
-        keyword, pos = self._first_keyword_pos(text)
-        if keyword and pos is not None:
+        action, pos = self._first_keyword_pos(text)
+        if action and pos is not None:
             before = text[:pos]
             self._append_text(before, "type_final")
             self._keyword_triggered = True
             self._suppress_output = True
-            if keyword == self.enter_keyword:
-                self.log("keyword: enter (final)")
-                self.send_enter()
-            elif keyword == self.end_keyword:
-                self.log(f"keyword: end utterance ({self.end_keyword})")
-            self.request_force_end(keyword)
+            if action.keys:
+                self.log(f"keyword: {action.word} send keys {action.keys}")
+                self.send_keys(action.keys)
+            else:
+                self.log(f"keyword: {action.word} (no key bindings)")
+            if action.force_end:
+                self.request_force_end(action.word)
             return
         self._append_text(text, "type_final")
 
@@ -155,8 +158,9 @@ class VoiceController:
         if self._backend:
             self._backend.end_utterance()
 
-    def _send_enter_key(self):
-        output.xdotool.send_key("KP_Enter")
+    def _send_keys(self, keys: list[str]):
+        for key in keys:
+            output.xdotool.send_key(key)
 
     def _listener_loop(self):
         """
@@ -168,10 +172,9 @@ class VoiceController:
                 return
             router = TranscriptRouter(
                 prefer_partials=self.config.prefer_partials,
-                end_keyword=self.config.end_utterance_keyword,
-                enter_keyword=self.config.enter_keyword,
+                keyword_actions=self.config.keyword_actions,
                 request_force_end=self._request_force_end,
-                send_enter=self._send_enter_key,
+                send_keys=self._send_keys,
                 log_fn=self._log if self.config.debug else None,
             )
             backend_errors: list[Exception] = []

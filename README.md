@@ -23,7 +23,7 @@ Terminal-based voice typing using Speechmatics Realtime API, Silero VAD, and xdo
 - Speechmatics connection idles out after configurable VAD silence (default 10s via `ws_idle_timeout`) to avoid concurrency caps while keeping latency low.
 - Speechmatics partial vs final handling:
   - Speechmatics emits fast, revisable partials and slower, stable finals. By default, the client types finals only; set `prefer_partials=True` in `voicetyper/config.py` to type partials live.
-  - The client listens for keywords in both partials and finals. Saying the end-utterance keyword (default: `stop`) drops any pending partial text and sends a `ForceEndOfUtterance` to Speechmatics. Saying the enter keyword (default: `enter`) sends an Enter keypress (without typing the word). If a final contains a keyword, everything from the keyword onward is discarded; only the text before it is typed.
+  - The client listens for configurable keyword actions (e.g., default `enter` sends an Enter keypress without typing the word). If a final contains a keyword, everything from the keyword onward is discarded; only the text before it is typed.
 
 
 ### Dev Log
