@@ -29,13 +29,15 @@ try:
         from gi.repository import AyatanaAppIndicator3  # noqa: F401
     gi.require_version("Notify", "0.7")
     from gi.repository import Gtk, Notify  # noqa: F401
+    gi.require_version("Keybinder", "3.0")
+    from gi.repository import Keybinder  # noqa: F401
 except Exception:
     sys.exit(1)
 PY
     then
-        echo "Installing GTK/AppIndicator bindings and notify tools (sudo required)..." >&2
+        echo "Installing GTK/AppIndicator/Keybinder bindings and tools (sudo required)..." >&2
         sudo apt-get update
-        sudo apt-get install -y python3-gi gir1.2-ayatanaappindicator3-0.1 libnotify-bin xdotool
+        sudo apt-get install -y python3-gi gir1.2-ayatanaappindicator3-0.1 gir1.2-keybinder-3.0 libnotify-bin xdotool
     fi
 }
 

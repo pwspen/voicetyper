@@ -8,7 +8,7 @@ from pathlib import Path
 
 from voicetyper.audio.capture import AudioLevelMeter, MicrophoneStream
 from voicetyper.audio.devices import InputDevice, default_input_device_index, list_input_devices
-from voicetyper.config import DEFAULT_CONFIG, AppConfig
+from voicetyper.config import load_config, AppConfig
 from voicetyper.controller import VoiceController
 from voicetyper.logging_utils import DebugSink
 from voicetyper.stt.speechmatics_client import SpeechmaticsBackend
@@ -122,7 +122,7 @@ def run_app(config: AppConfig):
 
 
 def main():
-    config = DEFAULT_CONFIG
+    config = load_config()
     if not config.resolve_api_key():
         print("Missing SPEECHMATICS_API_KEY environment variable or config.api_key.", file=sys.stderr)
         sys.exit(1)
