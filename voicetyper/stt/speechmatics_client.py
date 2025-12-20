@@ -158,3 +158,50 @@ class SpeechmaticsBackend(TranscriptionBackend):
         self._ws = None
         self._running = False
         self._audio_stream = None
+
+
+def validate_api_key(
+    api_key: str,
+    connection_url: str,
+    sample_rate: int,
+    language: str,
+    max_delay: float,
+    timeout: float = 6.0,
+    log_fn: Callable[[str], None] | None = None,
+) -> bool:
+    """
+    Perform a short websocket handshake to confirm the API key works.
+
+    We send a tiny silence buffer then close, relying on HTTP errors to signal
+    invalid tokens. Returns True on success.
+    """
+    log = log_fn or (lambda _msg: None)
+    if not api_key:
+        return False
+
+    async def _attempt():
+        conn_settings = models.ConnectionSettings(url=connection_url, auth_token=api_key)
+        audio_settings = models.AudioSettings(sample_rate=sample_rate, encoding="pcm_s16le")
+        transcription_config = models.TranscriptionConfig(
+            operating_point="enhanced",
+            language=language or "en",
+            enable_partials=False,
+            max_delay=max_delay,
+        )
+        ws = client.WebsocketClient(conn_settings)
+        stream = QueueAudioStream()
+
+        silence_frames = int(sample_rate * 0.05)
+        if silence_frames > 0:
+            stream.push(b"\x00\x00" * silence_frames)
+        stream.close()
+        await ws.run(stream, transcription_config, audio_settings)
+
+    try:
+        asyncio.run(asyncio.wait_for(_attempt(), timeout=timeout))
+        return True
+    except HTTPStatusError as exc:
+        log(f"api key validation failed: {exc}")
+    except Exception as exc:  # pragma: no cover - defensive guard
+        log(f"api key validation error: {exc}")
+    return False

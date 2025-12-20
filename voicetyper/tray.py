@@ -1,10 +1,12 @@
 from __future__ import annotations
 
+import os
 import signal
 import sys
 import threading
 from pathlib import Path
 import time
+from typing import Callable
 
 try:
     import gi
@@ -33,10 +35,10 @@ except Exception:  # pragma: no cover - only runs when deps are missing
     sys.exit(1)
 
 from voicetyper.audio.devices import InputDevice, default_input_device_index, list_input_devices
-from voicetyper.config import load_config, AppConfig, KeywordAction
+from voicetyper.config import load_config, AppConfig, KeywordAction, save_config
 from voicetyper.controller import VoiceController
 from voicetyper.logging_utils import DebugSink
-from voicetyper.stt.speechmatics_client import SpeechmaticsBackend
+from voicetyper.stt.speechmatics_client import SpeechmaticsBackend, validate_api_key
 
 
 def _find_icon(name_candidates: list[str | Path], fallback: str) -> str:
@@ -71,6 +73,9 @@ class TrayApp:
         self.sink = DebugSink(
             enabled=config.debug, log_path=Path(config.debug_log_path), buffer=self._debug_lines, lock=self._lock
         )
+        self.locked = not config.has_valid_api_key()
+        self._validating_key: str | None = None
+        self._hotkey_bound = False
         self.controller = VoiceController(
             config,
             backend_factory=lambda: SpeechmaticsBackend(config, log_fn=self.sink.info),
@@ -93,9 +98,9 @@ class TrayApp:
         )
         Notify.init("Voicetyper")
         self._indicator = self._build_indicator()
-        self._hotkey_bound = False
         self._init_hotkey()
         self._last_icon = None
+        self._refresh_state()
         self._start_state_timer()
 
     def _build_indicator(self):
@@ -126,6 +131,24 @@ class TrayApp:
     def _start_state_timer(self):
         GLib.timeout_add(500, self._refresh_state)
 
+    def _set_locked(self, locked: bool):
+        """Enable/disable user controls based on API key readiness."""
+        if locked == self.locked:
+            return
+        self.locked = locked
+        if locked:
+            if self.controller.enabled:
+                self.controller.set_enabled(False)
+            if self._hotkey_bound and self.config.hotkey_toggle_listening:
+                try:
+                    Keybinder.unbind(self.config.hotkey_toggle_listening)
+                except Exception:
+                    pass
+            self._hotkey_bound = False
+        else:
+            self._init_hotkey()
+        self._refresh_state()
+
     def _notify(self, message: str, force: bool = False):
         """
         Send notification if enabled or forced.
@@ -146,7 +169,7 @@ class TrayApp:
 
     def _init_hotkey(self):
         """Initialize and bind global hotkey if configured."""
-        if not self.config.hotkey_toggle_listening:
+        if self.locked or self._hotkey_bound or not self.config.hotkey_toggle_listening:
             return
 
         try:
@@ -178,6 +201,9 @@ class TrayApp:
         return False  # Don't repeat callback
 
     def _toggle_listening(self, _menuitem):
+        if self.locked:
+            self._notify("Add and validate your Speechmatics API key in Settings.", force=True)
+            return
         new_state = not self.controller.enabled
         self.controller.set_enabled(new_state)
         status = "Enabled" if new_state else "Disabled"
@@ -185,11 +211,15 @@ class TrayApp:
         self._refresh_state()
 
     def _refresh_state(self):
-        enabled = self.controller.enabled
-        streaming = self.controller.listening
+        locked = self.locked
+        enabled = self.controller.enabled and not locked
+        streaming = self.controller.listening and not locked
 
         # Three-state icon selection
-        if not enabled:
+        if locked:
+            icon = self.icon_off
+            description = "API key needed"
+        elif not enabled:
             icon = self.icon_off
             description = "Disabled"
         elif streaming:
@@ -209,7 +239,10 @@ class TrayApp:
             self._last_icon = icon
 
         self._indicator.set_title(f"Voicetyper: {description}")
-        self.toggle_item.set_label("Disable Listening" if enabled else "Enable Listening")
+        self.toggle_item.set_label(
+            "Add API key (locked)" if locked else ("Disable Listening" if enabled else "Enable Listening")
+        )
+        self.toggle_item.set_sensitive(not locked)
         return True
 
     def _show_settings_dialog(self, _menuitem):
@@ -261,15 +294,93 @@ class TrayApp:
 
         # API Key section
         row += 1
-        api_label = Gtk.Label(label="API Key:")
+        api_label = Gtk.Label(label="Speechmatics API Key:")
         api_label.set_halign(Gtk.Align.START)
         grid.attach(api_label, 0, row, 1, 1)
 
         api_entry = Gtk.Entry()
         api_entry.set_text(self.config.api_key or "")
         api_entry.set_placeholder_text("Enter Speechmatics API key")
-        api_entry.set_width_chars(40)
-        grid.attach(api_entry, 1, row, 1, 1)
+        api_entry.set_width_chars(32)
+        api_entry.set_hexpand(True)
+
+        api_status_icon = Gtk.Image()
+        api_status_label = Gtk.Label()
+        api_status_label.set_halign(Gtk.Align.START)
+
+        env_key = os.environ.get("SPEECHMATICS_API_KEY")
+        validation_state = {
+            "key": self.config.api_key if self.config.api_key_validated and self.config.api_key else None,
+            "status": "valid" if (self.config.api_key_validated and self.config.api_key) or env_key else "unknown",
+            "in_progress": False,
+        }
+
+        def set_api_status(kind: str, text: str):
+            icon_name = {
+                "valid": "emblem-ok",
+                "invalid": "dialog-error",
+                "pending": "dialog-information",
+            }.get(kind, "dialog-question")
+            api_status_icon.set_from_icon_name(icon_name, Gtk.IconSize.MENU)
+            api_status_label.set_text(text)
+
+        if env_key:
+            set_api_status("valid", "Using environment key")
+        elif validation_state["status"] == "valid":
+            set_api_status("valid", "Validated")
+        else:
+            set_api_status("unknown", "Not validated")
+
+        def on_api_changed(_entry):
+            validation_state["key"] = None
+            validation_state["status"] = "unknown"
+            set_api_status("unknown", "Not validated")
+
+        api_entry.connect("changed", on_api_changed)
+
+        validate_button = Gtk.Button(label="Validate")
+        validate_button.set_halign(Gtk.Align.START)
+
+        def finish_validation(success: bool, key: str):
+            validation_state["in_progress"] = False
+            validate_button.set_sensitive(True)
+            current = api_entry.get_text().strip()
+            if key != current:
+                validation_state["status"] = "unknown"
+                validation_state["key"] = None
+                set_api_status("unknown", "Not validated")
+                return
+            validation_state["status"] = "valid" if success else "invalid"
+            validation_state["key"] = key if success else None
+            if success:
+                set_api_status("valid", "Validated")
+            else:
+                set_api_status("invalid", "Validation failed")
+
+        def start_validation(_btn=None):
+            if validation_state["in_progress"]:
+                return
+            key = api_entry.get_text().strip()
+            if not key:
+                validation_state["status"] = "invalid"
+                validation_state["key"] = None
+                set_api_status("invalid", "API key required")
+                return
+            validation_state["in_progress"] = True
+            set_api_status("pending", "Validating...")
+            validate_button.set_sensitive(False)
+            self._validate_api_key_async(key, lambda success: finish_validation(success, key))
+
+        validate_button.connect("clicked", start_validation)
+
+        api_row = Gtk.Box(spacing=6)
+        api_row.set_hexpand(True)
+        api_row.pack_start(api_entry, True, True, 0)
+        api_row.pack_start(api_status_icon, False, False, 0)
+        api_row.pack_start(api_status_label, False, False, 0)
+        api_row.pack_start(validate_button, False, False, 0)
+
+        grid.attach(api_row, 1, row, 1, 1)
 
         # Keyword actions section
         row += 1
@@ -311,9 +422,25 @@ class TrayApp:
                 new_hotkey = None
             new_api_key = api_entry.get_text().strip() or None
             new_keyword_actions = self._collect_keyword_actions(keyword_rows)
+            validated = False
+            if new_api_key:
+                validated = (
+                    validation_state["status"] == "valid"
+                    and validation_state["key"] == new_api_key
+                )
+            elif env_key:
+                validated = True
 
             # Apply changes
-            self._apply_settings(new_notifications, new_hotkey, new_api_key, new_keyword_actions)
+            self._apply_settings(
+                new_notifications,
+                new_hotkey,
+                new_api_key,
+                new_keyword_actions,
+                api_key_validated=validated,
+            )
+            if new_api_key and not validated:
+                self._start_background_validation(new_api_key)
 
         dialog.destroy()
 
@@ -526,19 +653,20 @@ class TrayApp:
         hotkey: str | None,
         api_key: str | None,
         keyword_actions: list[KeywordAction],
+        api_key_validated: bool,
     ):
         """Apply new settings and persist to config file."""
-        from voicetyper.config import save_config
-
         # Track changes
-        hotkey_changed = hotkey != self.config.hotkey_toggle_listening
-        api_key_changed = api_key != self.config.api_key
+        previous_hotkey = self.config.hotkey_toggle_listening
+        hotkey_changed = hotkey != previous_hotkey
+        api_key_state_changed = (api_key != self.config.api_key) or (bool(api_key_validated) != self.config.api_key_validated)
         keywords_changed = keyword_actions != self.config.keyword_actions
 
         # Update config
         self.config.notifications_enabled = notifications_enabled
         self.config.hotkey_toggle_listening = hotkey
         self.config.api_key = api_key
+        self.config.api_key_validated = bool(api_key_validated) if api_key else False
         self.config.keyword_actions = keyword_actions
 
         # Save to disk
@@ -546,9 +674,12 @@ class TrayApp:
             self._notify("Failed to save settings", force=True)
             return
 
+        # Update lock state after persisting
+        self._set_locked(not self.config.has_valid_api_key())
+
         # Apply hotkey changes
         if hotkey_changed:
-            self._update_hotkey(hotkey)
+            self._update_hotkey(hotkey, previous_hotkey)
 
         # Apply keyword changes by restarting if currently enabled
         if keywords_changed and self.controller.enabled:
@@ -557,23 +688,27 @@ class TrayApp:
             self.controller.set_enabled(True)
 
         # Handle API key changes
-        if api_key_changed:
+        if api_key_state_changed:
             self._handle_api_key_change(api_key)
 
         self._notify("Settings saved successfully")
 
-    def _update_hotkey(self, new_hotkey: str | None):
+    def _update_hotkey(self, new_hotkey: str | None, old_hotkey: str | None = None):
         """Update global hotkey binding."""
         # Unbind old hotkey
-        if self._hotkey_bound and self.config.hotkey_toggle_listening:
+        previous = old_hotkey if old_hotkey is not None else self.config.hotkey_toggle_listening
+        if self._hotkey_bound and previous:
             try:
-                Keybinder.unbind(self.config.hotkey_toggle_listening)
+                Keybinder.unbind(previous)
                 self._hotkey_bound = False
-                self.sink.info(f"Hotkey unbound: {self.config.hotkey_toggle_listening}")
+                self.sink.info(f"Hotkey unbound: {previous}")
             except Exception as exc:
                 self.sink.info(f"Failed to unbind hotkey: {exc}")
 
         # Bind new hotkey
+        if self.locked:
+            return
+
         if new_hotkey:
             try:
                 success = Keybinder.bind(new_hotkey, self._on_hotkey_pressed, None)
@@ -591,19 +726,56 @@ class TrayApp:
 
     def _handle_api_key_change(self, new_api_key: str | None):
         """Handle API key change by restarting backend if needed."""
-        if not new_api_key:
+        if not new_api_key and not os.environ.get("SPEECHMATICS_API_KEY"):
             self._notify("Warning: No API key set. Voice typing will not work.", force=True)
+            return
+        if self.locked:
             return
 
         # If currently listening, restart controller to use new key
         was_enabled = self.controller.enabled
         if was_enabled:
             self.controller.set_enabled(False)
-            # Brief pause for clean shutdown
-            import time
             time.sleep(0.5)
             self.controller.set_enabled(True)
             self._notify("Backend restarted with new API key")
+
+    def _validate_api_key_async(self, api_key: str, on_complete: Callable[[bool], None] | None):
+        """Validate key without blocking the GTK loop."""
+        def worker():
+            ok = validate_api_key(
+                api_key=api_key,
+                connection_url=self.config.connection_url,
+                sample_rate=self.config.sample_rate,
+                language=self.config.language,
+                max_delay=self.config.max_delay,
+                log_fn=self.sink.info,
+            )
+            if on_complete:
+                GLib.idle_add(lambda: on_complete(ok))
+
+        thread = threading.Thread(target=worker, daemon=True)
+        thread.start()
+
+    def _start_background_validation(self, api_key: str):
+        """Validate and persist API key state after saving settings."""
+        if not api_key or self._validating_key == api_key:
+            return
+        self._validating_key = api_key
+
+        def finish(success: bool):
+            if api_key != self._validating_key or api_key != (self.config.api_key or ""):
+                return False
+            self._validating_key = None
+            self.config.api_key_validated = bool(success)
+            if not save_config(self.config):
+                self._notify("Failed to save API key status", force=True)
+            self._set_locked(not self.config.has_valid_api_key())
+            message = "API key validated" if success else "API key validation failed"
+            self._notify(message, force=not success)
+            return False
+
+        self._validate_api_key_async(api_key, finish)
 
     def _quit(self, _menuitem=None):
         # Unbind hotkey
@@ -624,10 +796,11 @@ class TrayApp:
 
 def main():
     config = load_config()
-    api_key = config.resolve_api_key()
-    if not api_key:
-        print("Missing SPEECHMATICS_API_KEY environment variable or config.api_key.", file=sys.stderr)
-        return 1
+    if not config.has_valid_api_key():
+        print(
+            "Speechmatics API key missing or not yet validated. Starting in locked mode until a key is validated.",
+            file=sys.stderr,
+        )
     try:
         app = TrayApp(config)
     except Exception as exc:

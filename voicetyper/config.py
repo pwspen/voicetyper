@@ -76,6 +76,7 @@ def parse_keyword_actions(raw: object) -> list[KeywordAction]:
 @dataclass
 class AppConfig:
     api_key: str | None = None
+    api_key_validated: bool = False
     connection_url: str = "wss://eu.rt.speechmatics.com/v2"
     language: str = "en"
     sample_rate: int = 16000
@@ -94,6 +95,12 @@ class AppConfig:
     def resolve_api_key(self) -> str:
         api_key = self.api_key or os.environ.get("SPEECHMATICS_API_KEY") or ""
         return api_key
+
+    def has_valid_api_key(self) -> bool:
+        """True if an env var is present or a stored key has been validated."""
+        if os.environ.get("SPEECHMATICS_API_KEY"):
+            return True
+        return bool(self.api_key and self.api_key_validated)
 
 
 def get_config_path() -> Path:
@@ -118,6 +125,7 @@ def create_default_config_file(path: Path) -> None:
         },
         "api": {
             "key": None,
+            "validated": False,
             "connection_url": "wss://eu.rt.speechmatics.com/v2"
         },
         "audio": {
@@ -188,6 +196,10 @@ def load_config() -> AppConfig:
                     api = data["api"]
                     if api.get("key"):
                         config.api_key = api["key"]
+                        if "validated" not in api:
+                            config.api_key_validated = True
+                    if "validated" in api:
+                        config.api_key_validated = bool(api["validated"])
                     if api.get("connection_url"):
                         config.connection_url = api["connection_url"]
 
@@ -263,6 +275,7 @@ def save_config(config: AppConfig, path: Path | None = None) -> bool:
         },
         "api": {
             "key": config.api_key,
+            "validated": config.api_key_validated,
             "connection_url": config.connection_url
         },
         "audio": {
